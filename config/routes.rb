@@ -1,4 +1,16 @@
 FoodierecsTwo::Application.routes.draw do
+  resources :restaurants
+
+  resources :users
+
+  resources :opinions
+
+  resources :mappings
+
+  resources :nominations
+
+  resources :feeds
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

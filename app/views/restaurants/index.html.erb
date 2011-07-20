@@ -1,0 +1,63 @@
+<h1>Listing restaurants</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Street number</th>
+    <th>Street</th>
+    <th>Phone</th>
+    <th>Lat</th>
+    <th>Long</th>
+    <th>Icon</th>
+    <th>Google</th>
+    <th>Reference</th>
+    <th>Type1</th>
+    <th>Type2</th>
+    <th>Type3</th>
+    <th>Type4</th>
+    <th>Url</th>
+    <th>Vicinity</th>
+    <th>Rating</th>
+    <th>Foodie likes</th>
+    <th>Foodie dislikes</th>
+    <th>Normal likes</th>
+    <th>Normal dislikes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @restaurants.each do |restaurant| %>
+  <tr>
+    <td><%= restaurant.name %></td>
+    <td><%= restaurant.address %></td>
+    <td><%= restaurant.street_number %></td>
+    <td><%= restaurant.street %></td>
+    <td><%= restaurant.phone %></td>
+    <td><%= restaurant.lat %></td>
+    <td><%= restaurant.long %></td>
+    <td><%= restaurant.icon %></td>
+    <td><%= restaurant.google_id %></td>
+    <td><%= restaurant.reference %></td>
+    <td><%= restaurant.type1 %></td>
+    <td><%= restaurant.type2 %></td>
+    <td><%= restaurant.type3 %></td>
+    <td><%= restaurant.type4 %></td>
+    <td><%= restaurant.url %></td>
+    <td><%= restaurant.vicinity %></td>
+    <td><%= restaurant.rating %></td>
+    <td><%= restaurant.foodie_likes %></td>
+    <td><%= restaurant.foodie_dislikes %></td>
+    <td><%= restaurant.normal_likes %></td>
+    <td><%= restaurant.normal_dislikes %></td>
+    <td><%= link_to 'Show', restaurant %></td>
+    <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
+    <td><%= link_to 'Destroy', restaurant, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Restaurant', new_restaurant_path %>

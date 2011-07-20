@@ -1,0 +1,33 @@
+<h1>Listing opinions</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Restaurant</th>
+    <th>Foodie</th>
+    <th>Like</th>
+    <th>To eat</th>
+    <th>To drink</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @opinions.each do |opinion| %>
+  <tr>
+    <td><%= opinion.user_id %></td>
+    <td><%= opinion.restaurant_id %></td>
+    <td><%= opinion.foodie %></td>
+    <td><%= opinion.like %></td>
+    <td><%= opinion.to_eat %></td>
+    <td><%= opinion.to_drink %></td>
+    <td><%= link_to 'Show', opinion %></td>
+    <td><%= link_to 'Edit', edit_opinion_path(opinion) %></td>
+    <td><%= link_to 'Destroy', opinion, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Opinion', new_opinion_path %>

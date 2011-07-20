@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @opinion.user_id %>
+</p>
+
+<p>
+  <b>Restaurant:</b>
+  <%= @opinion.restaurant_id %>
+</p>
+
+<p>
+  <b>Foodie:</b>
+  <%= @opinion.foodie %>
+</p>
+
+<p>
+  <b>Like:</b>
+  <%= @opinion.like %>
+</p>
+
+<p>
+  <b>To eat:</b>
+  <%= @opinion.to_eat %>
+</p>
+
+<p>
+  <b>To drink:</b>
+  <%= @opinion.to_drink %>
+</p>
+
+
+<%= link_to 'Edit', edit_opinion_path(@opinion) %> |
+<%= link_to 'Back', opinions_path %>
