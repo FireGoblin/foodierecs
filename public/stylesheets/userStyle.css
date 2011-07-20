@@ -1,0 +1,133 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'News Cycle',"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #393939;
+	text-align: left;
+	
+	font-size: 16px;
+}
+
+html { 
+	background-color: #e4e4e4;
+	background: url(../images/bar.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#header{
+	font-family: 'Lobster Two',"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 40px;
+	color: #ffffff;
+	
+	background-color: #1477bb;
+	
+	width: 680px;
+	padding-left: 20px;
+	height: 60px;
+}
+
+#userContent{
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	background-color: #ffffff;
+	
+	min-height: 100%;
+
+}
+
+#userInfo{
+
+}
+
+#userName{
+	font-family: 'Lobster Two',"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 30px;
+	text-decoration: underline;
+	
+	padding: 10px 0 0 20px;
+}
+
+#userFoodieYes{
+	font-family: 'News Cycle',"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 20px;
+	color: #C81010;
+	
+	padding: 0 0 0 20px;
+}
+
+#userFoodieNo{
+	font-family: 'News Cycle',"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 20px;
+	color: #AfAfAf;
+	
+	padding: 0 0 0 20px;
+}
+
+.restaurantListHeader{
+	margin: 10px 20px 0 20px;
+}
+
+.restaurantList{
+	margin: 10px 20px 30px 20px;
+	
+	width: 660px;
+}
+
+.restaurantNameLeft{
+	float: left;
+	width: 300px;
+	margin-bottom: 20px;
+}
+
+.restaurantNameRight{
+	float: right;
+	width: 300px;
+	margin-bottom: 20px;
+}
+
+.restaurantList a{
+	text-decoration: none;
+	color: #1477bb;
+}
+
+.recTag{
+	color: #C81010;
+}
+
+.foodieDish{
+	font-size: 12px;
+	padding-left: 5px;
+}
+
+.foodieDrink{
+	font-size: 12px;
+	padding-left: 5px;
+}
+
+.restaurantRecommend{
+	width: 250px;
+	height: 20px;
+	overflow: hidden;
+	padding-left: 5px;
+}
+
+.restaurantRecommend a{
+	display:inline-block;
+	position:relative;
+	float:left;
+}
+
+.restaurantRecommend a img{
+	text-decoration: none;
+	border: 0;
+	padding-left: 5px;
+}

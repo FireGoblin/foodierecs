@@ -1,0 +1,111 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'News Cycle',"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #393939;
+	text-align: left;
+	
+	font-size: 16px;
+}
+
+html { 
+	background-color: #e4e4e4;
+	background: url(../images/bar.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.backgroundImageWrap{
+	min-height: 100%;
+	overflow: scroll;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	
+	z-index: -100;
+}
+
+.backgroundImageWrap img.backgroundImage{
+	display: block;
+	position: fixed;
+	position: absolute;
+}
+
+#mainHeader{
+	font-family: 'Lobster Two',"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 40px;
+	color: #ffffff;
+	
+	background-color: #1477bb;
+	
+	width: 680px;
+	padding-left: 20px;
+	height: 60px;
+}
+
+#mainContent{
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	min-height: 100%;
+	background-color: #ffffff;
+
+}
+
+#mainNotes{
+	font-size: 14px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+#mainNotes a{
+	text-decoration: none;
+	color: #1477bb;
+}	
+
+.mainSectionTitle{
+	font-family: 'Lobster Two',"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 30px;
+	text-decoration: underline;
+}
+
+.mainSectionTitle .mainSectionSubTitle{
+	font-size: 18px;
+}
+
+.mainSectionTitle .mainSectionSubTitle a{
+	text-decoration: none;
+	color: #1477bb;
+}
+
+.sectionList{
+	font-family: 'News Cycle',"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 20px;
+}
+
+.sectionList a{
+	text-decoration: none;
+	color: #1477bb;
+}	
+
+#mainRecommendations{
+	margin: 15px 0px 0px 20px;	
+}
+
+#mainRatePlaces{
+	margin: 15px 0px 0px 20px;
+}
+
+#mainRecent{
+	margin: 15px 0px 0px 20px;
+}
+
+
