@@ -1,4 +1,8 @@
 FoodierecsTwo::Application.routes.draw do
+  #get "sessions/new"
+  get "pages/home"
+  #get "pages/index"
+
   resources :restaurants
 
   resources :users
@@ -10,6 +14,12 @@ FoodierecsTwo::Application.routes.draw do
   resources :nominations
 
   resources :feeds
+  
+  #resources :pages
+  
+  #root :to => 'pages#index'
+  root :to => 'pages#home'
+  match 'restaurant/one-if-by-land-two-if-by-sea' => 'pages#restaurant'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
