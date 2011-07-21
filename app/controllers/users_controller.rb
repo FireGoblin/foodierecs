@@ -14,7 +14,8 @@ class UsersController < ApplicationController
   # GET /users/1.xml
   def show
     @user = User.find(params[:id])
-
+		
+    #redirect_to "users/#{@user.[:facebook_url]}"
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @user }
@@ -37,10 +38,16 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+	def formatName(name)
+		name.downcase.gsub(/[^a-z]/, '').gsub(/ /, '-')
+	end
+		
   # POST /users
   # POST /users.xml
   def create
     @user = User.new(params[:user])
+    
+    @user["formatted_name"] = formatName(@user["name"])
 
     respond_to do |format|
       if @user.save

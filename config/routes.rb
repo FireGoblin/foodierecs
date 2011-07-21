@@ -19,7 +19,8 @@ FoodierecsTwo::Application.routes.draw do
   
   #root :to => 'pages#index'
   root :to => 'pages#home'
-  match 'restaurant/one-if-by-land-two-if-by-sea' => 'pages#restaurant'
+ # match 'restaurant/one-if-by-land-two-if-by-sea' => 'pages#restaurant'
+  #match 'restaurant/#{x}'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -18,10 +18,10 @@ class CreateRestaurants < ActiveRecord::Migration
       t.string :url
       t.string :vicinity
       t.float :rating
-      t.int :foodie_likes
-      t.int :foodie_dislikes
-      t.int :normal_likes
-      t.int :normal_dislikes
+      t.integer :foodie_likes
+      t.integer :foodie_dislikes
+      t.integer :normal_likes
+      t.integer :normal_dislikes
 
       t.timestamps
     end

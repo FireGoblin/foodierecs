@@ -1,10 +1,10 @@
 class CreateMappings < ActiveRecord::Migration
   def self.up
     create_table :mappings do |t|
-      t.int :restaurant_id1
-      t.int :restaurant_id2
-      t.int :foodies
-      t.int :nonfoodie
+      t.integer :restaurant_id1
+      t.integer :restaurant_id2
+      t.integer :foodies
+      t.integer :nonfoodie
 
       t.timestamps
     end

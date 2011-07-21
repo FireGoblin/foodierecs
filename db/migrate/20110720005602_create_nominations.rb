@@ -1,9 +1,9 @@
 class CreateNominations < ActiveRecord::Migration
   def self.up
     create_table :nominations do |t|
-      t.int :user_id
+      t.integer :user_id
       t.boolean :vote
-      t.int :voter
+      t.integer :voter
       t.boolean :nominator
 
       t.timestamps
