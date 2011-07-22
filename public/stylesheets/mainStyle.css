@@ -86,6 +86,10 @@ html {
 	padding-left: 20px;
 }
 
+.restaurantRecommend iframe{
+	float: left;
+}
+
 .restaurantRecommend a{
 	display:inline-block;
 	position:relative;
