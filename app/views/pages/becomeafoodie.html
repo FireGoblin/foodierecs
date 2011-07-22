@@ -2,85 +2,99 @@
 <head>
 
 
-<title>Restaurant recommendations from Foodies - foodierecs</title>
+<title>How to Become a Foodie - foodierecs</title>
 
-<link href="../css/userStyle.css" rel="stylesheet" type="text/css" />
-<!--The google fonts we are using -->
-<link href="http://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet" type="text/css" />
-<link href="http://fonts.googleapis.com/css?family=News+Room" rel="stylesheet" type="text/css" />
+<%= stylesheet_link_tag "becomeafoodieStyle", "http://fonts.googleapis.com/css?family=Lobster+Two", 
+										"http://fonts.googleapis.com/css?family=News+Room" %>
+<%= javascript_include_tag :defaults %>
+
 
 <!--This is for displaying on iOS -->
 <meta name="viewport" content="width=500">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <link rel="apple-touch-icon-precomposed" href="../images/appleLogo.jpg" />
 
-
-<!--<script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bookmark_bubble.js"></script>-->
-<!--<script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bubble_example.js"></script>-->
+<!--<script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bookmark_bubble.js"></script>
+<script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bubble_example.js"></script>-->
 
 </head>
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500);" >
-<div id="fb-root"></div>
 	<!--
 	<div class="backgroundImageWrap">
 		<img src="../images/bar.jpg" class="backgroundImage" width="1264" height="790">
 	</div>
 	-->
-	<div id="userContent">
+	<div id="foodieContent">
 		<div id="header">
 			foodierecs
 		</div>
 		
-		<div id="userInfo">
-			<div id="userName">
-				A really really long name my god it's so long.
-			</div>
+		<h1>
+			Recommendations on foodierecs are based on only the opinions of foodies, and no one else
+		</h1>
+		
+		<h2>
+			Why?
+		</h2>
+		<p>
+			There are two kinds of people in the world. The first kind are foodies, let’s call one Jack. The second are non-foodies, let’s 	
+			call one … Jick. 
+		</p>
+		<p>
+			Jack appreciates great food – he loves discovering the nuances of interesting cuisines, trying out new ways of cooking things,
+			and discovering new ingredients. Jack usually also loves trying drinks with interesting and fun ingredients – in short, he enjoys
+			food that someone has put care and effort into, and that shows.
+		</p>
+		<p>
+			Jick likes Olive Garden. And not just for the soup-salad-breadsticks combo; he thinks the pasta there is amazing. His favorite
+			area of New York is Times Square. The craziest thing he’s ever tried is a chicken <i>kebab</i>. 
+		</p>
+		<p>
+			What caused Jick to have such faulty taste buds? Is it an innate characteristic? Or the fact his parents gave him such a
+			ridiculous name? Or maybe, they fed him a little too much Kraft Macaroni and Cheese as a kid. Whatever it is, Jick’s restaurant
+			recommendations aren’t to be trusted. They are to be feared.
+		</p>
 			
-			<div id="userFoodieYes">
-				Foodie
-			</div>
-		</div>
+		<h2>
+			What does this have to do with anything?
+		</h2>
+		<p>
+			Most restaurant recommendation sites are filled with Jicks. One study* estimates that 99% of the people rating restaurants are
+			Jicks. So when you look at reviews, you’re likely basing your next meal based on what a Jick thinks. Scary, huh?
+		</p>
 		
-		<div class="restaurantListHeader"><b>Restaurants Michael likes:</b> </div>
-		<div class="restaurantList">
-			<div class="restaurantNameLeft"><a href="">JoeDoe</a>
-				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
-				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
-				<div class="restaurantRecommend">
-					<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href="http://metaphoricallydelicious.com" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-					<a href=""><img src="../images/not-for-foodies.jpg" /></a>
-				</div>
-			</div>
-			<div class="restaurantNameRight"><a href="">EEEEEEVENNNNNNN LLOOOGNONNNGNNNNNNGERRRRRRRR BY A LOOTTTTT</a>
-				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
-				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
-				<div class="restaurantRecommend">
-					<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href="http://metaphoricallydelicious.com" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-					<a href=""><img src="../images/not-for-foodies.jpg" /></a>
-				</div>
-			</div>
-			<div class="restaurantNameLeft"><a href="">Reeeeeallllllyyyyyyyy LOOOOOOOOOOONG</a>
-				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
-				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
-				<div class="restaurantRecommend">
-					<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href="http://metaphoricallydelicious.com" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-					<a href=""><img src="../images/not-for-foodies.jpg" /></a>
-				</div>
-			</div>
-			<div class="restaurantNameRight"><a href="">Reeeeeallllllyyyyyyyy LOOOOOOOOOOONG</a>
-				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
-				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
-				<div class="restaurantRecommend">
-					<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href="http://metaphoricallydelicious.com" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-					<a href=""><img src="../images/not-for-foodies.jpg" /></a>
-				</div>
-			</div>
-		</div>		
+		<h2>
+			The good news
+		</h2>
+		<p>
+			On foodierecs, only Jack’s opinion matters. We take what the Jacks of this world like, and use that to make a restaurant
+			recommendation for what you might like. We also take into account what you’ve liked in the past and try to use that to match what
+			 Foodie recommendation you might like.
+		</p>
 		
-		<!--Gotta make the border stretch all the way -->
-		<img src="../images/footer.jpg" />
+		<h2>
+			The bad news
+		</h2>
+		<p>
+			We have to assume you are not a Foodie. It’s nothing personal, but you are not to be trusted.
+		</p>
 		
-	</div>
+		<h2>
+			The better news
+		</h2>
+		<p>
+			Ok, so maybe one day we could trust you. One of the following would have to happen:
+			1.	You rate at least 50 fantastic places and tell us what you get to eat and/or drink there. Then, you apply to be a Foodie. The
+			 current group of foodies can then see what you like, and vote for/against you. Majority vote wins. <br />
+			2.	You rate at least 10 fantastic places and you get nominated by a current Foodie. We trust our Foodies to find other great
+			 Foodies. The current group of foodies can then see what you like and vote for/against you. Majority vote wins.
+		<p>
+			
+		<p>
+			<br />*Existence of study unverified
+		</p>
+	<div>
+		
 
 </body>
 </html>
