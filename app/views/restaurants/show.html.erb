@@ -2,7 +2,7 @@
 <head>
 
 
-<title>Restaurant recommendations from Foodies - foodierecs</title>
+<title><%= @title %></title>
 
 <%= stylesheet_link_tag "restaurantStyle", "http://fonts.googleapis.com/css?family=Lobster+Two", 
 										"http://fonts.googleapis.com/css?family=News+Room" %>
@@ -67,7 +67,7 @@
 		</script>
 		
 		<div class="foodieList">
-			<b>Foodies who like JoeDoe:</b> <br/>
+			<b><%= "Foodies who like " + @restaurant.name %>:</b> <br/>
 			<div class="foodieName"><a href="">Sidharth Kakkar</a>
 				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
 				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
@@ -83,7 +83,7 @@
 		</div>
 		
 		<div class="likeFacePile">
-			<b>Everyone who likes JoeDoe:</b> <br />
+			<b><%= "Everyone who likes " + @restaurant.name %>:</b> <br />
 			<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:facepile href="http://www.metaphoricallydelicious.com/2010/12/sushi-toro-chicago/" width="200" max_rows="5"></fb:facepile>
 		</div>
 		

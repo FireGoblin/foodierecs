@@ -14,6 +14,8 @@ class RestaurantsController < ApplicationController
   # GET /restaurants/1.xml
   def show
     @restaurant = Restaurant.find(params[:id])
+    @user = nil
+    @opinions = @restaurant.opinions.paginate(:page => params[:page], :per_page => 6)
     @title = @restaurant.name
 
     respond_to do |format|
