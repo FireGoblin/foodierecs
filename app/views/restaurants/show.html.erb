@@ -68,18 +68,12 @@
 		
 		<div class="foodieList">
 			<b><%= "Foodies who like " + @restaurant.name %>:</b> <br/>
-			<div class="foodieName"><a href="">Sidharth Kakkar</a>
-				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
-				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
-			</div>
-			<div class="foodieName"><a href="">Michael Overstreet</a>
-				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
-				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
-			</div>
-			<div class="foodieName"><a href="">Reeeeeallllllyyyyyyyy LOOOOOOOOOOONG</a>
-				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
-				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
-			</div>
+			<% unless @restaurant.opinions.empty? %>
+				<table class="opinions" summary="User opinions">
+					<%= render @opinions %>
+				</table>
+				<%= will_paginate @opinions %>
+			<% end %>
 		</div>
 		
 		<div class="likeFacePile">
