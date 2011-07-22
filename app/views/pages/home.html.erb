@@ -49,7 +49,7 @@
 		<div id="fbLogin">
 			<div id="fb-root"></div>
 		    <script>
-	  			FB.Event.subscribe('auth.login', function () {
+	  			FB.Event.subscribe('auth.login', function (response) {
 	      			console.log(response);
 					window.location = "<%= url_for( :action => 'main', :controller => 'pages', :only_path => false ) %>";
 		 		});
