@@ -37,17 +37,11 @@ class UsersController < ApplicationController
   def edit
     @user = User.find(params[:id])
   end
-
-	def formatName(name)
-		name.downcase.gsub(/[^a-z]/, '').gsub(/ /, '-')
-	end
 		
   # POST /users
   # POST /users.xml
   def create
     @user = User.new(params[:user])
-    
-    @user["formatted_name"] = formatName(@user["name"])
 
     respond_to do |format|
       if @user.save

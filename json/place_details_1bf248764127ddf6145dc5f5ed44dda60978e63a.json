@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "505",
+            "short_name" : "505",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Empire Boulevard",
+            "short_name" : "Empire Boulevard",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11225-3121",
+            "short_name" : "11225-3121",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "505 Empire Boulevard, Brooklyn, NY 11225-3121, United States",
+      "formatted_phone_number" : "(718) 493-6500",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6642410,
+            "lng" : -73.9454140
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1bf248764127ddf6145dc5f5ed44dda60978e63a",
+      "name" : "Xing Long Kitchen",
+      "reference" : "CnRoAAAASvXnYGC0sJz2Mw2qOrMLamhcuH2tceTMxGEaj2QFh72GUEEk9nrS6_s00z7Nimk_brDch0jieBd3xtP5VCSBGRC9iZDQvi09u1lUQa20wkvaxS_639aZN6sJ7MfziwXmcifjfBDaY0XMOwBAly9M_xIQQcnK22_pD4z4CTGziv34ORoU096jO4mW2cYHUXYRRCd7XtJDJ6E",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=4595742444818507269",
+      "vicinity" : "Empire Boulevard, Brooklyn"
+   },
+   "status" : "OK"
+}

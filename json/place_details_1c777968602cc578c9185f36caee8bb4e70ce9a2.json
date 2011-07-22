@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1901",
+            "short_name" : "1901",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Kings Highway",
+            "short_name" : "Kings Highway",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11229-1313",
+            "short_name" : "11229-1313",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1901 Kings Highway, Brooklyn, NY 11229-1313, United States",
+      "formatted_phone_number" : "(718) 375-8234",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6105670,
+            "lng" : -73.9545780
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "1c777968602cc578c9185f36caee8bb4e70ce9a2",
+      "name" : "Kings Farm",
+      "reference" : "CnRiAAAA2YAj0tcTMagSZ0KnVmflxkT4yy0HBWZTjGfIS8ebMC5wtS1cPaMngt9kEiIS69FOHkTlMN5VTmErsE1XM8KoT_-gcdqFwONtj_XUnlvuv4RvljSujdEYVkBmUiyIhj3ExZLdc9wblXgZHvrV3xKPNxIQgrAgdlAzjmHYNHti7VTQwhoUJ8L7XwKaWOc3nVs9CPfL5K7oMRo",
+      "types" : [ "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=15429389366366168957",
+      "vicinity" : "Kings Highway, Brooklyn"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "760",
+            "short_name" : "760",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Coney Island Avenue",
+            "short_name" : "Coney Island Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11218-5310",
+            "short_name" : "11218-5310",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "760 Coney Island Avenue, Brooklyn, NY 11218-5310, United States",
+      "formatted_phone_number" : "(718) 693-7798",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6388490,
+            "lng" : -73.96887099999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1b75b5004985c74bb2970957600d430e5d34633d",
+      "name" : "Palermo Pizza",
+      "reference" : "CnRjAAAA9mf3z8FoJ56OReO_WkWjlMdnQMe97D3DZIXVvQOcpF_Z9qDgL6oU--SQM0-yGlHdrA1NKOTgQ5AVL_MHuJB2wy0MoSdBX0IRL_IJe7xCIaVyVokZdYYXpLoko_5LLm3u8f9xI0UmK8MMR_S4c51pjBIQ-j601oo1urmUu8lGWS5G8RoU0za97oT7S8rYAe3mwGdyVrfV-CE",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=2317533010626502237",
+      "vicinity" : "Coney Island Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

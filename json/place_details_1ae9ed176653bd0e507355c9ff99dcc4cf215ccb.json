@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "2306",
+            "short_name" : "2306",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Voorhies Avenue",
+            "short_name" : "Voorhies Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11235-2605",
+            "short_name" : "11235-2605",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "2306 Voorhies Avenue, Brooklyn, NY 11235-2605, United States",
+      "formatted_phone_number" : "(718) 891-7762",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.5865640,
+            "lng" : -73.9456180
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1ae9ed176653bd0e507355c9ff99dcc4cf215ccb",
+      "name" : "Chinatown Restaurant",
+      "reference" : "CnRrAAAAyJyMy7LU_ct8SE4AMBoQRXs-AHa44euBPvDYx2KwibEixy2uAU19ptNxwHSPur4pvbuSNhXkAi_UDE5k5_EB8l02Sfc6eY3f81VM_g5qKgmlEey6oPVJWqoV8t9xiB-nLzwBQ-pNfuGdM60xH7dbARIQqYYHuhMw8Xk3NL7DNUwUlRoU5-tU_WCLovm5rrwGDpglVV1aQ3g",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=14419119832143328081",
+      "vicinity" : "Voorhies Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

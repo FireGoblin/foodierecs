@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "7111",
+            "short_name" : "7111",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "3rd Avenue",
+            "short_name" : "3rd Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11209-1308",
+            "short_name" : "11209-1308",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "7111 3rd Avenue, Brooklyn, NY 11209-1308, United States",
+      "formatted_phone_number" : "(718) 748-3294",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.634220,
+            "lng" : -74.0266460
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "1bb76b5d77cb37897a440a36438e8c8a88b43379",
+      "name" : "Dunkin' Donuts",
+      "reference" : "CnRkAAAAMe4P9TfFGk33MTpHuB94I1uVduJlz7JkxymWRg9hl8QHATGRUaMi1EVOoBAE9iLS79p1xzfZtP7qb1xgMv63ysUlpiwDWazVCX12regYBEkGzKnBX6ASRxrViXcIyE0xDaTc7h1UOKnUFAgtmhK0ZBIQ9GzEUKP6BXfSMzj5WlIvFBoUFy_b4S8_jDrrkglQOgaFI0d_W7c",
+      "types" : [ "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=6490485698181721896",
+      "vicinity" : "3rd Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

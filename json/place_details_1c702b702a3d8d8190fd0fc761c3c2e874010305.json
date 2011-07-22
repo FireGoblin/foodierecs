@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "709",
+            "short_name" : "709",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Kings Highway",
+            "short_name" : "Kings Highway",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11223-2237",
+            "short_name" : "11223-2237",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "709 Kings Highway, Brooklyn, NY 11223-2237, United States",
+      "formatted_phone_number" : "(718) 376-8996",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6064950,
+            "lng" : -73.9653440
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1c702b702a3d8d8190fd0fc761c3c2e874010305",
+      "name" : "Kosher Hut of Brooklyn",
+      "rating" : 2.50,
+      "reference" : "CnRtAAAAjIfxhM_nCdaMfNyYx0YD4NX54uQLFHUVPnyWwOCHFaB2fQvtY-E5iN1-Ds7aZxDOju6WZSoxEEEF_Qdhv18nEiORghBTrgDqDeIUyH4Ey5XAZJY4sUQoXf8ci7Nd8YpJigDUobF-fBL3T_SfEL84exIQ6X335dHXdJ1FPx3UOYDkPBoUL2n6vI7PZHLRDiG1tQCRlRNhhPM",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=609299631276532583",
+      "vicinity" : "Kings Highway, Brooklyn"
+   },
+   "status" : "OK"
+}

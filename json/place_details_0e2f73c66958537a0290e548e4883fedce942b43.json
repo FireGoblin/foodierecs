@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "5352",
+            "short_name" : "5352",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Kings Plz",
+            "short_name" : "Kings Plz",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11234",
+            "short_name" : "11234",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "5352 Kings Plz, Brooklyn, NY 11234, United States",
+      "formatted_phone_number" : "(718) 253-0285",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.610350,
+            "lng" : -73.92103999999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0e2f73c66958537a0290e548e4883fedce942b43",
+      "name" : "Five Continents Gourmet Foods",
+      "reference" : "CoQBdAAAAJoA7AsGh2ioKOqD5i1z4VbR9kTAiOdDnxishEhsSu8F-juPkDozTWvUks8Mij-UIUoBhsp_kB-Pq_rmT-dJUI4vXXxk2hcK_ErxEv1EUsBSe69Rh2dojia6qQUBSbLzf7YmzzNkgoGKVzWx_YGzUawtugECxFBae3dzMasjYUtrEhCLTwNla1PmdTrFhXap3r1YGhRY2cFUcfiG3ZXos9bI8d1RKvzTLw",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=10666915779111243363",
+      "vicinity" : "Kings Plz, Brooklyn"
+   },
+   "status" : "OK"
+}

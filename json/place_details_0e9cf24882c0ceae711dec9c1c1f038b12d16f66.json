@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "445",
+            "short_name" : "445",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "7th Avenue",
+            "short_name" : "7th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11215-5556",
+            "short_name" : "11215-5556",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "445 7th Avenue, Brooklyn, NY 11215-5556, United States",
+      "formatted_phone_number" : "(718) 788-5015",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6630360,
+            "lng" : -73.9845720
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "id" : "0e9cf24882c0ceae711dec9c1c1f038b12d16f66",
+      "name" : "7 24 Hour Express",
+      "reference" : "CnRpAAAAAa1e_pfYkSaAWpv_N8GXKx1LaoKlZztY7vr3mcqPOR_XhCyFTAj5-Hzjx6-9uS5pWI7uiUy2Z6gqtAQIkwv4CX6hhkChbpr9SLbu2K5G4d_xFz8YN0n_ZnasqtthW7aCxCKdPVNLTmA9AH7KxIvptBIQrYSH0A_OvtF-W03DZCME0hoUymfaNE88RgZ3aSly5X-fw1jxJYs",
+      "types" : [ "convenience_store", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=15945405131770653579",
+      "vicinity" : "7th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

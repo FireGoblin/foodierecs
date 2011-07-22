@@ -1,0 +1,39 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11235",
+            "short_name" : "11235",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "35 Neptune Avenue, Brooklyn, NY 11235, United States",
+      "formatted_phone_number" : "(718) 646-1001",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.5829130,
+            "lng" : -73.9556310
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1a83707c7e1ed2ea7981a8d50011da7d2356ed6a",
+      "name" : "1001 Nights Restaurant",
+      "rating" : 4.10,
+      "reference" : "CnRsAAAAhZFWshdVnpF06W3KrEN_ogEczOuTSw5fjWfmC4E2CiIDJnTQIRn1L75hDOFVZgkNKqpgWYkrxWjrumwE3zVaeB5gpEyCUrsM-LdcI-YdrfnhXgFDptnYpigZ_IRAs98EX-1GiYcTNj0VG_zlLwV64RIQPwv5INWs1vlk06x6iRiNxBoU85G4Ns2U_2oHR8eXzUIpZ2Ymcas",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=6315912742844854087",
+      "vicinity" : "Brooklyn"
+   },
+   "status" : "OK"
+}

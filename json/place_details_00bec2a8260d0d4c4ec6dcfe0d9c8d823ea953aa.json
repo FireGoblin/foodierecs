@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1830",
+            "short_name" : "1830",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Flatbush Avenue",
+            "short_name" : "Flatbush Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11210-4831",
+            "short_name" : "11210-4831",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1830 Flatbush Avenue, Brooklyn, NY 11210-4831, United States",
+      "formatted_phone_number" : "(718) 377-5900",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.624930,
+            "lng" : -73.9395980
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "id" : "00bec2a8260d0d4c4ec6dcfe0d9c8d823ea953aa",
+      "name" : "Deepe Convenience Inc",
+      "reference" : "CnRsAAAAjwYZhEa9VPa-Xc8N3JERbnoCPlbG9HTP4Bz2Wv58DzhRxHcU0bNUK87EfZEEYketb-WWCaOM7j6agZ2HaG7kTWQ6RX7xcWYK9GQ0QbxHDBUfA-adxlFKx8ez7O7iPlVb46WuycCSFdHYlSV1hvb3MxIQUmTCrBCfvgxjKn88krodcBoU5O2qXzSQcB4GszWTFcgkFpaMwGY",
+      "types" : [ "convenience_store", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=3177139812086359602",
+      "vicinity" : "Flatbush Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

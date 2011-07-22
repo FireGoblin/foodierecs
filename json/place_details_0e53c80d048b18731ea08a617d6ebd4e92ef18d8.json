@@ -1,0 +1,47 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "111",
+            "short_name" : "111",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Church Avenue",
+            "short_name" : "Church Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11218-3917",
+            "short_name" : "11218-3917",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "111 Church Avenue, Brooklyn, NY 11218-3917, United States",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6430590,
+            "lng" : -73.9791060
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0e53c80d048b18731ea08a617d6ebd4e92ef18d8",
+      "name" : "Thamer Deli & Grocery",
+      "reference" : "CnRrAAAAB2UvLo7GucJ2W0YB_ZKcARBta7a44ItclFIALLNuHNP-9OEwu_DAo7vkXS4wHuIvupwwYoyb5m0gcOZCtXHizVX92HAm8dW-ZT9yrCbYNGdcX2072zxDRsxitq6WgGPUycrb60cgvsr6bXPJUaH0hxIQqrcFvyur0YOIYjhcO2e5TxoUCP_RzMikj19hvGJ_6-0npgRjh5M",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=4462019781531161170",
+      "vicinity" : "Church Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

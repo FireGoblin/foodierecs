@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "2612",
+            "short_name" : "2612",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "east 14 Street",
+            "short_name" : "east 14 Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11235",
+            "short_name" : "11235",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "2612 east 14 Street, Brooklyn, NY 11235, United States",
+      "formatted_phone_number" : "(347) 462-2620",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.587820,
+            "lng" : -73.9552540
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0d8b10516d57dae77406352c4c309b84eedf8b7c",
+      "name" : "Restaurant Lazur",
+      "reference" : "CnRmAAAABhgmQ54wNeisnH-VvrCsnPjmDbuD8xWJ0IgB00GFrZCAUl-W1l7pApv96S4nXrhnc5PRn-1yXK40H24F3JEHIYCyFEc6sEf7lUjts4UWxO358LrV_0CxuLNcgm4CWr9aM5IVmnrJ7tH7cnyK74W64RIQw9ZXk2dKWrEyexbC_x17_xoUKSQ4MX76E5-HZavque_1gGj2NUo",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=5838094487654225164",
+      "vicinity" : "east 14 Street, Brooklyn"
+   },
+   "status" : "OK"
+}

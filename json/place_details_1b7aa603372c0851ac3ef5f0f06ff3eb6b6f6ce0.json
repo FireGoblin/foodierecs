@@ -1,0 +1,54 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "6735",
+            "short_name" : "6735",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "3rd Avenue",
+            "short_name" : "3rd Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kings",
+            "short_name" : "Kings",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11220-5253",
+            "short_name" : "11220-5253",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "6735 3rd Avenue, Brooklyn, NY 11220-5253, United States",
+      "formatted_phone_number" : "(718) 748-9354",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6368650,
+            "lng" : -74.02523100000001
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1b7aa603372c0851ac3ef5f0f06ff3eb6b6f6ce0",
+      "name" : "Bangkok Thai Restaurant",
+      "rating" : 3.60,
+      "reference" : "CnRuAAAAoMuuuxfi-qZatU47wlEjE7FNEvZksIWT69vrTn8beIfWHYTis3dLcDeE89_lqbJ1qnRjf3Axc4QLepyWxBcEgJY_GYCpkTlmei_ccrdLh1b4oO31L9W4CB5o4F23UzVqThFjTVtu9Sbx3YEJOhVPMRIQic3TNEcNXtFz5nLUTp2wwhoU__YB6s825J6bb_Nuv09I1HEM32Q",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=3021545433671105680",
+      "vicinity" : "3rd Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,57 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1544",
+            "short_name" : "1544",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Broadway",
+            "short_name" : "Broadway",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "New York",
+            "short_name" : "New York",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kings",
+            "short_name" : "Kings",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11233",
+            "short_name" : "11233",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1544 Broadway, New York, NY 11233, United States",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6862080,
+            "lng" : -73.9163260
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0c9c7799bc04f7b77b867803a5abb11725e2fa89",
+      "name" : "S & J Jamaican-American Restaurant",
+      "reference" : "CoQBegAAAFv0A_B4Qnq7ZeJcdIHxojAked7LBOHGnPv7VCrayKk_LbKVWkkeoUFftA9G9B5Lu9oO1xs_2BoDjRQS2zrXKrkdE4YLfTRdQqobF3bgNFXqSuyQdoYuWTndn0jOMVyi86iGw7JANY58adWT5rZPYR_WdDU2k9iXLr0CH16zWdb_EhCq9dHmGY2vT5HoHHmLiUe6GhTJx5yabx-czfxxTwCccAdj93_Bww",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=18428235687316599328",
+      "vicinity" : "Broadway, New York"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "6014",
+            "short_name" : "6014",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "7th Avenue",
+            "short_name" : "7th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11220-4105",
+            "short_name" : "11220-4105",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "6014 7th Avenue, Brooklyn, NY 11220-4105, United States",
+      "formatted_phone_number" : "(718) 567-7616",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6366370,
+            "lng" : -74.0123260
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+      "id" : "0ab23cca6c901aaa248bbc1e0d1f6f602c3ba586",
+      "name" : "Shape Shake Bar Inc",
+      "reference" : "CnRqAAAAyDtZW2SNrNoqEZbLh8qivNoxrfgAzSqkzwp4g7uzqUJifCucNQI9oxHP5WLSCrHts8XGOgyz5MJ_03SnAMGcGJYDQCLHQZ1IvCGhMYEack4DjuxhWXZ1yza2omOWGexfj_qpz2V91LJgXTRjwfmOnBIQ64pC-zjWllvB5SvDcs0qMRoUi6zQF1WUiEtgorY4rDTs6SfZe6E",
+      "types" : [ "bar", "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=2241800922101331689",
+      "vicinity" : "7th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

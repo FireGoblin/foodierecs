@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "8774",
+            "short_name" : "8774",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "B Bay Pkwy",
+            "short_name" : "B Bay Pkwy",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11214",
+            "short_name" : "11214",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "8774 B Bay Pkwy, Brooklyn, NY 11214, United States",
+      "formatted_phone_number" : "(347) 587-5777",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.598420,
+            "lng" : -73.99771699999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0bff871d7bd71c61b82bcecb62943b28899e278c",
+      "name" : "Johny's Place",
+      "rating" : 3.80,
+      "reference" : "CnRlAAAA_4dXwR66DMyjr8rcv81-218CxUERgcPVnQh6Q9SiZL6lE2dLt4vQnKezVJe5ofhsXeEkNQaKSN5WAKjOT4B9W4-0OCeyr8JkOAeb7EFwZTDzvLqLTR0FpLuGaxMxycNkKtCqPYkjn2p9MfyJFbOtSxIQr0ubvY9osjkKbcnmhINbpBoUCKph3Q25MCPcBrNSebjvPzUDZ4Y",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=9578201974355559680",
+      "vicinity" : "B Bay Pkwy, Brooklyn"
+   },
+   "status" : "OK"
+}

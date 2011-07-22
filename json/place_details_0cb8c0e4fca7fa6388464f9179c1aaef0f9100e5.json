@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "382",
+            "short_name" : "382",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "McDonald Avenue",
+            "short_name" : "McDonald Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11218",
+            "short_name" : "11218",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "382 McDonald Avenue, Brooklyn, NY 11218, United States",
+      "formatted_phone_number" : "(718) 871-6161",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6446660,
+            "lng" : -73.980030
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0cb8c0e4fca7fa6388464f9179c1aaef0f9100e5",
+      "name" : "Foodtown",
+      "reference" : "CmRfAAAACwQO-CHUJOlvzl0TtOig_cuvYTOY_3W4Cb0I9TPX5rlYjKJxwRLSsKun0uUTrBs7b99YNqh4jV61VHv_HN-hqU0-2o5UBUKHGp5O4q3TC6XhbJ1lwQkQdawGH6fbY3PyEhCKFnblftWy5hguc6o-bN6FGhTcap_p__-z25ov87ZjdM7AEKXszA",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=17007675220401199607",
+      "vicinity" : "McDonald Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

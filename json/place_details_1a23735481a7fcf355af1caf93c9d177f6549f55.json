@@ -1,0 +1,58 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "2270",
+            "short_name" : "2270",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "86th Street",
+            "short_name" : "86th Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "New York",
+            "short_name" : "New York",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kings",
+            "short_name" : "Kings",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11214",
+            "short_name" : "11214",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "2270 86th Street, New York, NY 11214, United States",
+      "formatted_phone_number" : "(718) 996-0714",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6006930,
+            "lng" : -73.99217899999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1a23735481a7fcf355af1caf93c9d177f6549f55",
+      "name" : "Waloy Bakery",
+      "reference" : "CnRjAAAA4behNclLXyXmPplox3_x6Aq4RFiFotTN43JCjthTaM0OIMpFhlziD4sbxlMe0f5UHXFoA-dOvtBR2sy2i2K_zvPhfv1wj6x4kpQ8AdHCphmucbkHqWY3pehjTpzZ2A-YJGx1xSzu_PGSFnE8fzHCyBIQ2lCFdZDch3A73GgmEvqGUhoUrKx6WwQ5dS5iw95_qHLBKxNWzDE",
+      "types" : [ "bakery", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=13930806969220990005",
+      "vicinity" : "86th Street, New York"
+   },
+   "status" : "OK"
+}

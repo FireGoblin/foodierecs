@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "2715",
+            "short_name" : "2715",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "West 15th Street",
+            "short_name" : "West 15th Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11224-2705",
+            "short_name" : "11224-2705",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "2715 West 15th Street, Brooklyn, NY 11224-2705, United States",
+      "formatted_phone_number" : "(718) 449-1400",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.5813420,
+            "lng" : -73.98341800000001
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "1c396b97baab54c9ff3ee607a351bfcc8e63d5e7",
+      "name" : "Banner Smoked Fish Inc",
+      "reference" : "CnRtAAAAalA_9wrLdwPIEKM757zbTQaQkHrBR73A_mqI_fGKXovBFRxPR6Q1ni_kZnY5x4eeQFZ9Wf9rGcrbAFxPO_BrzaUrwW00Dy_BnbXtgFImE4ctHnzbIxj3AhenYFwhUHFsFebdcAKVdyrXtt8VmsuVkxIQqtW5KVOUg2Ya-iXPCuq11xoUEXFna3a3FJyKLj6s8eCg9iu-Tu8",
+      "types" : [ "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=11177801879292600289",
+      "vicinity" : "West 15th Street, Brooklyn"
+   },
+   "status" : "OK"
+}

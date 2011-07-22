@@ -1,0 +1,59 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "260",
+            "short_name" : "260",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Court Street",
+            "short_name" : "Court Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "New York",
+            "short_name" : "New York",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kings",
+            "short_name" : "Kings",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11231",
+            "short_name" : "11231",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "260 Court Street, New York, NY 11231, United States",
+      "formatted_phone_number" : "(718) 488-8695",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6852440,
+            "lng" : -73.9945340
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0fdcf4c8b8c4b48687207f721488e6f345ef4621",
+      "name" : "Buddy's Burrito & Taco Bar",
+      "rating" : 3.20,
+      "reference" : "CoQBcQAAALMiJiTizgVkuPYB-z-sxuzITVqjJcYmQg9ix2EjhQB5jUtBpqN__TK4t6xFggdVC0tYRTlSdGD4fXXj53fQ2mvYonSFwI2S3skQXoxxsUPg8dfTaZBtfkJ1X10_nCyS_0Mpx-Sx-asDZmWVpxBccfognSFNx9hPXff9pxi35f7gEhC3FeAc-n2ww4XC4C5iosWfGhTLcoTivFNV8oZjzWW7SfsAoKvaVA",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=16317977727551205480",
+      "vicinity" : "Court Street, New York"
+   },
+   "status" : "OK"
+}

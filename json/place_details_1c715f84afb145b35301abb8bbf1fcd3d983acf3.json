@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "2705",
+            "short_name" : "2705",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Church Avenue",
+            "short_name" : "Church Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11226-4104",
+            "short_name" : "11226-4104",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "2705 Church Avenue, Brooklyn, NY 11226-4104, United States",
+      "formatted_phone_number" : "(718) 282-4221",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6506980,
+            "lng" : -73.9522370
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1c715f84afb145b35301abb8bbf1fcd3d983acf3",
+      "name" : "La Baguette Shop Inc",
+      "reference" : "CnRsAAAANB4LdCFMqw-PeBNTCSWXY_YVm3Hdu49yeWDb84KfDgLHjTApDiVelLhL5zpS2UuFizm9BVIIRjiEoJde6A3HKFBqfh40ih-S760OUBIs9Zj1kxUrY3Zla2fdLQn2RqY2GMPIUsdle259uJ3000O_4xIQjnI8vRxGTcFeiGr0qOGNYRoUUCzgcRdXReFxMg1rovf369YpDYw",
+      "types" : [ "bakery", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=11485592889026806177",
+      "vicinity" : "Church Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

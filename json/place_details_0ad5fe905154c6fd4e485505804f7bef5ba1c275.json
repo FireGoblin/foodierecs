@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "5502",
+            "short_name" : "5502",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "18th Avenue",
+            "short_name" : "18th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11204-1929",
+            "short_name" : "11204-1929",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "5502 18th Avenue, Brooklyn, NY 11204-1929, United States",
+      "formatted_phone_number" : "(718) 232-7275",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6248090,
+            "lng" : -73.98443999999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0ad5fe905154c6fd4e485505804f7bef5ba1c275",
+      "name" : "Park Pizza & Cafe",
+      "reference" : "CnRoAAAA3o1a11EtKdbFdNOKfDNSavG7kcTmf8g9EuesN7HCWgxjJDP7_YqpjOsKSA85e60TIWbRvWHKEih1Rn-bKzsB46bN49WjwJbXcuxvvSXrKLfytpU-q4xEUwR1k4hfBF2co-_rt1d1Yt4S_Ll2o4ZGyRIQOhBvlhhEZM3HxCt2JUmeQRoU_TIEphCywWkceuVWXamMRyGyqt0",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=6996698443077030171",
+      "vicinity" : "18th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

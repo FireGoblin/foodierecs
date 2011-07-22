@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "213",
+            "short_name" : "213",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "50th Street",
+            "short_name" : "50th Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11220-1710",
+            "short_name" : "11220-1710",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "213 50th Street, Brooklyn, NY 11220-1710, United States",
+      "formatted_phone_number" : "(718) 567-9500",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6489880,
+            "lng" : -74.0163290
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0f59ef190949f43e1d9905ce50a64cca74383c27",
+      "name" : "Li-Lac Chocolates",
+      "reference" : "CnRpAAAAmsiBC42jkcQ66XjWDpTeUKKR2pb7rvwOS_aUceXAUDMKiL-AHTl2lPLaW3ISY-X02_AhA-hCfLs5N3sl7iTXqY_QuWo61-sUvmud5_s5l9TOdbXxvn3Rpy33oFbbFow70xFGqNky-lRMiw5h4Je-YRIQEr5ZzY8dodcT-eWQJ0z2SRoUHiwNZjdDUfLUFsVrMiAJz0GZXwE",
+      "types" : [ "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=12870349151836144074",
+      "vicinity" : "50th Street, Brooklyn"
+   },
+   "status" : "OK"
+}

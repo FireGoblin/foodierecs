@@ -1,0 +1,21 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "formatted_address" : "102-15 Metropolitan Ave. , Forest Hills NY 11375, United States",
+      "formatted_phone_number" : "(718) 627-1442",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.61734000000001,
+            "lng" : -73.97369399999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "00ada001d9c7eeafbe2a43b21a025c0ce28785f4",
+      "name" : "La Piccola Italia",
+      "reference" : "CnRoAAAAsD_H2so0MTArvTqU7w7ih31NQgS0hMMyDsUKOpmbqD_Yk1J8DTjUwaeWpnvhFsoOVxy8I7pxAvyWN9LNlstHA74F43HI5Q6r_4Ne5P78sg8epnrLzuOLldZO8B-DSVPrrtGeEgjLvr8s7OtjHurHiBIQ2eQ_2jWrbyQ8XUOS49rcJhoUI7MdEPf8iMjM5ybZrGS8PaXTPiI",
+      "types" : [ "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=8844446546414461807",
+      "vicinity" : "United States"
+   },
+   "status" : "OK"
+}

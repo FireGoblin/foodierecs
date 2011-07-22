@@ -1,0 +1,47 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "471",
+            "short_name" : "471",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "45th Street",
+            "short_name" : "45th Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11220-1201",
+            "short_name" : "11220-1201",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "471 45th Street, Brooklyn, NY 11220-1201, United States",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6481130,
+            "lng" : -74.0077180
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "1b6796b0494a0872826f09ab62d1c2c6aa4d7507",
+      "name" : "Marquez Perez Grocery Store",
+      "reference" : "CoQBcgAAAJQ9SUxkALICtCJ3GbpUDmnJJveQ4Si9YHLly4gEZxh3cOE_XYteCmP3m23PTucRRygVh9AelS7lzTYzJLvNlNpWg_9w5MhvsyaGCQv8hudlxp9Pv9HmliF541JC4TRYN_HAJErVEC2z6ZPcnzyyQVL7GwByEuQjKgH_ue3mpB1gEhARKk6JWoXCIib0LAh-dP5yGhTDdq6XeXZAFO58rvlU9Was0iKq5w",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=2429064236494482542",
+      "vicinity" : "45th Street, Brooklyn"
+   },
+   "status" : "OK"
+}

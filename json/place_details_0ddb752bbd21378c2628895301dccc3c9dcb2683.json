@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1652",
+            "short_name" : "1652",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "86th Street",
+            "short_name" : "86th Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11214-2841",
+            "short_name" : "11214-2841",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1652 86th Street, Brooklyn, NY 11214-2841, United States",
+      "formatted_phone_number" : "(718) 236-5928",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6091790,
+            "lng" : -74.00610
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0ddb752bbd21378c2628895301dccc3c9dcb2683",
+      "name" : "Carvel Ice Cream",
+      "reference" : "CnRnAAAA2hyAs7jUplwzq7n5M3QVT-Tft3-IrUM-QXkvKnrQwAplGrmClgegYUndFHz8b2oG1-WgcpBcOFGFbYa1dM-mPVMCCwrFdbL5SfjvpURDOhi1CicF_XvWWiLnP7dkRStABUReTsqqqv06xK8cxJj2zBIQByaOFc46yejc2F0AZ--BJBoU9NrPXYSxk_xYGLanXbsfbukmJlc",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=2329987017011542823",
+      "vicinity" : "86th Street, Brooklyn"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "8514",
+            "short_name" : "8514",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Bay Parkway",
+            "short_name" : "Bay Parkway",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11214-4104",
+            "short_name" : "11214-4104",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "8514 Bay Parkway, Brooklyn, NY 11214-4104, United States",
+      "formatted_phone_number" : "(718) 333-0681",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6023410,
+            "lng" : -73.9936680
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "1b6f453d01830ea0fead02536449a63fad7141c9",
+      "name" : "Dunkin' Donuts",
+      "reference" : "CnRkAAAADzkp1_LnrqLEvlUV9k3x2kHXnaxa4quHEIpnrVqU7f2II_EJ35ChRFy7h4wD4VGNUhJv0U1YMdX6YTikrKSKstLS380Y19tB6e7Drw3ofrRuVLxDXxU8XpPT92sMeoUHiWcnzIBXyU12NnNIxGlmKRIQAv8rgw_dIJIqf42GIcY6LxoUu7Sk6eFe9ZYAg0Z0L7wxdb6XUd4",
+      "types" : [ "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=7421007057983883577",
+      "vicinity" : "Bay Parkway, Brooklyn"
+   },
+   "status" : "OK"
+}

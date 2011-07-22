@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "884",
+            "short_name" : "884",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Utica Avenue",
+            "short_name" : "Utica Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11203-4314",
+            "short_name" : "11203-4314",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "884 Utica Avenue, Brooklyn, NY 11203-4314, United States",
+      "formatted_phone_number" : "(718) 856-5331",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6515130,
+            "lng" : -73.93038799999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0da18bdf3a7f4cb891beedd1f32a67d35f0bffc5",
+      "name" : "Ackeetree Delight",
+      "reference" : "CnRoAAAAJCBT-kA5hG9nt8qG-p5h85RkS165J78NGMATFt7XqXbEfHUKaHrK9G9pZRrtbcj6UStyDHOKVu6HdvA8aeYX-Zk4yDVZ5PwH12tWIb03IHfhc0ayX5QJZdZWN0i8do9ekzZFQkPW4pj6_0bCMGldWRIQcLQtTOW2ky5yJmomyzl8GhoU7VYl4NnuSdSfmrQ4ooqGZeZQejY",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=4351269902661169626",
+      "vicinity" : "Utica Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

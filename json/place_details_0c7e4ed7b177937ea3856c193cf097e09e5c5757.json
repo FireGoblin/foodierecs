@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "5401",
+            "short_name" : "5401",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "5th Avenue",
+            "short_name" : "5th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11220-3112",
+            "short_name" : "11220-3112",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "5401 5th Avenue, Brooklyn, NY 11220-3112, United States",
+      "formatted_phone_number" : "(718) 439-0041",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6427440,
+            "lng" : -74.0126020
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0c7e4ed7b177937ea3856c193cf097e09e5c5757",
+      "name" : "Cafe Con Pan",
+      "reference" : "CnRjAAAAQ-ZRz7BJo1DYgZVY1BngEft7mVk0XD2blBoJrNUZD0gmxCrPP6vPQR6su0nc0Z4N5pmuSHgPser2YjrZFW0GXDp0pvdL9zYjeqE54slGMKN21TtdamKrTuxPLdDtlU-pPKUxiZvVZqOa63zkgHlHLBIQbcp80kEyHGNlBM9a3l5UXBoUnQxkak59Uzx4gc_gDsiGnbTC4Sw",
+      "types" : [ "bakery", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=11772205429381330115",
+      "vicinity" : "5th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

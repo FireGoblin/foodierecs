@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "276",
+            "short_name" : "276",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "5th Avenue",
+            "short_name" : "5th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11215",
+            "short_name" : "11215",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "276 5th Avenue, Brooklyn, NY 11215, United States",
+      "formatted_phone_number" : "(718) 832-1111",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6743870,
+            "lng" : -73.982050
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0adc2918cc11ecc1827c9f616505095857505675",
+      "name" : "Naruto Ramen",
+      "rating" : 3.10,
+      "reference" : "CnRkAAAAtERi8lXksxIZwpNWtRedofODeLif3tqJCSLNR7QeU-whmLSizAp1VHqyT4HUj-8Wb6evfxTozXGoqwlDdFN8XU2PZPGw9qTxiAHhBSRgg_PlB0SjFyw1Fe-yTzlfSGCtjLpxE74-C17ojJhzUk7qihIQvAJCsbC308n6nrbPSMBaCRoUu8x_wBzzBK9LOYyDGSK-YxHB1oM",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=12789365690332191447",
+      "vicinity" : "5th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

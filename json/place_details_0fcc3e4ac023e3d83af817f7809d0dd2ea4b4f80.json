@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "132",
+            "short_name" : "132",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Greene Avenue",
+            "short_name" : "Greene Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11238-1138",
+            "short_name" : "11238-1138",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "132 Greene Avenue, Brooklyn, NY 11238-1138, United States",
+      "formatted_phone_number" : "(718) 230-3520",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6864120,
+            "lng" : -73.96662599999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0fcc3e4ac023e3d83af817f7809d0dd2ea4b4f80",
+      "name" : "Speakeasy",
+      "rating" : 2.70,
+      "reference" : "CnRhAAAAZhf0vfABpjv-EhqyJyr-V5bLnFjtQLmlFR1gUeFHJX5l88ScJvHdNt3PS8EX5P40y3yZaaOk9EBbi9ocnQhefH3H85eI5IkBVTuKnC4cWH6AvN1S-jH5arpUweWo_onyAmU8STWNm8Y6XDPiSv6X7hIQI8CCSIIEfbzWKULOzTO9mhoUpiXVPN_RC4q7pkaI6BlhKNvonmg",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=9297225621386136382",
+      "vicinity" : "Greene Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

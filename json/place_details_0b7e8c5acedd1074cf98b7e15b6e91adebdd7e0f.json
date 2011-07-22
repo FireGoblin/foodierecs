@@ -1,0 +1,54 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "207",
+            "short_name" : "207",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "7th Ave",
+            "short_name" : "7th Ave",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kings",
+            "short_name" : "Kings",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "New York",
+            "short_name" : "New York",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11215",
+            "short_name" : "11215",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "207 7th Ave, Brooklyn, New York 11215, United States",
+      "formatted_phone_number" : "(718) 499-7767",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6702380,
+            "lng" : -73.9785490
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0b7e8c5acedd1074cf98b7e15b6e91adebdd7e0f",
+      "name" : "Sette Restaurant",
+      "rating" : 3.10,
+      "reference" : "CnRoAAAAUE5lgo3gQAhoo_W42BYD6PuGVioY5fqId6XRP_xQC67WuP1g9ebZqF_kLGupXjWPGZF2_X6LXmysTFea9jjq0hcIY78ag8eZf6lAAWdfUBLXpkO2fc6OG6dvmZPlMBiAAxpXHGpLPnIEj08GapIxdBIQAxNH5aqQt9jqbd0MPR_2BhoUwWIWznbRUg3i2u57lzemtwV2PF0",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=16693131597613510228",
+      "vicinity" : "7th Ave, Brooklyn"
+   },
+   "status" : "OK"
+}

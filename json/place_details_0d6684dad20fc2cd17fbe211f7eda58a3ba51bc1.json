@@ -1,0 +1,54 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "85",
+            "short_name" : "85",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Bergen St",
+            "short_name" : "Bergen St",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kings",
+            "short_name" : "Kings",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "New York",
+            "short_name" : "New York",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11201",
+            "short_name" : "11201",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "85 Bergen St, Brooklyn, New York 11201, United States",
+      "formatted_phone_number" : "(718) 858-6818",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.686630,
+            "lng" : -73.99002399999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0d6684dad20fc2cd17fbe211f7eda58a3ba51bc1",
+      "name" : "Hanco's Bubble Tea & Vietnamese Sandwich",
+      "rating" : 4.30,
+      "reference" : "CoQBfgAAAHVbCDTtTBryQ7-KPKuzOOrR25Asg4e-cif2KHKKUhHrdC_R29pnakL-Y23m2K6uUE9DVEDbrcdmfJ44r0sWpofiIyYp6cM0kdLtjf0lUH_1kSmyyLXvc70G4sOHBykxuLChvUjPzMpb6dDV_4lMVXLLgZPn7sQ7y8lwmVbtVQG9EhBTo1_FaUblczDL5GUtlpvbGhSNfBOA_UBovyHpt4Oq6bHjKgKDdg",
+      "types" : [ "cafe", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=7389689202188365697",
+      "vicinity" : "Bergen St, Brooklyn"
+   },
+   "status" : "OK"
+}

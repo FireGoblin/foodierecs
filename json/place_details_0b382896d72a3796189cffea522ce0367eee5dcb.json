@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "770",
+            "short_name" : "770",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Nostrand Avenue",
+            "short_name" : "Nostrand Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11216",
+            "short_name" : "11216",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "770 Nostrand Avenue, Brooklyn, NY 11216, United States",
+      "formatted_phone_number" : "(718) 604-1160",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.672280,
+            "lng" : -73.95036399999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0b382896d72a3796189cffea522ce0367eee5dcb",
+      "name" : "CHICAGO60 PIZZA",
+      "rating" : 2.40,
+      "reference" : "CnRmAAAA8yRfkAU8B1hE9WtzDtMP0mBljty8LlrGz5vNLj2pekogQa4u9SgdB6xIESGvF5i5P7cZdxvCCTOnBX8fDmFyoJuM7cYXvJrNKm1NVEPqjuudZ7ghImlNlZVzdAEP8ZcXAeWfxpaVXT4-soPhbqRhFRIQpSZv9HapYMlxfaqpuGRWLhoUXzN5yo_N-o4dS9KDvw4Ieuq0_J8",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=8297660719234679582",
+      "vicinity" : "Nostrand Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,47 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "4824",
+            "short_name" : "4824",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Church Avenue",
+            "short_name" : "Church Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11203-3310",
+            "short_name" : "11203-3310",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "4824 Church Avenue, Brooklyn, NY 11203-3310, United States",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6514280,
+            "lng" : -73.93150
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0ced92589eb6b63206304c8e6e20074da9a79767",
+      "name" : "Crave Fish & Juice Bar",
+      "reference" : "CnRsAAAAsZjR_-77W8yUl92exsm8EWE3E_PCn5tMBA2hMWQ6pd-i_Ucfpn1T3C2vOXa31KMhkG7c-PBZcp2HXRmbVj9Sj-6j9N1OsBT1VCXYVQxGoNFawxrV_COd__yBJcj79iZdJ60ITBjqELR-y1hClGefqxIQhlPXiW_xIdt7_4BV8BrxYxoU7DJgjScpauGl1CDY1Ivy3E3SoGs",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=2803283397587503133",
+      "vicinity" : "Church Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

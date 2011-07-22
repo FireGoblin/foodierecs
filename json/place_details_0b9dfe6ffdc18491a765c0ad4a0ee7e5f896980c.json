@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "4224",
+            "short_name" : "4224",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Avenue D",
+            "short_name" : "Avenue D",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11203-5708",
+            "short_name" : "11203-5708",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "4224 Avenue D, Brooklyn, NY 11203-5708, United States",
+      "formatted_phone_number" : "(718) 531-0555",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6415970,
+            "lng" : -73.93625899999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0b9dfe6ffdc18491a765c0ad4a0ee7e5f896980c",
+      "name" : "Navy Blue Fish Market",
+      "reference" : "CnRrAAAANVCOvFDdmJarpH9149WLC20EZ92AnFjmvkrlnhkqkReUimRjR-RgjrdqniJ11BdrDGo8A__uHG92U5Yb3bxODsly-U1AsGbd1uKTBwPsZ6hcoNXwC7OorB49GIkfKzxlbmiuZf61PGj4djAgMpiZwxIQsbuwv8_d40zuawuKcmuhdRoUui4iOyBVzeNEGx4YNnRVLl3etyo",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=3866437128053344313",
+      "vicinity" : "Avenue D, Brooklyn"
+   },
+   "status" : "OK"
+}

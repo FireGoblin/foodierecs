@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1308",
+            "short_name" : "1308",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Avenue J",
+            "short_name" : "Avenue J",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11230-3606",
+            "short_name" : "11230-3606",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1308 Avenue J, Brooklyn, NY 11230-3606, United States",
+      "formatted_phone_number" : "(718) 377-5407",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6248870,
+            "lng" : -73.96296699999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0e32c25e41d183816380655ae0261c81b7f156b8",
+      "name" : "Blue Ribbon Fruit Store",
+      "rating" : 4.10,
+      "reference" : "CnRvAAAAHa40y3SlZidOFlE2p4LBfb-ZYlV43gPVd3mcBWKCf6p3EuC9pctE3y6kYTmloSABjDwhVtEpn5l0QIHBu4z9UcH2ujl1GU1UICGdbeeOuEvTM4jEq04pcrEmINEpead7o_KLhzf-ZbiUW4fcA6whtxIQyOThcm7EJDcSbmxWyZdhSBoUhVof7ObbyLJGF7egWOrR4SLp_MU",
+      "types" : [ "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=11887556772077216687",
+      "vicinity" : "Avenue J, Brooklyn"
+   },
+   "status" : "OK"
+}

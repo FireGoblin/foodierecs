@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "4321",
+            "short_name" : "4321",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Church Avenue",
+            "short_name" : "Church Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11203-3101",
+            "short_name" : "11203-3101",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "4321 Church Avenue, Brooklyn, NY 11203-3101, United States",
+      "formatted_phone_number" : "(347) 425-8636",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6514760,
+            "lng" : -73.93642199999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0db8ddebd289d7c2cdfda0cb109221e9f4d88af2",
+      "name" : "ELV Grocery",
+      "reference" : "CnRhAAAA1zVvTEbyXYJz_W7E8nJOFCAoxEWW8CFBiUZpf8BKZ73FpFuQ2OgGUIgqShVVljqGp3Pz2fs_8mp3gmJUfhpbChWxynUhX99w5QP6eBO051iZGPFRfyv59b8nrSMSQt296Rm5jE5oFcIzY3O3OPVH9hIQO5vVfr0qnEQp9I_axPho1xoUQs-tjOJ09ll2Q2omMLrLngjHzPw",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=6534530394464097982",
+      "vicinity" : "Church Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

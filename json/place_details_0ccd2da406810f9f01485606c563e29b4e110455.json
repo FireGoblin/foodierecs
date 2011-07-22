@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "8123",
+            "short_name" : "8123",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "3rd Avenue",
+            "short_name" : "3rd Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11209-3803",
+            "short_name" : "11209-3803",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "8123 3rd Avenue, Brooklyn, NY 11209-3803, United States",
+      "formatted_phone_number" : "(718) 238-1954",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6265380,
+            "lng" : -74.0296680
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0ccd2da406810f9f01485606c563e29b4e110455",
+      "name" : "United Mini-Mart",
+      "reference" : "CnRmAAAAwVrFZzgmX-wQc6TIzgVI56r3Fk1dwRlLxSN37x55IFbglv611cS9-1TkUYMBIDUTPELbQ0jsh6CKUucVMkecdHrKPb6Ktgd-orvQVgoDMuvC1bjtI9-M-xCqUiHFlwjksDwsLkVvJljhZUXNORFF8BIQCe8tUH2TpnJTcAZ22ChkMBoU5247Z5mZN3qE8JMpWtqYFhQfluA",
+      "types" : [ "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=5458602978275836362",
+      "vicinity" : "3rd Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

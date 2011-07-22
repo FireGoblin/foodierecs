@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "200",
+            "short_name" : "200",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Schermerhorn Street",
+            "short_name" : "Schermerhorn Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11201-5889",
+            "short_name" : "11201-5889",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "200 Schermerhorn Street, Brooklyn, NY 11201-5889, United States",
+      "formatted_phone_number" : "(718) 243-0050",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6888180,
+            "lng" : -73.986070
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "00dc6b7554aedf5a2304ed0dab7559048f7d6ac0",
+      "name" : "Brooklyn Fare",
+      "rating" : 4.40,
+      "reference" : "CnRjAAAAzB2t2pY8Z5TPwnycejFDp0mOUlkynyW8qIH_s3FOhCM9SxYt3Lr9q2PvtbER2_uLU00xxy04C23PyDwF9N5Ags_JFavsl9D1xTEhGvloBK4yBCcq0Sz3S4EnKDsmpw2oCn4mHVkVGkPKr84Cx-kB4xIQ37y66d2_buPBcn0FrYWb3BoUSUNIlB9i6AQ8kDNLA5EO4ACJGTs",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=1018147617591875522",
+      "vicinity" : "Schermerhorn Street, Brooklyn"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,57 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1795",
+            "short_name" : "1795",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Coney Island Avenue",
+            "short_name" : "Coney Island Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "BROOKLYN",
+            "short_name" : "BROOKLYN",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kings",
+            "short_name" : "Kings",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11230",
+            "short_name" : "11230",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1795 Coney Island Avenue, BROOKLYN, NY 11230, United States",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6136940,
+            "lng" : -73.9628630
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0b9d471cd31d8857bc7534d7da354cac8432de4a",
+      "name" : "Dr. B's Gourmet & Cafe",
+      "reference" : "CnRuAAAAqf-BZSSPvjnRSRuWEB_CMV11xYI0jJtzC9xXkQ4C2rYNMqCEzznJ-upAUqrG1mEJVeexGtPn6_QHmEKKpORpcS--9H-gG3-4hCRIrgZghouD_XR-ME8UOtErMeY5hs_pBcRXFD12exA626G-ZYEYXxIQ1bET3lUKYUZno8eXUbhjJBoU6q4xdvYd_UMiy6TEqYDP5TMPemQ",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=10742032465157188512",
+      "vicinity" : "Coney Island Avenue, BROOKLYN"
+   },
+   "status" : "OK"
+}

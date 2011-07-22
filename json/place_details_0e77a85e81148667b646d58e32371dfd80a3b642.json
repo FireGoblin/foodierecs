@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "3913",
+            "short_name" : "3913",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "9th Avenue",
+            "short_name" : "9th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11232-3207",
+            "short_name" : "11232-3207",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "3913 9th Avenue, Brooklyn, NY 11232-3207, United States",
+      "formatted_phone_number" : "(347) 442-0702",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6456170,
+            "lng" : -73.99541599999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0e77a85e81148667b646d58e32371dfd80a3b642",
+      "name" : "J & B Deli & Grocery",
+      "reference" : "CnRsAAAA05J6KilLo_9eF3AdIaKpQuSQamRCXGmveL9Zl0_mFRQONozGhC-BT-CJJ7LZzgty8KFZ6BuQ-19UK0qbIM4xBRfVvuhZ-s2yyZ-15vka3eE5jj1fV-3x-X1MZ7AEwLXaDE_CgdYPKVJAiYoOBlsXtRIQfXac5vZ88SDmDpBCEJKXVBoU9nuNe2rp9kBA5CFAWdYdyD97GI8",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=11327934474669858099",
+      "vicinity" : "9th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

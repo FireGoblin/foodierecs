@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "300",
+            "short_name" : "300",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Wyckoff Avenue",
+            "short_name" : "Wyckoff Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11237-5981",
+            "short_name" : "11237-5981",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "300 Wyckoff Avenue, Brooklyn, NY 11237-5981, United States",
+      "formatted_phone_number" : "(718) 418-0307",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6992350,
+            "lng" : -73.9107430
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0bade417c81dcf79904dd50decfecfe7b15db310",
+      "name" : "Little Caesars Pizza",
+      "reference" : "CnRsAAAAOXlCPN2Yb2EPMN_z2s5jKd4iGYKU58lCLVBXXfjCDo3xjBquHw85fz3ThPT7rpjqoBF9VWydPJwuTA0zEmSkZ-AvTDHvviDT_35iVdT9uWIN3TGenpX1pusKMHertN7LfMttfQQeoU0Mc-CEiEiBkxIQBaMulTWO_TOPlN22O4TOZRoUS0ipn3MutMkwmE7ZL292mwurgTk",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=12532307545856258451",
+      "vicinity" : "Wyckoff Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

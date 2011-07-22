@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1477",
+            "short_name" : "1477",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "East 32nd Street",
+            "short_name" : "East 32nd Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11234-3403",
+            "short_name" : "11234-3403",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1477 East 32nd Street, Brooklyn, NY 11234-3403, United States",
+      "formatted_phone_number" : "(718) 998-0020",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6165190,
+            "lng" : -73.94345899999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0c5ff9c4b562dd9d2e8796bf24cbe9b721d4db37",
+      "name" : "Tea For Two Cuisine",
+      "reference" : "CnRqAAAAPsq_FO8vs17LWcbeRwfUFk0E_iwox98H8YeQej25CA8B2SXjHLZ0GvyMi9_7p5tRO15ZrI_J_gFB6zLPWWNSOxaxS4Q2f0buXmjZZvsDy_tBvDwC3jERz8nr_ROJ9ve8wkGhFF_Uy33VTIX9MT5KDRIQsgElIFCSmhMdZPstYMmB1RoU12M0asc83_4pIvLp5h5o6oCVPZk",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=2920235289472145406",
+      "vicinity" : "East 32nd Street, Brooklyn"
+   },
+   "status" : "OK"
+}

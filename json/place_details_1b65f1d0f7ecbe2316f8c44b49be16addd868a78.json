@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "2744",
+            "short_name" : "2744",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Coney Island Avenue",
+            "short_name" : "Coney Island Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11235-5021",
+            "short_name" : "11235-5021",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "2744 Coney Island Avenue, Brooklyn, NY 11235-5021, United States",
+      "formatted_phone_number" : "(718) 934-8173",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.5895470,
+            "lng" : -73.96073899999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1b65f1d0f7ecbe2316f8c44b49be16addd868a78",
+      "name" : "Carvel Ice Cream & Bakery",
+      "reference" : "CnRwAAAANXHhGW8O8Zci3eQ0juuKHGWYd2lLMLaNV_4q_oRBaZeyC_7VfUq08tDLV37i10iPNpmtRf6QGoY-EkYWhXznCJemEKrorao2_b0jBWLMzGODGTWRNjdErF-Lk_IUdiYVp7HDkr-2AGjD55Z-3NETAxIQeQheHZI2Wp7hRJajhbFvABoUvi8k_bWgjSZnXLIdKcQ6oXfcBKE",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=7888860329048401930",
+      "vicinity" : "Coney Island Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

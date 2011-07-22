@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "145",
+            "short_name" : "145",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Hamilton Avenue",
+            "short_name" : "Hamilton Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11231-2616",
+            "short_name" : "11231-2616",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "145 Hamilton Avenue, Brooklyn, NY 11231-2616, United States",
+      "formatted_phone_number" : "(718) 422-0946",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6805420,
+            "lng" : -74.00399500000002
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0ba0998f33070b20e45cadaebfc117f3da6f1f4b",
+      "name" : "Circus Produce",
+      "reference" : "CnRlAAAA6KQqqb8RriJ9IkRCFnQQORzkFgz2bK72ASoedNGUTcOMCSkRRPvxUC9VT9oM96Z2JibVStbA1QFQs5R_2jhQsbW7Uh5JdNFqqEJHstKznzj1yYIELxLgO05fEf_Xj1Ik_dty8nFWWvx7zxL-3COeHBIQ1kkP78VAscByhnRtqwBZqhoUFaM_GaiMD7Poss6xim4Z-QnGdXQ",
+      "types" : [ "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=13376152314409137602",
+      "vicinity" : "Hamilton Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

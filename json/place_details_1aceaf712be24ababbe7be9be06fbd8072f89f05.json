@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "691",
+            "short_name" : "691",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Coney Island Avenue",
+            "short_name" : "Coney Island Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11218-4306",
+            "short_name" : "11218-4306",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "691 Coney Island Avenue, Brooklyn, NY 11218-4306, United States",
+      "formatted_phone_number" : "(718) 856-6207",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.64069000000001,
+            "lng" : -73.96901199999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1aceaf712be24ababbe7be9be06fbd8072f89f05",
+      "name" : "Punjab Restaurant",
+      "rating" : 4.50,
+      "reference" : "CnRoAAAAQ8kZ18eEhijUi9BZ8y4SlfF0VdsAj_Fp2xz34ldOxD9iFpChMpJjkzK-jTZXKn_mpav8odqNhFq2GWAfuOurVGxDqH8aOF2UjsrKt_Dwnlo9HQTfDhIbVkSBZ-YpxW1tG4JPl7eJ0bB144qNEttSbRIQyGb8rLZkC3bvvRJBZ7X_PxoUobxuDx-5bpBPToJ9EWsGDUlP4FA",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=5994232016068459602",
+      "vicinity" : "Coney Island Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

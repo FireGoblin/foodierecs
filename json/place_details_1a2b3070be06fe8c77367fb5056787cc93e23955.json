@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "188",
+            "short_name" : "188",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "5th Ave # A",
+            "short_name" : "5th Ave # A",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Kings",
+            "short_name" : "Kings",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11217-3527",
+            "short_name" : "11217-3527",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "188 5th Ave # A, NY 11217-3527, United States",
+      "formatted_phone_number" : "(718) 636-8886",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6770840,
+            "lng" : -73.980030
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1a2b3070be06fe8c77367fb5056787cc93e23955",
+      "name" : "Lobo Park Slope",
+      "rating" : 3.20,
+      "reference" : "CnRmAAAACWCOuefy_9mdujaBsCUbT4b3HxnqgA4j-kwLRftBqQkvVLM2hTLHEsGT5ez0OIpbz_wb8abQ1JE8ylpNYXtAOlsz9fsWSy0RZ5nXwtRC2YMhUoWuDl4rXOhIKfre5oUzpJMNpo4NmHexzTuV4OO2ERIQko9wdPlNDWzktiqeZBbDdBoUbOCUuLF8wakmymHFOfJB1JUuvBg",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=278305456268167131",
+      "vicinity" : "5th Ave # A"
+   },
+   "status" : "OK"
+}

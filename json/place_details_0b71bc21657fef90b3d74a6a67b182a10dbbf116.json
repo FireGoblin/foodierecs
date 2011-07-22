@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "248",
+            "short_name" : "248",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Utica Avenue",
+            "short_name" : "Utica Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11213-3931",
+            "short_name" : "11213-3931",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "248 Utica Avenue, Brooklyn, NY 11213-3931, United States",
+      "formatted_phone_number" : "(718) 778-0050",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.67010700000001,
+            "lng" : -73.9312480
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0b71bc21657fef90b3d74a6a67b182a10dbbf116",
+      "name" : "Sun Farm Market",
+      "reference" : "CnRnAAAA7wneE2ptBnnAkMOnHuv6UwLt99wgtIBhjnkaRcTUOA4cnzkUuMn-6Cm55qLMers5GCNiwmhJtlaQRR5s9HAA9vPd759fIUfchDfdq4VtbTqohsmX_NFKcNXgURTJQoxYdtruUnAxhZ5-P4vGE1NHVhIQbEd5ACJsOmG4r31NjltBRBoU2mhsUmMENCnOhqr0y_YVnC78p9A",
+      "types" : [ "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=11136313704545148318",
+      "vicinity" : "Utica Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

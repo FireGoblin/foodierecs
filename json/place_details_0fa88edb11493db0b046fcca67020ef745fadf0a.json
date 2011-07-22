@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "4315",
+            "short_name" : "4315",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "15th Avenue",
+            "short_name" : "15th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11219-1602",
+            "short_name" : "11219-1602",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "4315 15th Avenue, Brooklyn, NY 11219-1602, United States",
+      "formatted_phone_number" : "(718) 438-5707",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6352340,
+            "lng" : -73.9843130
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0fa88edb11493db0b046fcca67020ef745fadf0a",
+      "name" : "Abe's Fruit Market",
+      "reference" : "CnRoAAAAeC_rDxYCjSv3PHpYJvO-THxrexjYqKEFV5Oq_T8XTD0q7jxn4v4RSEtep6AAqOrdoKpQIlMNohPVc1c8OeLR3RA17QXrWQZ3v2FKsH3ILFz80aEITKytlOybkTjUfqQ25k16jL6lhQs2R8pToLOLsBIQ92pxqqL3HzvJDK6bOdV28BoUQdAr8iHIjyUn66cv6-dAtxpKIGY",
+      "types" : [ "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=1164711836031267370",
+      "vicinity" : "15th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

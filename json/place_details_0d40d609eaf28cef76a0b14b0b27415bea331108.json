@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "59",
+            "short_name" : "59",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Clark Street",
+            "short_name" : "Clark Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11201-2415",
+            "short_name" : "11201-2415",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "59 Clark Street, Brooklyn, NY 11201-2415, United States",
+      "formatted_phone_number" : "(718) 237-0133",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6977230,
+            "lng" : -73.9935290
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0d40d609eaf28cef76a0b14b0b27415bea331108",
+      "name" : "Heights Prime Meats",
+      "reference" : "CnRpAAAAUVPFB00vF_aiAWXCP0NoSwX4fL6yvZybuI4zfo-SDAS-aFlk2dg5DTGHS_bmgR0BTXMXorZWHWRYKoR9UcuYjof3tZGxhvzMLr86t5nWE-7Ag9uF7f46Tmkiqtq4Sgfol2ANXdpFXLADewWjKxoc7xIQesmoOkAQ7GIhW0lgCsAvCxoUHARq-bCpjJekYabTjRgYXZxweWg",
+      "types" : [ "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=6384372850271798365",
+      "vicinity" : "Clark Street, Brooklyn"
+   },
+   "status" : "OK"
+}

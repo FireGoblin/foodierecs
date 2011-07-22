@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "713",
+            "short_name" : "713",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Fulton Street",
+            "short_name" : "Fulton Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11217-1213",
+            "short_name" : "11217-1213",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "713 Fulton Street, Brooklyn, NY 11217-1213, United States",
+      "formatted_phone_number" : "(718) 858-5888",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6874410,
+            "lng" : -73.97693199999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0b6b1d5406121d87ef1413e9c25e410987b028e8",
+      "name" : "Subway",
+      "reference" : "CmRdAAAAGwqIbYqJHggLOYrDU2eACEMpow6azasb-rnWtmlw0DfSHz8ESB-BuRuAkyh22mXF52orGAtLMZIDwLYQaUJeJ3ScOzCzc3srgGzhia4nuk_iWu0jZygihxE40C3vmkpOEhBMdvo3IJm_6fJeJFs6f5IYGhTtwLFJt8AQRIC7rCutCKjZFNWPyw",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=5967928693927769936",
+      "vicinity" : "Fulton Street, Brooklyn"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "428",
+            "short_name" : "428",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Knickerbocker Avenue",
+            "short_name" : "Knickerbocker Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11237-4517",
+            "short_name" : "11237-4517",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "428 Knickerbocker Avenue, Brooklyn, NY 11237-4517, United States",
+      "formatted_phone_number" : "(718) 919-7660",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6994020,
+            "lng" : -73.9196020
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "00d7bdd0fc3a94c3abb7ab67526f10ffc9fce95e",
+      "name" : "McDonald's",
+      "reference" : "CnRhAAAAlvFEXQFrryGHPU0LI328xkINF4w19lPp6lRbg2m7hNK0j2aGHUnRh8TQwJtKYAeypNUfyMwC3ifmvBIveaH46Zlw5WxvHIfJiao1S7AOcis9hXaEZDG0i86kyw0LIrNqIOm20bjMM9DUKlb8RrnUQhIQ02tDz7R1-Mzm1jLKOFED7xoUnKFdevlHXoXGdGZrTsPkNxUdU8s",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=3182431125161977951",
+      "vicinity" : "Knickerbocker Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

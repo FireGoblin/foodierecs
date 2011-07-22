@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "2381",
+            "short_name" : "2381",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "86th Street",
+            "short_name" : "86th Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11214-4309",
+            "short_name" : "11214-4309",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "2381 86th Street, Brooklyn, NY 11214-4309, United States",
+      "formatted_phone_number" : "(718) 449-5179",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.5994680,
+            "lng" : -73.989390
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0af3cbf7d7d6866dbaa5f9ee0f16afca5945f1b6",
+      "name" : "S & S Provisions",
+      "reference" : "CnRmAAAA59Fdt3bq6Pg56pspeLeU24Rr3Gthr3HOcDgI9LcmJ0znuwabiv4-NNQ8g4SDA3lQ0hW9zjEymVDKdos3FADIAdpq-eE2KxaRjNQIS-Qx7SVXkZVmubikSOYgORzV6Kg9ttPopccFxDOAoIs_Dl3QNxIQemftPsquyUVJ9qUAfiyBxhoUjKsgLwflXS0ninCCPvcuWuAnaes",
+      "types" : [ "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=6563984034656471787",
+      "vicinity" : "86th Street, Brooklyn"
+   },
+   "status" : "OK"
+}

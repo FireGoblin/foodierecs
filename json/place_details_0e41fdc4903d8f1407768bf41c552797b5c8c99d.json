@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "8611",
+            "short_name" : "8611",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "19th Avenue",
+            "short_name" : "19th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11214-3813",
+            "short_name" : "11214-3813",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "8611 19th Avenue, Brooklyn, NY 11214-3813, United States",
+      "formatted_phone_number" : "(718) 234-1940",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6055460,
+            "lng" : -74.0008010
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0e41fdc4903d8f1407768bf41c552797b5c8c99d",
+      "name" : "Elza Fancy Food",
+      "reference" : "CnRmAAAAVKb6NyMdbWEbLSL9vxYfZc5ZtSi__y6BPZqVo747TjHLKOTG-SYcW_69eHXKuA6lLdrMAYn5YsrSY8H1GY2q7a3WpatURhKLnQWdWGNSB5BMsD-4m9si2QYLW9L2oH1PCT1tNJiGQCL4e9EzcvFVtBIQt_rm-1Umz6L3HW9VUo9EnBoUdT4hV3f6Dn1O8J8CkbEL8pA5c5c",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=4439863496030972907",
+      "vicinity" : "19th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

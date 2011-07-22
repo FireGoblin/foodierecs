@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "7303",
+            "short_name" : "7303",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "New Utrecht Avenue",
+            "short_name" : "New Utrecht Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11204-5137",
+            "short_name" : "11204-5137",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "7303 New Utrecht Avenue, Brooklyn, NY 11204-5137, United States",
+      "formatted_phone_number" : "(718) 232-4504",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6171190,
+            "lng" : -73.9993650
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0bb8a25508ddeae8080c9d014d7f6306eff9d58a",
+      "name" : "Mi Tienda Abelita",
+      "reference" : "CnRpAAAACtRjWzMrvlyLb06tF33V5vE8nsqsEiNXPd6gbWvISIUPpjHkfay8YQelM5mfVaBWXA7DYSdVKnRbJO03EI28SJGNHdzKbzvTjuSKsAU2338q7Hk1Azd2dYo80Jd05uIkQKigInYkrtLOBBcFbqWXsRIQX0hWgniSua5UGm9RP-CQXBoUtnN_PwcvYDNSDp0QR8wu2H0HD10",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=9850217943979958494",
+      "vicinity" : "New Utrecht Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

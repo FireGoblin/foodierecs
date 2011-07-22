@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1806",
+            "short_name" : "1806",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Bath Avenue",
+            "short_name" : "Bath Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11214-4647",
+            "short_name" : "11214-4647",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1806 Bath Avenue, Brooklyn, NY 11214-4647, United States",
+      "formatted_phone_number" : "(718) 837-1284",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.603550,
+            "lng" : -74.0060950
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0c12957f4b18f59ecd0ebbe26e6985083cdc3327",
+      "name" : "La Chapincita",
+      "reference" : "CnRkAAAAW10CoLoCZCptweWuE2Z1MTt1dhGKxshU4RRCoE9T9NrWAqIggdHTA-VqE5RA1R7xuYMugO1an6o84qn3FuyzJ2VpofQ6CJpOkEh8TzMLs95sojYHiRaQgNk1S69FXIASYFSBYhO5qIOQ5GW-zO4E3xIQeK1e7e6WPHvDcXhi9A5FNRoUjsDv-Uo7nnQ6l79xlNM9DAgIGTo",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=160532779664181527",
+      "vicinity" : "Bath Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "2318",
+            "short_name" : "2318",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "86th Street",
+            "short_name" : "86th Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11214-4310",
+            "short_name" : "11214-4310",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "2318 86th Street, Brooklyn, NY 11214-4310, United States",
+      "formatted_phone_number" : "(718) 996-3539",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6000820,
+            "lng" : -73.9912820
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0cc321038fe061e63312af55fcd87020f804796e",
+      "name" : "Flow Cafe Inc",
+      "reference" : "CnRjAAAA82qAV2MvY_TutijVvzhWgU8HPJw_l_81XfGqZP3uUozc13lC7XqZQVh1pPrMEZGEfO2BCkUz0pXl2T-L-vUNcix7_GFQATg8sKuCKuBr_QDkpPhnhD4t9FDH3LXSkqJAFPHr9OlOdg8cqKYV-QvPCRIQ7GA8sDSHYcCBlUr927qcuhoUPGbmoaVyNL3j98qHVT4cOXg0Hq4",
+      "types" : [ "cafe", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=8711734797384658785",
+      "vicinity" : "86th Street, Brooklyn"
+   },
+   "status" : "OK"
+}

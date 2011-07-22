@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "6301",
+            "short_name" : "6301",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "8th Avenue",
+            "short_name" : "8th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11220-4717",
+            "short_name" : "11220-4717",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "6301 8th Avenue, Brooklyn, NY 11220-4717, United States",
+      "formatted_phone_number" : "(718) 680-0118",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6333470,
+            "lng" : -74.0113520
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "1bafdb4ba95dfe8e12b6154a43a4cd28f0be4498",
+      "name" : "Fei Long Market Inc",
+      "rating" : 3.60,
+      "reference" : "CnRqAAAA1oe0fa1oBUZDSte9em1i5hbRqLUrQ8LquCq1YGB8cZj7oxeOvVQlieO3f-3XSHNmR_6hWKELB5coE3eFVvV2OHtdlr1_TT8IeEfU28QUhXKakjW4vXPxSoMsLdYVjytmbYMnKy7NF-m5JRENcb1-xxIQCzOaJE3BpfnTwv1o0U5q4xoUqaI95H6MAFxr9OlgUiCNDOb6yM4",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=12893481771684425415",
+      "vicinity" : "8th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "2702",
+            "short_name" : "2702",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Knapp Street",
+            "short_name" : "Knapp Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11235-1012",
+            "short_name" : "11235-1012",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "2702 Knapp Street, Brooklyn, NY 11235-1012, United States",
+      "formatted_phone_number" : "(718) 648-8035",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.5881250,
+            "lng" : -73.93181199999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "1c880ba53067ff9cb27cecb6ddbb6f938939da28",
+      "name" : "7-Eleven",
+      "rating" : 4.40,
+      "reference" : "CmReAAAAT7o9MyyZk4WNiBGsuJiZyaGjtp3Gu5CwVTEwDrfKArWEzn7kfjHO5_eFjiWMJkTzujP1QGKzTKRcIt9LB-GbNJKlpJZFIZHTgF1OXO3A4lDdSYGi-9Qf68S0zp1nYxEpEhBE5HjKhSPKba3soHdrZc0zGhSc4vwwA0N0hTDWP8Go7eNtbZ23Xw",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=2996538808866012292",
+      "vicinity" : "Knapp Street, Brooklyn"
+   },
+   "status" : "OK"
+}

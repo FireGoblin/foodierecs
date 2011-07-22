@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "3810",
+            "short_name" : "3810",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Nostrand Avenue",
+            "short_name" : "Nostrand Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11235-2013",
+            "short_name" : "11235-2013",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "3810 Nostrand Avenue, Brooklyn, NY 11235-2013, United States",
+      "formatted_phone_number" : "(347) 702-4023",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.5909620,
+            "lng" : -73.94016499999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1c42ba673fad89f41054d41ed48e39fc48ea3d96",
+      "name" : "Shurovin Corporation",
+      "reference" : "CnRqAAAAIjaxpVt37Uy2by4aJT9x-7-0anm6DyB0tZLJ3qgwrSyeLB0GvLDJSz3PkrVASA-eiC8mUEERpQxZdvutyZP4gD3HDr8ROS8jtfVZdZA5qyI2-ME9vw9d8AXI3m-K88qZF2CgnpADPyBlyyaFGkn6OhIQ663gYhs2YieKZvJyVGBneBoU5ATY88xb7pUWsSROyH6g5q1wErc",
+      "types" : [ "cafe", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=9106412328090166692",
+      "vicinity" : "Nostrand Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

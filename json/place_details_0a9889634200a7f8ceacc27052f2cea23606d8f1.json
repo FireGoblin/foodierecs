@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "5224",
+            "short_name" : "5224",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "8th Ave # A",
+            "short_name" : "8th Ave # A",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11220-2822",
+            "short_name" : "11220-2822",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "5224 8th Ave # A, Brooklyn, NY 11220-2822, United States",
+      "formatted_phone_number" : "(718) 853-8588",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6396680,
+            "lng" : -74.00558199999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0a9889634200a7f8ceacc27052f2cea23606d8f1",
+      "name" : "Noodle Station",
+      "reference" : "CnRlAAAAqA7Rf24fVVnDIZaURg28eFbiMHvnuuVZD06VhAYM1_xY58Hb5XNdosJQbpQn5V9p56Dv6vQHdfSbv5mqrWWB4zzkSWJfnLrLmt8DGON0JSfdeJlA8PkrJlX8En8Ua0S8McwqtpLQWiFm2SD3-fhvFxIQKyTdY7DHAKgsee1z3eYF_hoUolL_TJsmkEdNXXpjTm0rSjJeqLQ",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=11274040308655025668",
+      "vicinity" : "8th Ave # A, Brooklyn"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,59 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "66",
+            "short_name" : "66",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Hicks Street",
+            "short_name" : "Hicks Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "New York",
+            "short_name" : "New York",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kings",
+            "short_name" : "Kings",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11201",
+            "short_name" : "11201",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "66 Hicks Street, New York, NY 11201, United States",
+      "formatted_phone_number" : "(718) 852-5084",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6999970,
+            "lng" : -73.993740
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+      "id" : "0ea63e857f47146ef27b16101ed870c7bc78309c",
+      "name" : "Jack the Horse Tavern",
+      "rating" : 3.90,
+      "reference" : "CnRsAAAAkfDOfgZbyvVCGmnVXi2kqo-JNqdi90-8tnCFm6x7UZqRS7mMLGkFNG3SjiFMi7TIK9tQu_TLyJmRIz6v0oSEOjUJ5_EuzLfj2XuWB2mjZWaiPGMzhObK0zyQeoXRg4LTy5fpHG7rGdPEiEdHRA00ZBIQytukdEtLBeib8Ef-TR1lwBoUkfoCVSNNrHdNIDCmgHXOoufsTAg",
+      "types" : [ "bar", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=1124774904469174695",
+      "vicinity" : "Hicks Street, New York"
+   },
+   "status" : "OK"
+}

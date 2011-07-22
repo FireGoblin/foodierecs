@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110721035449) do
+ActiveRecord::Schema.define(:version => 20110721232135) do
 
   create_table "feeds", :force => true do |t|
     t.integer  "feed_id"
@@ -72,6 +72,8 @@ ActiveRecord::Schema.define(:version => 20110721035449) do
     t.integer  "normal_dislikes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "formatted_name"
+    t.string   "borough"
   end
 
   create_table "slugs", :force => true do |t|

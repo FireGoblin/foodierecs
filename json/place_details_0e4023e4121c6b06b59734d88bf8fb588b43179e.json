@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "5210",
+            "short_name" : "5210",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "7th Avenue",
+            "short_name" : "7th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11220-2808",
+            "short_name" : "11220-2808",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "5210 7th Avenue, Brooklyn, NY 11220-2808, United States",
+      "formatted_phone_number" : "(718) 633-6939",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.641240,
+            "lng" : -74.0075250
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0e4023e4121c6b06b59734d88bf8fb588b43179e",
+      "name" : "Eastern Gourmet",
+      "reference" : "CnRlAAAAwHHwJt-n4iTjtAfix9iFxnGJRY8j9N2JtHkKLCRZVwLGiB0ZPuqiXcUiCXeyMZLTVSjYoL84cZqGdKqOU0Zi89k_m-AaNwOfiArv2mnMjOjjUr7g4cKyG8y9qdUDum8K8mW2_lAFENJssGXgiHLF5xIQlNzH9JhAExb27AzweMjHvxoUs_1oHNFKNkv0_WSTUPoU0v87rkw",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=5257837205765747952",
+      "vicinity" : "7th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

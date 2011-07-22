@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "339",
+            "short_name" : "339",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Hicks Street",
+            "short_name" : "Hicks Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11201-5509",
+            "short_name" : "11201-5509",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "339 Hicks Street, Brooklyn, NY 11201-5509, United States",
+      "formatted_phone_number" : "(718) 246-4007",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6905470,
+            "lng" : -73.9978120
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0c3b09d8ee92086299f92c56a65499f57282fb47",
+      "name" : "Au Bon Pain",
+      "reference" : "CnRiAAAAxkpDTiOdOZapj0kd1JLc9uhlXGc-wgBUr16SmK8Ic-47Io4JWpEh4iFxINXajoXoNBfpOtodKBGVvTDTCuBNvn9I2h4un5FkEmf2_kYmxNV00L-G2f7TRn8CN4do5YTES7LsmF3UpDVMAwlehFTTWBIQCcXLnjTxTeUyxclPL_U9TxoU0BByx_uJyszPJU3QKT4X-s-iAr4",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=3993893988763808354",
+      "vicinity" : "Hicks Street, Brooklyn"
+   },
+   "status" : "OK"
+}

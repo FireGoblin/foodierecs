@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "6930",
+            "short_name" : "6930",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "4Th Ave",
+            "short_name" : "4Th Ave",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11209-1502",
+            "short_name" : "11209-1502",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "6930 4Th Ave, Brooklyn, NY 11209-1502, United States",
+      "formatted_phone_number" : "(718) 921-1213",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.633990,
+            "lng" : -74.0241250
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0c4bc09a6e48934e34b853d8c70e9228888fb84d",
+      "name" : "Ovington Deli & Grocery",
+      "reference" : "CnRvAAAAzsMjaf7rxet2BmkpuiG2NgYg9SYewNHs-oMw6VJYDG2DMJV7Mx16V33NuaHLpbz_YXA8DbmCgoG4FAy3rmLpGaObWaFjEBiabnTIAFnj4VcCCPPhbtqT076TLvs266IQzkafpqcRM96oAOfOXi8nEBIQMAfRUgOMndxWJ23jIKrr_RoUl_eFuh6czBjI-Kv7BzggNtcAkgo",
+      "types" : [ "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=9877677383213284064",
+      "vicinity" : "4Th Ave, Brooklyn"
+   },
+   "status" : "OK"
+}

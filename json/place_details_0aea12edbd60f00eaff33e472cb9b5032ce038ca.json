@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1003",
+            "short_name" : "1003",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Brighton Beach Avenue",
+            "short_name" : "Brighton Beach Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11235-5606",
+            "short_name" : "11235-5606",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1003 Brighton Beach Avenue, Brooklyn, NY 11235-5606, United States",
+      "formatted_phone_number" : "(718) 934-9005",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.5781520,
+            "lng" : -73.95907099999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0aea12edbd60f00eaff33e472cb9b5032ce038ca",
+      "name" : "Eastern Feast",
+      "reference" : "CnRlAAAAywBpHJ-H1fSt5ng84rJ3Bchdyp6vHaUQO24G1gRc33CYYRK_bJqqAiW1fZxfZOmzCfEw_ArMjb5-huGFipp6XesTiRsZgAbSse8R9jYALPbcYwqKk9wXwhQlbCUgeZ4hPt_lpfbTw00Vq4PtNC-eFxIQ8JdGKZygRtRm4zGJGl-6hxoUrxr0X3E8EfBNHcVUB6dQr2uMq9E",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=12284169555117453807",
+      "vicinity" : "Brighton Beach Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

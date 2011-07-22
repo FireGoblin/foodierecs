@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "150",
+            "short_name" : "150",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "7th Avenue",
+            "short_name" : "7th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11215-2257",
+            "short_name" : "11215-2257",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "150 7th Avenue, Brooklyn, NY 11215-2257, United States",
+      "formatted_phone_number" : "(718) 369-9548",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6726050,
+            "lng" : -73.9770030
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "1adc0f0d56136ec2d3e22905ae0f838d49e72c4d",
+      "name" : "D'Vine Taste",
+      "rating" : 4.50,
+      "reference" : "CnRkAAAA0EhnckHKIwW9-7bh4Agkgnj4a3J2AXYMM6x3I8A4AUt6-DjUO5KWAiS6cjUXmVLFE7_5pT_34KIvllpNdCsgb_sMkH-us0NUsYLEhvRLeAx9Vim0dG5rQR7cVU1v_oT7Ybv70UiIJI0LMGUIKyFI5xIQ64V-q4w1OTYavWEu6I9iqBoUV6IHYwmt6amSoYgLGZ22J0IrcNo",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=15078969680574708448",
+      "vicinity" : "7th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

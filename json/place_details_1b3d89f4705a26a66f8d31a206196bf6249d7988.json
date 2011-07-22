@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "273",
+            "short_name" : "273",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "13th St",
+            "short_name" : "13th St",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11215-4909",
+            "short_name" : "11215-4909",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "273 13th St, Brooklyn, NY 11215-4909, United States",
+      "formatted_phone_number" : "(718) 499-7553",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6666810,
+            "lng" : -73.9878160
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+      "id" : "1b3d89f4705a26a66f8d31a206196bf6249d7988",
+      "name" : "Lucky 13 Saloon",
+      "rating" : 4.0,
+      "reference" : "CnRlAAAA-2K4N1nxovdy-XkJuQkQseqILaPCkvmo4mNL5STDXsXuf7Sn3HfuRiE9wbBv_SkXxV-3vVODyYPgBYUeWSKPL1GwNklY1hD1ejj59KP8r891eXdhlqcxttxWGamNX21kApL2F0mmIn4kOkY_OLoS3hIQlzjlPfR_F6HyyS87OvWspBoUuWmVTXTMYnpa-nNQK0ckMSDFCNQ",
+      "types" : [ "bar", "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=2219636547764120783",
+      "vicinity" : "13th St, Brooklyn"
+   },
+   "status" : "OK"
+}

@@ -42,6 +42,9 @@ class RestaurantsController < ApplicationController
   def create
     @restaurant = Restaurant.new(params[:restaurant])
 
+		puts(@restaurant.name + " " + @restaurant.formatted_name)
+		@restaurant.formatted_name = formatName(@restaurant.name)
+
     respond_to do |format|
       if @restaurant.save
         format.html { redirect_to(@restaurant, :notice => 'Restaurant was successfully created.') }

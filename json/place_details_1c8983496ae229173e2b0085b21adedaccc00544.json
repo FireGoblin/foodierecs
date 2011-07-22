@@ -1,0 +1,58 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "2223",
+            "short_name" : "2223",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Tilden Avenue",
+            "short_name" : "Tilden Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "New York",
+            "short_name" : "New York",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kings",
+            "short_name" : "Kings",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11226",
+            "short_name" : "11226",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "2223 Tilden Avenue, New York, NY 11226, United States",
+      "formatted_phone_number" : "(718) 284-4589",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.64676499999999,
+            "lng" : -73.9561580
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1c8983496ae229173e2b0085b21adedaccc00544",
+      "name" : "Mike's Island Grill & Bakery",
+      "reference" : "CoQBcwAAADnfkR2PqZjjJsH-90hxJtFuNQm5ius0o_j17hAXh4e72yu4wPmOHQrJZioCP5FExtzUZpo8_jvCX1h_NdDse3rBnOIOS6v44U4acM_WH3QMguXeHsoYzq8iRTTSWlhSyCaywncDyZg6tVLyU7ixVUe9XZUnRFa0BAsJ-00umOjEEhAIyP2MvSFG6nsqavAMu3nMGhRlSCIueAGmp_r9ApJU-EXdz6M00A",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=10957136852752184988",
+      "vicinity" : "Tilden Avenue, New York"
+   },
+   "status" : "OK"
+}

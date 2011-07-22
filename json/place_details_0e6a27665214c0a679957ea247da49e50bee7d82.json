@@ -1,0 +1,47 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "7927",
+            "short_name" : "7927",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "New Utrecht Avenue",
+            "short_name" : "New Utrecht Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11214-1611",
+            "short_name" : "11214-1611",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "7927 New Utrecht Avenue, Brooklyn, NY 11214-1611, United States",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6118070,
+            "lng" : -74.00079700000001
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0e6a27665214c0a679957ea247da49e50bee7d82",
+      "name" : "Big Bob's Best Fish Market",
+      "reference" : "CoQBcQAAAEHuM6_OtUiR808YzulOsyWzkxTWOBSZzal5or_av9lYetJOI1t3l4lHYAze3DZ4-mBhupdVGKzZ-SwMzgWzSufHKou9Wm0P-x0zq_7llyJ8JIv4oAZuKdcM3h7PI7VLJHVrdYruuTNktluudbXN8JnQ6wPL_4VfrzCyaesD9hM4EhBI5qVhpNE3dzF_CF4l8oK-GhSZolC0Njy7W79KIl6nv1w4wKzC1A",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=7008255963910370246",
+      "vicinity" : "New Utrecht Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

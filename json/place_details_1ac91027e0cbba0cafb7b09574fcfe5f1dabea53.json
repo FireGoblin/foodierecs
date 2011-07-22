@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1",
+            "short_name" : "1",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Metrotech Ctr",
+            "short_name" : "Metrotech Ctr",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11201-3948",
+            "short_name" : "11201-3948",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1 Metrotech Ctr, Brooklyn, NY 11201-3948, United States",
+      "formatted_phone_number" : "(718) 797-2255",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6933640,
+            "lng" : -73.9871320
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1ac91027e0cbba0cafb7b09574fcfe5f1dabea53",
+      "name" : "May Metro Tech Inc",
+      "reference" : "CnRpAAAAmszL1gog0yqk7OJSdhbJbGUbwE3wvewe_FvVbCwv2IGFcuAiSkyWTyVCs5wr4hrpE2JB0IzmUtAGG2CcQ_432ywpwDCaX4y_Yq938grOIfbLrXPuCNWZiPzWhluxSfcbQzEp6Njk4MYbiMWmsuhAixIQAwMlOrWG1h7B0s5UVxefvBoUfa3YGW7SAuyndJqKQySwKp5SRfU",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=15467036724724487520",
+      "vicinity" : "Metrotech Ctr, Brooklyn"
+   },
+   "status" : "OK"
+}

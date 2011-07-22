@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "8406",
+            "short_name" : "8406",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "20th Avenue",
+            "short_name" : "20th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11214-3004",
+            "short_name" : "11214-3004",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "8406 20th Avenue, Brooklyn, NY 11214-3004, United States",
+      "formatted_phone_number" : "(718) 266-6062",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6057220,
+            "lng" : -73.9973320
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0c3902cd5bf22110ef9256c0c170af7d1bfbf277",
+      "name" : "White Mountain Farm Grocery",
+      "reference" : "CoQBcwAAAMinl008H6jWA04Gji9cwyM0pjySAx1I2T9Xu-SwH5MBQBKAkFTBLHRP2PC10DRb9GHXM1T0G5hd5qmEMwkMQemIff68GjsIwhNIYj2tXL7057ZakV_jEz4Qn2tLnE3CeU-I6UChm5Ha76AE0FpxYIMRD2m2nNDyM0n3Z9TM0nDiEhC8G9i3SfrBemsZqPbRO342GhRDl8vc8s0Q6-AAaAZRMruVN6-dQA",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=13531083400699182457",
+      "vicinity" : "20th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

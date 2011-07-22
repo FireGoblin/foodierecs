@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "2006",
+            "short_name" : "2006",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Bath Avenue",
+            "short_name" : "Bath Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11214-4812",
+            "short_name" : "11214-4812",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "2006 Bath Avenue, Brooklyn, NY 11214-4812, United States",
+      "formatted_phone_number" : "(718) 333-1738",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6011590,
+            "lng" : -74.00144299999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "id" : "1c5a0517a799180778e08e6a766bf19181e4aefd",
+      "name" : "Morales Grocery",
+      "reference" : "CnRmAAAA5SwvnkWbmyPCPGwhAwCg22PrM054rpqswrkABqrYVGu7O2w03HtgF1EeEEKMBUIvSAiR-G-ddso0KY98fjIItRQNpfkLPpJAtwL9Z5mx0AhbwxxCawlOUMnpunZWAO3Gty48leYDXgEiydq8Yknh0RIQnWHXErdyVdjnIAJE31q3nBoUXA8975Gzd86V7S0eNRsMu7kyYDY",
+      "types" : [ "convenience_store", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=2980011668318485729",
+      "vicinity" : "Bath Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

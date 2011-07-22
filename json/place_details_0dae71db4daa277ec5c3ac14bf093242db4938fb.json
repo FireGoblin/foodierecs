@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "7810",
+            "short_name" : "7810",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Flatlands Avenue",
+            "short_name" : "Flatlands Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11236-3530",
+            "short_name" : "11236-3530",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "7810 Flatlands Avenue, Brooklyn, NY 11236-3530, United States",
+      "formatted_phone_number" : "(718) 531-5003",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6347880,
+            "lng" : -73.91435799999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0dae71db4daa277ec5c3ac14bf093242db4938fb",
+      "name" : "Subway",
+      "reference" : "CmRcAAAAWgiVsITaLJdCOJTystJ9oTV4c_agzc1LsWvLD31z4Vrd9bxdpI00mI8SDiJuhVpEjksezBrmo9nvA6FI1s6z87dgwAuXO6SoJr-k3jz2Roa0b7d7DL5dLMwFIoTEswPEEhDZ8qdeXPkuh1a29cyzc3CoGhQnjkOUzDDj5mlFCL8gi3PTntNzLw",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=7293099443992263726",
+      "vicinity" : "Flatlands Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

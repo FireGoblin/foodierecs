@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "258",
+            "short_name" : "258",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Flatbush Avenue",
+            "short_name" : "Flatbush Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11217-2820",
+            "short_name" : "11217-2820",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "258 Flatbush Avenue, Brooklyn, NY 11217-2820, United States",
+      "formatted_phone_number" : "(718) 623-8808",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6793730,
+            "lng" : -73.97421799999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0e22027f98df25cca37b30f7d3d502504ca29b96",
+      "name" : "Vegetarian Palate",
+      "rating" : 3.80,
+      "reference" : "CnRpAAAANUYrMRUaNiqpjILC1mk85GDeJCq5Noe1gqCgfQG8WHkt0y_PZ_rPulymCza1IG-uHOZ1LGsIlS00N-kLfj_cyhOUvfTwvnzW74o5PelDMav51Ag6VpiIslPuhL0C8gfMRuRKbiZTqrDwQwRd5ow5YxIQxK5YxPUyGpZy-S84sPQjnxoUlWlDHaw7Q8uw3HSB-QM3zH7X8Es",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=17533883663104112890",
+      "vicinity" : "Flatbush Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

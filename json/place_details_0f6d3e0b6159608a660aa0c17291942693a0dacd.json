@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "47",
+            "short_name" : "47",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Hicks St # A",
+            "short_name" : "Hicks St # A",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Kings",
+            "short_name" : "Kings",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11201-6902",
+            "short_name" : "11201-6902",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "47 Hicks St # A, NY 11201-6902, United States",
+      "formatted_phone_number" : "(718) 722-7777",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.7002920,
+            "lng" : -73.99339499999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0f6d3e0b6159608a660aa0c17291942693a0dacd",
+      "name" : "Tutt Cafe",
+      "rating" : 4.10,
+      "reference" : "CmRgAAAAZk97GRE0-DJLSZlH1Dhm8MXcBCHfGNff5v8GJpuG7uKZ6F1Q5CRpb5-D3AoLiPmo07HjPIBVVnh4c5jScSKNKbz2_4S6cRonZgAyGT2s9jD8yxwY9mQdQn_8RWLqsPDvEhAgM_PxdHzxeY7Ixs8H8KDOGhTRIm8JKqeq0G8z16l9EWnXH1nlHA",
+      "types" : [ "cafe", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=4722589805452355994",
+      "vicinity" : "Hicks St # A"
+   },
+   "status" : "OK"
+}

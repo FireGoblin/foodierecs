@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "6928",
+            "short_name" : "6928",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "3rd Avenue",
+            "short_name" : "3rd Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11209-1305",
+            "short_name" : "11209-1305",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "6928 3rd Avenue, Brooklyn, NY 11209-1305, United States",
+      "formatted_phone_number" : "(718) 836-9292",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6351290,
+            "lng" : -74.0265850
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "1c3b0ac5251d375948969047d9aa6214033d4a7a",
+      "name" : "J & C Market Inc",
+      "reference" : "CnRnAAAAdKSfgWfzV_qoUZrg51ZWLnivxcjhnkLcMd-uYZchEiVxBlVy-D6ONdmRnnWV4EKoobGj26fA_VEAmJ-A0wXlFgS8tiHAXskfrt3SWPXU4wCP-4RWYxb6Xct5v9hHgLPq4_x8JARJyvXdF3ZCHtphHRIQH_OUPshlfr2C6YuyqPQCxhoUs4A80oPKKePDywFDR-3BuCfPNc8",
+      "types" : [ "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=249692673104046470",
+      "vicinity" : "3rd Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

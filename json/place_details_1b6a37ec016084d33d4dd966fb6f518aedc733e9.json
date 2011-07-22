@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1164",
+            "short_name" : "1164",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Willmohr Street",
+            "short_name" : "Willmohr Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11212-3202",
+            "short_name" : "11212-3202",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1164 Willmohr Street, Brooklyn, NY 11212-3202, United States",
+      "formatted_phone_number" : "(718) 342-2676",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6582040,
+            "lng" : -73.9157180
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1b6a37ec016084d33d4dd966fb6f518aedc733e9",
+      "name" : "Kings Fried Chicken",
+      "reference" : "CnRrAAAARN1k-BI8OGYrp9vT5_6AlI508DruXsc7oJ94nwdPFWaakIHS8CnFkGayG3Va8RXBPDvtOcFN-i3nAZ9Ichl3__whF_GWUoDpMvPUJF1h3dm2HQW1haMH6B6sF-RJ13LTA2QG-mVPKdHfUSMHyjTrexIQOYN-zSXHRbOJRFcTG6Q3AhoUSlhDrsB1oFsAiKlbuN7E_IFZEPo",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=18038533019870354904",
+      "vicinity" : "Willmohr Street, Brooklyn"
+   },
+   "status" : "OK"
+}

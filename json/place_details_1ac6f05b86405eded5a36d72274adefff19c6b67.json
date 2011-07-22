@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "6423",
+            "short_name" : "6423",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "20th Avenue",
+            "short_name" : "20th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11204-3905",
+            "short_name" : "11204-3905",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "6423 20th Avenue, Brooklyn, NY 11204-3905, United States",
+      "formatted_phone_number" : "(718) 232-7056",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6164630,
+            "lng" : -73.9855080
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1ac6f05b86405eded5a36d72274adefff19c6b67",
+      "name" : "Europa Restaurant",
+      "rating" : 3.50,
+      "reference" : "CnRpAAAANwZq7LGMTvL0uuBsZhhU1zfXUoQFkWaMNpK-yrP3g5u40Pt0NIi031xDxPJTRlbP1JYpLo44_XoW_I8tM2sjp7XGUeOqkCw8eV4WaQNBN6IQXTiVjhavowd_d3lBVJYP4DZD-AzouawFuz_J4ttghRIQhC8NK0JF9-_2XLSqkOy9-hoUAvWbD8mq4lSL84fcTVnaDDrTDrw",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=13603265901418095230",
+      "vicinity" : "20th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "156",
+            "short_name" : "156",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "5th Avenue",
+            "short_name" : "5th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11217",
+            "short_name" : "11217",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "156 5th Avenue, Brooklyn, NY 11217, United States",
+      "formatted_phone_number" : "(718) 622-2275",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6780660,
+            "lng" : -73.979490
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0a94581b279c7924eee9b2d4f867b974b3803b00",
+      "name" : "The V-Spot",
+      "rating" : 3.40,
+      "reference" : "CnRhAAAAvuwpVhoRXQUpgCAynucOeSQ0kuBWK8rd42EFCFNSGjPj08X73-BhTZRbx8Yk-lr_8rNw41iU7qSKNXV_-hO-hj5etdVUPJ8GSEvsYYIUWBYMfx5Kp6DXWmkxI895HbKDoDCc_eT8KqiyddAiCuT3sBIQWsoFk3hiVuLMXXhoZ52hjRoUONS-QzrmUf4C-o0h6MJZX9LVtXg",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=9671921603694962633",
+      "vicinity" : "5th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

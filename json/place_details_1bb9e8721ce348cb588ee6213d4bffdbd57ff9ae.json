@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "7324",
+            "short_name" : "7324",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "6th Avenue",
+            "short_name" : "6th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11209-2608",
+            "short_name" : "11209-2608",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "7324 6th Avenue, Brooklyn, NY 11209-2608, United States",
+      "formatted_phone_number" : "(718) 748-1766",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6293450,
+            "lng" : -74.0199880
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "1bb9e8721ce348cb588ee6213d4bffdbd57ff9ae",
+      "name" : "B & K Deli & Grocery",
+      "reference" : "CnRrAAAApGwd7VbqHWlcsPhyGkxLJ5OSCAhMUjszFK0Q6NROS2HWx1Na2uji1v1Ai8rLeOGrbw3SZKgxAyDUeJ7PzORRmXHtwM2B1P1q5U7WFaBEQ9G4NDBBWU_8lKntQ8QqU1tJTi1VVxDBl39vRK9I8k4eIBIQUzQeboZGuuXrXr3YkWzucxoUgQzDpbDTjvJYmFj9c5iz-NtVJw4",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=12037805345836854412",
+      "vicinity" : "6th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

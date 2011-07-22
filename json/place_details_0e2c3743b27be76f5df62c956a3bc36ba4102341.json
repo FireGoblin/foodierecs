@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "640",
+            "short_name" : "640",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Parkside Avenue",
+            "short_name" : "Parkside Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11226-1506",
+            "short_name" : "11226-1506",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "640 Parkside Avenue, Brooklyn, NY 11226-1506, United States",
+      "formatted_phone_number" : "(718) 469-1295",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.65587499999999,
+            "lng" : -73.95222699999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0e2c3743b27be76f5df62c956a3bc36ba4102341",
+      "name" : "New York Pasta Authority",
+      "reference" : "CnRvAAAAEStxPDm6ksJHUjt3b50SrhkxtzyKsr1aIzECUMdAh9AFYQzASHJ3k78Fw4o2BTKxAQBMdWADNGmM7dtn5AEc__u9Y-dV-f31w4bFKJkLuFJ6F_nkF2ySHSK9vo5aWqGJEmTqqyKbpgrHFZuPB6tj-RIQvd9oG2w3kw67IAjekNYdPxoUM9SUud-63dBEbBALrdCcB9J1sO0",
+      "types" : [ "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=10174905512885981105",
+      "vicinity" : "Parkside Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "2027",
+            "short_name" : "2027",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Emmons Ave # 8",
+            "short_name" : "Emmons Ave # 8",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11235-2793",
+            "short_name" : "11235-2793",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "2027 Emmons Ave # 8, Brooklyn, NY 11235-2793, United States",
+      "formatted_phone_number" : "(718) 332-4850",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.5841120,
+            "lng" : -73.9466460
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0d92e21269792d061eefaf7068c89ae9105010b9",
+      "name" : "New Cats Cafe",
+      "rating" : 2.90,
+      "reference" : "CnRkAAAAotpdLiapwljgmZTGQn3yXnytq52I1an-i-xiSUUbBAiFql4k2R-WpcZGs0oyUmvpdtLH5t8Iu2FNU0tXPXU9SRnbyO4EK7sPyHBEuAxbomc1TkO2UkypjEoeUQNCue-jlhtpK5ryGr4kAMwQRfP1-hIQxqusVI_BG1GCm0ypd3TVqRoU-EsN4ZTvf048d51Zfe7x2eHKoJA",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=13932436054533027747",
+      "vicinity" : "Emmons Ave # 8, Brooklyn"
+   },
+   "status" : "OK"
+}

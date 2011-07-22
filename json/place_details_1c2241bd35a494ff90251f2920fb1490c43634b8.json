@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1263",
+            "short_name" : "1263",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "59th Street",
+            "short_name" : "59th Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11219-4917",
+            "short_name" : "11219-4917",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1263 59th Street, Brooklyn, NY 11219-4917, United States",
+      "formatted_phone_number" : "(718) 437-0004",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6296790,
+            "lng" : -73.998330
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "1c2241bd35a494ff90251f2920fb1490c43634b8",
+      "name" : "Kosher Corner Inc",
+      "reference" : "CnRnAAAAqp8kM_ploY-uHwweT3ajszYIO1F7a0vZBzAR7lEGQlt59heRKPA3rXgUDyxqHLsXXc7aSBr-uTo9Lpq7c_aFR7NSdDWShK5V6vAr1qJJQspCF-aDT_OiGPjMdnUQuraOxbbCaS4YnfQoKyhDLPLHrhIQiKIfRqUf9QWGSJ9TDvwBTxoULBlMbQu-NuMxQw_S5yxtJnX4yEM",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=8239979054789732466",
+      "vicinity" : "59th Street, Brooklyn"
+   },
+   "status" : "OK"
+}

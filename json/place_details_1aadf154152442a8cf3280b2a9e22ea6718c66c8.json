@@ -1,0 +1,59 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "318",
+            "short_name" : "318",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Lafayette Avenue",
+            "short_name" : "Lafayette Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "New York",
+            "short_name" : "New York",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kings",
+            "short_name" : "Kings",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11238",
+            "short_name" : "11238",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "318 Lafayette Avenue, New York, NY 11238, United States",
+      "formatted_phone_number" : "(718) 230-5214",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6884140,
+            "lng" : -73.9629410
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "1aadf154152442a8cf3280b2a9e22ea6718c66c8",
+      "name" : "Choice Market",
+      "rating" : 3.60,
+      "reference" : "CnRkAAAA4kdZqc2LqymfY_p_-QIh-jQB-37EDu1qCS38Keji17eTE0OTBWzAdkeRagJl3VMzbzqlkrjgiB7i2fiwMmeRecYGJl-6B7NNAZViEXtDHAEePOp_Q9bsX1RKQuqs7a1D67AW20dx8lZTsZVH4WGn-RIQHZiDgnpCD-lU2O6Ll44MqhoUustAVbbUmY83iO1xynESQZFBczg",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=15069742618342347159",
+      "vicinity" : "Lafayette Avenue, New York"
+   },
+   "status" : "OK"
+}

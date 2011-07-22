@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1151",
+            "short_name" : "1151",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Brighton Beach Ave",
+            "short_name" : "Brighton Beach Ave",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11235-5960",
+            "short_name" : "11235-5960",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1151 Brighton Beach Ave, Brooklyn, NY 11235-5960, United States",
+      "formatted_phone_number" : "(718) 332-0986",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.5775950,
+            "lng" : -73.955440
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0e8dae6f1fa8a44fec2b976398928c4267a36ed5",
+      "name" : "Yireh Dely Grocery",
+      "reference" : "CnRoAAAAFCQrLNq71N5Pcynl0-bct-H17uJSf8IoSd1uu5V7KvBrADDvRYTyCrINpAcgEbMlCoBa3f3y7Ia_OB4v5Qn6G4cDX_eKtek-lnjsAUqA7HRzxFREpcy20uI9Php2fqajzosEfa7F_CyvaW7CodxcBhIQBcUMAW6agpcZvnc5vhfxLRoUD9gli9uzjd3LYwkgiKFLNFPkeE8",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=1919732666971416145",
+      "vicinity" : "Brighton Beach Ave, Brooklyn"
+   },
+   "status" : "OK"
+}

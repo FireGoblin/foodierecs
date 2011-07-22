@@ -1,0 +1,58 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "106",
+            "short_name" : "106",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "7th Avenue",
+            "short_name" : "7th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "New York",
+            "short_name" : "New York",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kings",
+            "short_name" : "Kings",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11215",
+            "short_name" : "11215",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "106 7th Avenue, New York, NY 11215, United States",
+      "formatted_phone_number" : "(718) 622-2112",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6741550,
+            "lng" : -73.9758310
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0c0064fb159c662a68397afb91ee3e1f8367f18e",
+      "name" : "Szechuan Palace",
+      "reference" : "CnRmAAAA4B_THfxxH6UbGd3tvlhMWxImFf0eNuPQktWybG-3Y_s5kueikGbPFh3C9oVUoROo2E-ufAZHQwAJNkuEIgh6QWzpdtZHCd9IJTpRw5sAdZx8N8ehk58fbvCSBSNcpS4tGcRS7FVAdwG1Gd_NA7-I0RIQTaiNydml5U4Xd1HCN5EqmhoUclDCWoLRBYXDqy9pK_hkY2ZNTeI",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=3986082440056906120",
+      "vicinity" : "7th Avenue, New York"
+   },
+   "status" : "OK"
+}

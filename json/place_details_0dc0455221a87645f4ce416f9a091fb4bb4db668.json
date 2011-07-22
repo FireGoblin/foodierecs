@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "957",
+            "short_name" : "957",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Utica Ave # 1A",
+            "short_name" : "Utica Ave # 1A",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11203-4300",
+            "short_name" : "11203-4300",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "957 Utica Ave # 1A, Brooklyn, NY 11203-4300, United States",
+      "formatted_phone_number" : "(718) 345-0049",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6498320,
+            "lng" : -73.9300070
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0dc0455221a87645f4ce416f9a091fb4bb4db668",
+      "name" : "A & V Pizza & Restaurant",
+      "rating" : 4.30,
+      "reference" : "CnRvAAAAJ5wsxQwhV4YncLOIG1-66VxZL6YpK6lzOR4msduT0cEjCBOPkr5-C_48U4bKIYAhAT9T28N06mBf5kDbnbjUDvDd4FVuHb7ndrRbJ_ngeDlZ4ho_cwJpsL2de3m1XwRLkP3RQgcNs4oV_N2UJx1CvBIQhbh-V0GuUoc0NHssudq8KxoUxhqRi8NT3etMOSN6cCPthLGcx3s",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=8471711227114245946",
+      "vicinity" : "Utica Ave # 1A, Brooklyn"
+   },
+   "status" : "OK"
+}

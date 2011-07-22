@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "801",
+            "short_name" : "801",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Franklin Ave # A",
+            "short_name" : "Franklin Ave # A",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11238-5579",
+            "short_name" : "11238-5579",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "801 Franklin Ave # A, Brooklyn, NY 11238-5579, United States",
+      "formatted_phone_number" : "(718) 773-2605",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6715940,
+            "lng" : -73.9573130
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0cd24e18597a553c382eca4a624a7aa96ddf6b45",
+      "name" : "Shorty Grocery Corporation",
+      "reference" : "CoQBcQAAADCmrdnF2X2DWfxzSRH0DND-t0-ZLYqtxFg13TuCNwyCWuC8YrdZWTlwbpAy0JKsAca6GZO0RucdscAyaJ9RU-vDdBcXbQUBjSZCYTFzFt_c9lk2Wc5VGYt_H2vk0LF48R5agHlj6CQ7fObeFO1u4b9F1I4OhJ4ThVxU1sdFqlEnEhBianaygl80jCcjg49xoyqxGhTYRvonLzH1VNWJrzM8LAWhs6CfQw",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=17169725682800399702",
+      "vicinity" : "Franklin Ave # A, Brooklyn"
+   },
+   "status" : "OK"
+}

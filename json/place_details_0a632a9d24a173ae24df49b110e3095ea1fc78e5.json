@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "734",
+            "short_name" : "734",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Nostrand Avenue",
+            "short_name" : "Nostrand Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Kings",
+            "short_name" : "Kings",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11216-3674",
+            "short_name" : "11216-3674",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "734 Nostrand Avenue, NY 11216-3674, United States",
+      "formatted_phone_number" : "(718) 493-2395",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6736250,
+            "lng" : -73.950250
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0a632a9d24a173ae24df49b110e3095ea1fc78e5",
+      "name" : "Imhotep's Health & Living",
+      "rating" : 4.10,
+      "reference" : "CnRvAAAAR9xhfRoV51pP7DR0yBan8IDaqw2lnaQhmW0P51PPqEtNT3rhnuwSnHlI_qfHE_jeTfnKOeDJuCBXpfHIx2NKVkpRA98UXq7Fm_QqlvnRnnoUSPxAOcioWsfRzwlthcJ8CbvPPl-GaEzgJiDrZZv-nBIQ8uxfZ1Q7UBp3iAKTzSM-XBoUs1ZHLIErEzNRKk_aayn3TbeMXWQ",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=5567513160398070569",
+      "vicinity" : "Nostrand Avenue"
+   },
+   "status" : "OK"
+}

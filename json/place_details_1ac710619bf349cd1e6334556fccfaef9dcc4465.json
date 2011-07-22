@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1640",
+            "short_name" : "1640",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Nostrand Avenue",
+            "short_name" : "Nostrand Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11226-5516",
+            "short_name" : "11226-5516",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1640 Nostrand Avenue, Brooklyn, NY 11226-5516, United States",
+      "formatted_phone_number" : "(718) 282-8341",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.645970,
+            "lng" : -73.9493490
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1ac710619bf349cd1e6334556fccfaef9dcc4465",
+      "name" : "Choices Caribbean Restaurant",
+      "rating" : 3.90,
+      "reference" : "CoQBcwAAABsK0QUlg1HLdA8l-mWni4vau0oTfZ2wY6D7xHSIjFbAHhpZ9GlBlIolf2n2E58ZMWXywhlLLE3tLN1XhdRsSt5RcrFv4Mroqztl6P4U3Mqj44eO4lW_OtHZXRcH82eWHz6oixfEz6FA6upthZNylmu-gtEzsapfvVmLjtvGwF6PEhDIEIPc77QlI-cJlySV2wh4GhR6TxnQPoNG6q32K6szygLuKJH-ug",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=17086844437556341689",
+      "vicinity" : "Nostrand Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1739",
+            "short_name" : "1739",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Flatbush Avenue",
+            "short_name" : "Flatbush Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11210-4236",
+            "short_name" : "11210-4236",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1739 Flatbush Avenue, Brooklyn, NY 11210-4236, United States",
+      "formatted_phone_number" : "(718) 253-0039",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6276520,
+            "lng" : -73.9418410
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "1a21c913d4a4cf26e8e64569708396b2e96f5ad8",
+      "name" : "Brothers Food & Deli",
+      "reference" : "CnRrAAAAweDONaPzjgo9tZWaQQB6D4ZUyGk4LB2qIEQqeaK2bMwPQzXJcnwgCvdCBMpSavzJqbQb6q18ceuCd1g5Uh66NBEMMg-DbJSDXgTHuC11IZJOm26vODChnBbMwMhrU9eatku5qicyJAVIfQKWah_9oBIQnEcKdYpeBCCkATws4x4XZRoU-LG7w-Ak6LI5GJvEE5vg8V-MiCg",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=1616542569050331648",
+      "vicinity" : "Flatbush Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

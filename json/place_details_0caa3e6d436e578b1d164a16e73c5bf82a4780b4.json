@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "4305",
+            "short_name" : "4305",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "14th Avenue",
+            "short_name" : "14th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11219-1429",
+            "short_name" : "11219-1429",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "4305 14th Avenue, Brooklyn, NY 11219-1429, United States",
+      "formatted_phone_number" : "(718) 853-4450",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.63673199999999,
+            "lng" : -73.98635399999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0caa3e6d436e578b1d164a16e73c5bf82a4780b4",
+      "name" : "Boro Park Bagels",
+      "reference" : "CnRnAAAAzrmyiHhfXnUqAjnadE74s78xPTNEPGHDVYPAdj3sjNG84iQU6fUwD6VOcqJNvPZEw0uhwWsUMRyRUgMux5B4C6cYnn6_7h2kjay-MzP2QmZNr2jWuJaNp7ScH9f2kLZmg6j6m0BRfFTLJpVFvp2VgRIQOKsOMvloHFObGyVaTWF5UxoUiGx7CuUTc89PywiX7s3PI-YEAKk",
+      "types" : [ "bakery", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=7477159634071883680",
+      "vicinity" : "14th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

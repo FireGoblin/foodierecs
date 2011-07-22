@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "2223",
+            "short_name" : "2223",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Church Ave # A",
+            "short_name" : "Church Ave # A",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11226-3201",
+            "short_name" : "11226-3201",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "2223 Church Ave # A, Brooklyn, NY 11226-3201, United States",
+      "formatted_phone_number" : "(718) 469-7925",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6504470,
+            "lng" : -73.9579080
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1b1c3630f3583a095406f3dd30e69c72f0120d50",
+      "name" : "Remarkable Flavors",
+      "reference" : "CnRpAAAA7zGScusHUZrS-w_EcfUbgghyO1qiahxSdULBJ17uR5FgL3SVhUfTzx45KTzg6LM-LHyTzRjnmaSFgQBji5WDIXgX7D9StvGaniK3ndwz3uLlqftiazd2PqErpKQHHaSgLrUktbNoaX0n_NsPK6mkYBIQkZv5I99yoHyaSwnU8tsfKBoUJOzD-9UV_C3XAIl-7b3tWUNa4vw",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=2252491148761917520",
+      "vicinity" : "Church Ave # A, Brooklyn"
+   },
+   "status" : "OK"
+}

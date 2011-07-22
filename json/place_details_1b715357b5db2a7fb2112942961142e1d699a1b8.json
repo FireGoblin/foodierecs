@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "205",
+            "short_name" : "205",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Church Avenue",
+            "short_name" : "Church Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11218-3919",
+            "short_name" : "11218-3919",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "205 Church Avenue, Brooklyn, NY 11218-3919, United States",
+      "formatted_phone_number" : "(718) 438-1982",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6435750,
+            "lng" : -73.97816499999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "1b715357b5db2a7fb2112942961142e1d699a1b8",
+      "name" : "A & M Inc",
+      "reference" : "CmRgAAAAiHc_305u-F1Ej5k7-I3vslbzgrMPEYuFbFjreD03m6TbWpk-v75e-MxlOJSmrnD6a97R8-YqcN-iRH0NL8A2NDEZFkpvs-m0PDopUabAiDtULpG1TXQ6FEiE9QqYmM08EhBGGfGbJq0E2k7mqcAKQ1HzGhRLTALaNWnymm_l3qUMBDEZT47LwQ",
+      "types" : [ "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=5933120107173305760",
+      "vicinity" : "Church Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

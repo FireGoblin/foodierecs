@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "524",
+            "short_name" : "524",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "4th Avenue",
+            "short_name" : "4th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11215-4768",
+            "short_name" : "11215-4768",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "524 4th Avenue, Brooklyn, NY 11215-4768, United States",
+      "formatted_phone_number" : "(718) 965-1668",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6676130,
+            "lng" : -73.9912370
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "01a2bcba25bfc283fc792a314e1f163043d7a617",
+      "name" : "New Good Fortune Kitchen",
+      "rating" : 3.50,
+      "reference" : "CnRuAAAAKi2yKAnGNCevIMKIkd2GJJN1awLaUcTepbKGXJ2pzBSMsATHB4RcwrG1osG27j7QTc1d82VnMiE2hcRyDUCn4ybBBePYpo_5j9vY_LHt4W3sjBSpUQJMfSvklJyhSJJVXkN2BUDrOTNs-wurIr3uQBIQlS9k17ZsO1JQ8UogT2U6JhoUjGvtUIUankTzQf5_ko5u8LEs6uU",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=1173943854213716478",
+      "vicinity" : "4th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

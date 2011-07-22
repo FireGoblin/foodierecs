@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "7902",
+            "short_name" : "7902",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "3rd Avenue",
+            "short_name" : "3rd Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11209-3602",
+            "short_name" : "11209-3602",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "7902 3rd Avenue, Brooklyn, NY 11209-3602, United States",
+      "formatted_phone_number" : "(718) 680-7900",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6285130,
+            "lng" : -74.0293090
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0ea5098b20470482b2511ad0dc1bea2b79676e74",
+      "name" : "79 Pizzeria & Restaurant",
+      "rating" : 3.50,
+      "reference" : "CnRwAAAA8LcND2zcje-I14wNJDZQFWXVcb_O4YH4gFJmbFsbOO5iLFw9u68CpNOaNgu7epJgaOrwIeqaDWRXYdOlKckO8nhsukXA3-Urf6aBmwcLZaypFKZmKMsKAKG2UYORzSk0fPO1Wjtq3mcbfpZFZI6zmxIQqaAWQXUGZs0prx5XpbPRTBoUDSv4Rrg7x_cigkQhKCSjYOaUMyI",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=12349201931697722096",
+      "vicinity" : "3rd Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

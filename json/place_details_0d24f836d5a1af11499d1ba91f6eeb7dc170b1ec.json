@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "406",
+            "short_name" : "406",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Ave P",
+            "short_name" : "Ave P",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11223",
+            "short_name" : "11223",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "406 Ave P, Brooklyn, NY 11223, United States",
+      "formatted_phone_number" : "(718) 998-2710",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6088210,
+            "lng" : -73.97267400000001
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0d24f836d5a1af11499d1ba91f6eeb7dc170b1ec",
+      "name" : "Fine Fare Supermarket",
+      "reference" : "CnRsAAAAmMLk0BqNl6G2qnGG_jl7_ks17wY0rA1w2xYJmg0hIirPX1K8s-wiEuI4NY4-aENaX_HdXyvKnqcdmWOUDvzwlU08CX-F6u1Aopq3vHSjJizTpwco9g78xyJ-Pw-9cVkaM3I4Ga3T0VuczJBKtVxnyxIQ3xBw-vt0NckCarU3SrQN-RoUbS1PRxaXRcKxiXZyh13sVNvOcpE",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=320727574791871485",
+      "vicinity" : "Ave P, Brooklyn"
+   },
+   "status" : "OK"
+}

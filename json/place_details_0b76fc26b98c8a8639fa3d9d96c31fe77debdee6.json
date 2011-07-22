@@ -1,0 +1,54 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "229",
+            "short_name" : "229",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Court St",
+            "short_name" : "Court St",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "New York",
+            "short_name" : "New York",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "New York",
+            "short_name" : "New York",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11201",
+            "short_name" : "11201",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "229 Court St, New York, 11201, United States",
+      "formatted_phone_number" : "(718) 222-5598",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6867850,
+            "lng" : -73.99387399999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0b76fc26b98c8a8639fa3d9d96c31fe77debdee6",
+      "name" : "Ghang Thai Kitchen",
+      "rating" : 3.90,
+      "reference" : "CnRpAAAAX9sc5DBP4k9T0uanokY-Cotp_qhR4iy24c8UYBM7fLFYu15Fk91dVOsVEVT61TxUIDPKTulLvDLiSNHPB9neNhoczLCjOu4jDmfm58QL8Yce85Cx3KlasOSjEsQnXGwatzIEQaibXTLl5TtJjFiWIhIQt9t09iSUn4kGk8KWbKL_choUYIuzMt3sEn8qeJzw5mnCSWJtpOs",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=3639146924656064488",
+      "vicinity" : "Court St, New York"
+   },
+   "status" : "OK"
+}

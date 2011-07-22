@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "661",
+            "short_name" : "661",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Nostrand Avenue",
+            "short_name" : "Nostrand Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11216-3615",
+            "short_name" : "11216-3615",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "661 Nostrand Avenue, Brooklyn, NY 11216-3615, United States",
+      "formatted_phone_number" : "(718) 604-8300",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.67463499999999,
+            "lng" : -73.94990299999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0afe07a87e205d39df1be60a3c72d47216f95a08",
+      "name" : "Number One Chinese Kitchen",
+      "rating" : 3.50,
+      "reference" : "CoQBcgAAAJIiXuH67gYlzHPtdf8VUPHkOFQnHP3KAFzZJnOA5Z0GLb0VXJTg1k5SrXU1RWlEOvhxuk3Amh0CMKTL4Y8uABZFLXbS3rCGJzA_r_qdvhKt57Pe-d3HLVyTptrRv21eIgKGflQVz7UjDa5bYOUFi7IVQnl3rLInfvG0vApOqOzpEhCZ_kKb6p1ReYF1uQVhTRYhGhSz7hDq13S76V-PYSQIyLBbnKa8UQ",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=13631910569366943710",
+      "vicinity" : "Nostrand Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

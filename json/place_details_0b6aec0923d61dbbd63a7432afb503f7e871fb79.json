@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1554",
+            "short_name" : "1554",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Ralph Avenue",
+            "short_name" : "Ralph Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11236-3129",
+            "short_name" : "11236-3129",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1554 Ralph Avenue, Brooklyn, NY 11236-3129, United States",
+      "formatted_phone_number" : "(718) 629-5557",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.63905099999999,
+            "lng" : -73.9193640
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0b6aec0923d61dbbd63a7432afb503f7e871fb79",
+      "name" : "Zhu Hui Zhang",
+      "reference" : "CnRkAAAAxhG8jTwDuzg4vCSRkqsTvbCwatAhzf2gFhWK8WJ3TCaLf3Dx5V5bHsR73pQHtspoA84aaO4CCIG1COntiUwUH-U5uQcg2mEMDtdenQTmDWYofi5BHvRrKIXRdTRz3WrPztJwqLD4Jr3KtwC4HPRslBIQXQpp_wBX6MEqR6fCd5df3BoUaJluO3RNVIRY4CDuj9-RQf50y3k",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=2288713690474854990",
+      "vicinity" : "Ralph Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

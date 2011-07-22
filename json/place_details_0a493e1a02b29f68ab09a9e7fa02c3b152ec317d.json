@@ -1,0 +1,59 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "237",
+            "short_name" : "237",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "9th Street",
+            "short_name" : "9th Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "New York",
+            "short_name" : "New York",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kings",
+            "short_name" : "Kings",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11215",
+            "short_name" : "11215",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "237 9th Street, New York, NY 11215, United States",
+      "formatted_phone_number" : "(718) 788-0929",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6706660,
+            "lng" : -73.9888260
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0a493e1a02b29f68ab09a9e7fa02c3b152ec317d",
+      "name" : "Catene Italian Deli",
+      "rating" : 4.20,
+      "reference" : "CnRrAAAA32L3YsSc_6vERQsll-8OJ7d7wslUtYl5lEDqNbzeehuxq6qCDM4O8BtcXDNhZPzQ3866aF-Z5_mOx3NnbKA9hkxlSZVLf2E3xh6QRVEuuCiSM5Q3AK6cjJEavs8tuZHP9lGYJuM37UNtkX-pcAQy_BIQ3ueN1momKEDNLeVYR3I10RoUIE9EtxZVaVYyvgNaRa68OlImlVA",
+      "types" : [ "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=13047213644281220338",
+      "vicinity" : "9th Street, New York"
+   },
+   "status" : "OK"
+}

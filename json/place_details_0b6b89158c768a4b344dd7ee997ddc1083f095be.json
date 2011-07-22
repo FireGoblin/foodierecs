@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1671",
+            "short_name" : "1671",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "McDonald Avenue",
+            "short_name" : "McDonald Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11230-6312",
+            "short_name" : "11230-6312",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1671 McDonald Avenue, Brooklyn, NY 11230-6312, United States",
+      "formatted_phone_number" : "(718) 382-1226",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.61230399999999,
+            "lng" : -73.9732660
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0b6b89158c768a4b344dd7ee997ddc1083f095be",
+      "name" : "Rose Gourmet",
+      "reference" : "CnRjAAAAj_4eiUynSIN3qbohfk-u4aQY0FvMVlFfPFWEmWwn8YDlKbThqZCsofJMfrwQW54w4rfadh4LgUBWZ-qFU9GtThI0n2INMnMzzQxTo0gS9WcQwyucmUEQEQJrNmf5lmWvEhqxfhQvg-LmjSqOMODg5hIQLsPB_RDQsbeSaKqo9sqy8xoUvwkkaxpOTzMoeL5lB4BfCxyFtgw",
+      "types" : [ "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=6720035017578389459",
+      "vicinity" : "McDonald Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

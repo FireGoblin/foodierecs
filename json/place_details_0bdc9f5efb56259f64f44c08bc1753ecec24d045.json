@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1232",
+            "short_name" : "1232",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Avenue U",
+            "short_name" : "Avenue U",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11229-4102",
+            "short_name" : "11229-4102",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1232 Avenue U, Brooklyn, NY 11229-4102, United States",
+      "formatted_phone_number" : "(718) 336-2338",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.5982950,
+            "lng" : -73.958910
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0bdc9f5efb56259f64f44c08bc1753ecec24d045",
+      "name" : "Yee Kee Restaurants Inc",
+      "reference" : "CnRtAAAAXc1ITKcbtqZ6cQ850flzyCatk8N_2pU0rkITtHMi1TFzn8c6RgpHRMRPUu9ulY7_uzZaVwKlWcJHBR-eUzX0rXy2KrrKZ6fY1F0qlr2JMZNbyyHHR9gXSCAUJRynjwd-ZtAZAp27Zpz5h9JM9uZt6BIQsIoPatn6DP3Pod_XVpEqqRoUGiv5vgZaQqWBbn88WtHmL9WsWhc",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=440777299027710256",
+      "vicinity" : "Avenue U, Brooklyn"
+   },
+   "status" : "OK"
+}

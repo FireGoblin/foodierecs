@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "679",
+            "short_name" : "679",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Flatbush Avenue",
+            "short_name" : "Flatbush Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11225-5601",
+            "short_name" : "11225-5601",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "679 Flatbush Avenue, Brooklyn, NY 11225-5601, United States",
+      "formatted_phone_number" : "(718) 703-0408",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6567570,
+            "lng" : -73.9599410
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1ca2c22c6d704247efeff7ba8303f5c43aa88f46",
+      "name" : "El Castillo De Las Rosas",
+      "reference" : "CnRvAAAA2ba72K0WtKSdBbyY2gTO7PoQzTRRek6c1cTzL-DMj_vuHVKDyDqFIRYN-lA7WPNKTxgEWwS26-y4rSQaowRrDpEWpQ3GI9MjHqQ_aF2vyKSBXveD5TWbDpOO432lIM8qVfyTem6_UUbvyO2XVLzqaxIQbXm2msVV5Zts0wIiPhW5mRoUOfs3t-p4nXYsoVxvaMXOgqVnkpQ",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=14182014907356316403",
+      "vicinity" : "Flatbush Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

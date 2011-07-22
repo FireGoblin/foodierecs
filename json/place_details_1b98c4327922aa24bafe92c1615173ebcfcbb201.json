@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "449",
+            "short_name" : "449",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Kings Hwy # E",
+            "short_name" : "Kings Hwy # E",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11223-1760",
+            "short_name" : "11223-1760",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "449 Kings Hwy # E, Brooklyn, NY 11223-1760, United States",
+      "formatted_phone_number" : "(718) 339-1321",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6044340,
+            "lng" : -73.9733830
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "1b98c4327922aa24bafe92c1615173ebcfcbb201",
+      "name" : "Green Apple",
+      "reference" : "CnRhAAAA5qC0bx6B4dsKbgFbjudFwqoSCRGDOZO5D9I-RMPFPlCAiQrOL06FaU0Z01sjAKWIrZNV8SfObhVwBtkLVERpCfaUesgM_9-K13OUvXYFKZ51acIBfMdyrkUWTnKvi1PGr1FpB8sWzVqlLQwPcoJrlhIQzgtDFO12PCmj_rMcxBlokxoU2uoVvMFiHR6XwiGJdiwj8OBuPzo",
+      "types" : [ "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=5188417459493638094",
+      "vicinity" : "Kings Hwy # E, Brooklyn"
+   },
+   "status" : "OK"
+}

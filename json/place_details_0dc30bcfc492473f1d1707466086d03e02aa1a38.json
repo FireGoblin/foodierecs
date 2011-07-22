@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "22-26",
+            "short_name" : "22-26",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Court Street",
+            "short_name" : "Court Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11201",
+            "short_name" : "11201",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "22-26 Court Street, Brooklyn, NY 11201, United States",
+      "formatted_phone_number" : "(718) 624-1107",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6934080,
+            "lng" : -73.9907590
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0dc30bcfc492473f1d1707466086d03e02aa1a38",
+      "name" : "Pizza Hut",
+      "reference" : "CmRfAAAAGI0IR6izBfuoRo1hxEqd1aufN87Fp70TQr9-C3CCDNWrDFShG6jGTPMeuVQI8kqI1WRkt8JPpzN2YFUZSqCIV10-YsU-FMhVxKIerKQWesEf-9zS9yd21nRjOwoqRqzKEhCBStJyaWuB673JSOD3HY06GhT9FYLGbCdJv5cslb56f8Hgj7FtkQ",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=7257096492504862602",
+      "vicinity" : "Court Street, Brooklyn"
+   },
+   "status" : "OK"
+}

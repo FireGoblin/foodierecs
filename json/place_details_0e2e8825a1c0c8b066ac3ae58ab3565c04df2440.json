@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1012",
+            "short_name" : "1012",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Avenue I",
+            "short_name" : "Avenue I",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11230-2906",
+            "short_name" : "11230-2906",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1012 Avenue I, Brooklyn, NY 11230-2906, United States",
+      "formatted_phone_number" : "(718) 377-4242",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6270020,
+            "lng" : -73.96609699999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0e2e8825a1c0c8b066ac3ae58ab3565c04df2440",
+      "name" : "Brooklyn Eruv Association",
+      "reference" : "CnRvAAAAG7vE3QPQ7KRsWEcnqcmndtjb5JXyVkAhTtbeqPNiN-96GbftoBxigr2PLyCXFAmtY2omY44N-PMxAFGMXn5OPBCjKf2Cu1vGureHn0AHM14MMJm0QgxNj7TSbiLZzDuRzL5QFZSiAdNxDlLXOvT2gxIQuFZGWjaQr5a3p9iO8KoDTBoUrDNO2SACbmkGeTKkouwT4Of8dnM",
+      "types" : [ "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=1694773180755154122",
+      "vicinity" : "Avenue I, Brooklyn"
+   },
+   "status" : "OK"
+}

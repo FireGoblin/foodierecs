@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "686",
+            "short_name" : "686",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "5th Avenue",
+            "short_name" : "5th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11215-6309",
+            "short_name" : "11215-6309",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "686 5th Avenue, Brooklyn, NY 11215-6309, United States",
+      "formatted_phone_number" : "(718) 499-3857",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6616230,
+            "lng" : -73.99333399999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0e73a0f8ffaf661cbf1802f05ea24377c3624030",
+      "name" : "Luigi's Pizza",
+      "rating" : 4.0,
+      "reference" : "CnRlAAAAiYo79D8mt8obwm51B1FBcHwn7ARjHe43Ex6onz8jzqWIen9bC8JGbn47yH6kZGTOgQD0Vs1Zke8ZaKoqZk80y672GGvBFnLChm2GtPkK5_zkj-5HhVcXmYwHAAeznweKrvDd8clAmHM00MuusVgIVhIQDAvkH-nTHGFy9Z24rt6K9BoUXK8Bl0fBdEcWMluHJ5buIGIfW9E",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=14040834042213958662",
+      "vicinity" : "5th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

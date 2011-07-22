@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "7416",
+            "short_name" : "7416",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "13th Avenue",
+            "short_name" : "13th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11228-2021",
+            "short_name" : "11228-2021",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "7416 13th Avenue, Brooklyn, NY 11228-2021, United States",
+      "formatted_phone_number" : "(718) 680-6616",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.62071299999999,
+            "lng" : -74.0073860
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0dba9f9d183ba72a4c1638ad34e39df29739cd72",
+      "name" : "Park's Deli & Grocery",
+      "reference" : "CnRtAAAAKghMRvo56dgQoVBZkewPcL6xwXdL6PAaYHkELbGIxoTT2Nai_aUPciS4NJ7canTZLaorOH2wGIjuDmjFpiIoUAFrKoEqufUD0ky4C0zhofE0hFrAP3U74aI8nk9KcVj5YpPoo_3F1asi9gyZlZLaJBIQ1zIOQmVcEQmV_nCJbBb59hoUEOia8ATRSTShSV4pg8ckkZ61DZI",
+      "types" : [ "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=9620637156983166875",
+      "vicinity" : "13th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "627",
+            "short_name" : "627",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Kings Highway",
+            "short_name" : "Kings Highway",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11223",
+            "short_name" : "11223",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "627 Kings Highway, Brooklyn, NY 11223, United States",
+      "formatted_phone_number" : "(718) 627-5227",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6061740,
+            "lng" : -73.9658290
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1bc177081be45e2028cacab946348f9087b6f503",
+      "name" : "SUSHI K BAR II",
+      "reference" : "CnRlAAAAFfv3EOrRf8SKSAqYXVM93F2JmbZG48e4-FY2XZcpHaaXWZ63M85A6s4hBgnI0ZtZ74EVIk49kyWLTBpryP13LDM8j_adAsfADuwDX0wiNACUC7g8hyMGw6fPFkgMsvuKXW3EQHnABrdUVW1OgcCWwRIQBcIubeJgV9KAYmADclmfKxoUqJlD8_MLWBpreEATd72AtzAbRv0",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=8526462153876880340",
+      "vicinity" : "Kings Highway, Brooklyn"
+   },
+   "status" : "OK"
+}

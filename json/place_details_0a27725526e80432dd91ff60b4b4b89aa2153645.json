@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "2605",
+            "short_name" : "2605",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Bedford Avenue",
+            "short_name" : "Bedford Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11226-7603",
+            "short_name" : "11226-7603",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "2605 Bedford Avenue, Brooklyn, NY 11226-7603, United States",
+      "formatted_phone_number" : "(718) 462-0155",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6397370,
+            "lng" : -73.9541550
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0a27725526e80432dd91ff60b4b4b89aa2153645",
+      "name" : "99 Cents Supermarket",
+      "reference" : "CnRrAAAAeJu53S2FNzdQVOYBGltIfoX2BhQ64KW6oV87K__dL5K_KfdguphOifW-m8TYao0tRqxTHzSNh_tHX1hWeNlI4YoQKq58oQycNav6FvXP7-qXZjKNc-W2TnPA23VmbR-hXHj7e9DtWyHfD14bUtDHOxIQ8NYEfXdDJyNCiRVXGPqJGRoUQTZvZf2AwlejlJmKx9223I8eQjw",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=5993234736361777495",
+      "vicinity" : "Bedford Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

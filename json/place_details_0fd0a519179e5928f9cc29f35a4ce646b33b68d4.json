@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1300",
+            "short_name" : "1300",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "8th Avenue",
+            "short_name" : "8th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11215",
+            "short_name" : "11215",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "1300 8th Avenue, Brooklyn, NY 11215, United States",
+      "formatted_phone_number" : "(718) 768-3133",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6633490,
+            "lng" : -73.9812460
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0fd0a519179e5928f9cc29f35a4ce646b33b68d4",
+      "name" : "13th Street Cafe",
+      "reference" : "CnRnAAAAD0TrZNVMvR-MtIjWc7U7vW_Gxns9yiC9AegY9asJrCISe9vz9LjcVzcbFA23CZlxEZrAsuT_Yp_-X58JFBqi5-61EQsMsGB3Tc287CArBSDHmSr5EKMRklXotkuUPpfLk6IPXsx8bfqhFBQmPzFLZRIQZPeHAgGmhtEwbKMh3aAw3RoU_r4zkcfxzyi-46O9gNrbvL0tdZ4",
+      "types" : [ "cafe", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=2537794847873132368",
+      "vicinity" : "8th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

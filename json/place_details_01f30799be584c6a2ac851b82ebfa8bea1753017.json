@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "5600",
+            "short_name" : "5600",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "1st Avenue",
+            "short_name" : "1st Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11220-2550",
+            "short_name" : "11220-2550",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "5600 1st Avenue, Brooklyn, NY 11220-2550, United States",
+      "formatted_phone_number" : "(718) 680-6688",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.649060,
+            "lng" : -74.02496599999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "01f30799be584c6a2ac851b82ebfa8bea1753017",
+      "name" : "Munchick Foods Co Inc",
+      "reference" : "CnRtAAAAJ_Kb1aScNkjRfAl7HEcOGQcXCJWn1cIYOtHJ7y24ZNJw9OWSds6Ujg1MRSyIpWmpyCaRJoigO0MV9l8fKedNgZrGOd7ldcvJ1ohkL6OnD0z7EBedEQuL5eQ9sSMAuk3jQe1KX_3xGHORksXzytuSmRIQy5JzTyzF9zgMkHpVv_-JwBoUEJrJgF3i9m2k6VHcaiDrr8WEqEQ",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=14409628856612418587",
+      "vicinity" : "1st Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

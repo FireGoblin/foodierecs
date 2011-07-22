@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "2110",
+            "short_name" : "2110",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Avenue X",
+            "short_name" : "Avenue X",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11235-2911",
+            "short_name" : "11235-2911",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "2110 Avenue X, Brooklyn, NY 11235-2911, United States",
+      "formatted_phone_number" : "(718) 743-8099",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.5928060,
+            "lng" : -73.94864099999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0ae580119e8297f57415da8a71532fa96b55b4e7",
+      "name" : "Anthony's Place",
+      "rating" : 4.40,
+      "reference" : "CnRmAAAAqrCrCz5uHnqI7OBDP4Bvqf8oImuN8WCIXQHe5VPWs1FzpAVP5eB0b5NEBcxBpVglywoHjD2M_pZ58CjmMxvInrxkPbrcyr_OIIpQfSc1b7JlrVJtuC5nS3vIrE2je_nR4U2m5lhmtnTR3bq3FvxuABIQYiExI0yuJdBRQUPk6hlkpRoUkhd2rb_PEo1tFIRTBRYmkLD5e9k",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=17316299814642602250",
+      "vicinity" : "Avenue X, Brooklyn"
+   },
+   "status" : "OK"
+}

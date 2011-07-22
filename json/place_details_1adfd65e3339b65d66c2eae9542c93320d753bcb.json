@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "462",
+            "short_name" : "462",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "36th Street",
+            "short_name" : "36th Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11232-2560",
+            "short_name" : "11232-2560",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "462 36th Street, Brooklyn, NY 11232-2560, United States",
+      "formatted_phone_number" : "(718) 369-8937",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6530690,
+            "lng" : -74.0028370
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1adfd65e3339b65d66c2eae9542c93320d753bcb",
+      "name" : "Green Fig Bakery Cafe",
+      "reference" : "CnRsAAAAz7cNZKuvMuXbIg9pUpYno0-sxoN4t8mVWUyVWAdoi6xAMiv6YXeH65DegTWz6Ujv7K5JmihGdMKCdFZJtCQaIY4lMGzW9qOtqzWJRwHIObBm3FeuObz899Boi8RIQuPh-WGhiwXKc8ZtClyRfzfWTxIQy4ipHQ42Dolw-Axi6d_BbRoUAMQAFj1zsdBFeT4I1_EAO1IMDVs",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=9211251655976419953",
+      "vicinity" : "36th Street, Brooklyn"
+   },
+   "status" : "OK"
+}

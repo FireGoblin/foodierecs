@@ -1,0 +1,57 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "10",
+            "short_name" : "10",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Newkirk Plaza",
+            "short_name" : "Newkirk Plaza",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "BROOKLYN",
+            "short_name" : "BROOKLYN",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kings",
+            "short_name" : "Kings",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11226",
+            "short_name" : "11226",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "10 Newkirk Plaza, BROOKLYN, NY 11226, United States",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6354590,
+            "lng" : -73.9628180
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0ac5a59065ed42860248ae018eb33f668c5dd588",
+      "name" : "Dunkin' Donuts",
+      "reference" : "CnRkAAAAt8yLmcC4sNAD94ZnUoZja9mkIhunYU12SSZEt6yFfi--x0jYQnuMb2A7OUiu4DH-YqqHGoBqJPwDKWv_0yOHUT-YTaxPbjo72nPEQkcCU9GwXe3opaXYTQibTmDGY1_Ug30tPOkYUPuaia2c-WxtshIQFGbxWHc0E7U46szou3vW_xoU8EP1zOmq6Gn5fViAEOLyIEeglOs",
+      "types" : [ "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=4193831954554779585",
+      "vicinity" : "Newkirk Plaza, BROOKLYN"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "5007",
+            "short_name" : "5007",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "16th Avenue",
+            "short_name" : "16th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11204-1405",
+            "short_name" : "11204-1405",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "5007 16th Avenue, Brooklyn, NY 11204-1405, United States",
+      "formatted_phone_number" : "(718) 438-9833",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6301980,
+            "lng" : -73.98625699999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "00d0d7c752baac6aacb9c8f486087a90d79b9123",
+      "name" : "Moti's",
+      "reference" : "CmRcAAAAZqSKvmxQpLtixwhu-ZUnKBVZZV_QSLitr2pVoJLkUDPIGhfgxAQ_4-F2w-3v91yxaJm98dsozIvHU0h4B4-Q_vMhMQB4_zj_qTT5a6dM1pIbylErieC3CcT1N-mBWlc2EhDBjkKoXhZrC13lSMvXgLmfGhQcQavkaQAqes_eN-ROytE_ZlUiSg",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=3539065684156944519",
+      "vicinity" : "16th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

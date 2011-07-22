@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "504",
+            "short_name" : "504",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Empire Boulevard",
+            "short_name" : "Empire Boulevard",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11225-3220",
+            "short_name" : "11225-3220",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "504 Empire Boulevard, Brooklyn, NY 11225-3220, United States",
+      "formatted_phone_number" : "(718) 493-9045",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6642060,
+            "lng" : -73.94547799999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0fbd49131abd775ef59c1efb5b3da398a269d7fa",
+      "name" : "Klein's Grocery",
+      "reference" : "CnRmAAAAWKQ5pdnyIRnuFd75EWGs79K9zF6W_A6g1XmaVYSBZOAV2yYms6rs8QO9N-TfBf6qjnFRrkKnVsr6u0jsj1nj0P3odTunIkxKhiKLNQs_Ei7hbyoNGuDt9z8UISy8BquZWKv2ZcXl2nIMAB29saUUXRIQO_kNYivvSljHFLIlSkYWkRoUjBLM7d3rzGWCzKkUvhYeo7KfAlc",
+      "types" : [ "bakery", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=4337059797126910045",
+      "vicinity" : "Empire Boulevard, Brooklyn"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "283",
+            "short_name" : "283",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Smith Street",
+            "short_name" : "Smith Street",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11231-4739",
+            "short_name" : "11231-4739",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "283 Smith Street, Brooklyn, NY 11231-4739, United States",
+      "formatted_phone_number" : "(718) 875-1880",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6823140,
+            "lng" : -73.9932950
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0e8ade09fcaf691d209df73dc0c9f9c2a8456422",
+      "name" : "Zaytoons Inc",
+      "rating" : 3.90,
+      "reference" : "CnRiAAAAljPC2Me8QI_BZxs2rT4DC6mrVvytSOXqNr9MJ0nM6gF02D8XQr_TAqlId1UXVU8mqk1phwtXXQ3H1OeJnK_FUqKMBdU2t8h-Ow2oD3cgo3A6F0IgxDLAJqBnnLi-8U19jegdUsu8eh4u-l8QEc6j-xIQ3azhQca8rZ6IFUDrfj8I9xoUEf0gTR2_3mOTMm_dWWtmKHX2cJs",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=5539340845563511443",
+      "vicinity" : "Smith Street, Brooklyn"
+   },
+   "status" : "OK"
+}

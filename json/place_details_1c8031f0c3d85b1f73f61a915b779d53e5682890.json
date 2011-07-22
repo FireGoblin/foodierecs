@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "3524",
+            "short_name" : "3524",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Flatlands Avenue",
+            "short_name" : "Flatlands Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11234-2609",
+            "short_name" : "11234-2609",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "3524 Flatlands Avenue, Brooklyn, NY 11234-2609, United States",
+      "formatted_phone_number" : "(718) 377-3377",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6177920,
+            "lng" : -73.9404670
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "1c8031f0c3d85b1f73f61a915b779d53e5682890",
+      "name" : "Supermarket Of Ave N inc",
+      "reference" : "CnRwAAAAe08Q1UKT5fIxA-2UtpU_YcYS_r4wbPkgQ0LKqXdHu91ByKeinJqpk0FzbQVrmDoTFrTgxnu-uZzpBQq8Dvpj7PbBnoXdhKe7_jFaTZZ9-q4XvoiNGgxlWJ5tsctJ8jjg0kuV_Dd7LiyxwdNTkCJPRxIQ0k04gbchGb8BTJResDOBWhoUZtX-uvlRFTELOShURFJeC0b4QQo",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=15646949075650092354",
+      "vicinity" : "Flatlands Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

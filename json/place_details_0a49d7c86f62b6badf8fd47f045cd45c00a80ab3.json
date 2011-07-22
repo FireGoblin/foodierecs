@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "5115",
+            "short_name" : "5115",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "13th Avenue",
+            "short_name" : "13th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11219-3560",
+            "short_name" : "11219-3560",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "5115 13th Avenue, Brooklyn, NY 11219-3560, United States",
+      "formatted_phone_number" : "(718) 851-7728",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6333540,
+            "lng" : -73.99341299999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0a49d7c86f62b6badf8fd47f045cd45c00a80ab3",
+      "name" : "Strauss Bakery",
+      "reference" : "CnRlAAAA3LDZ3SXa4JruBHxxYHVxZXGFvFwmkDYrXG6vs4bViVwfcYaKLP8EcWk-8w7r5Et9hajnYASuMcZ_WFBnkbTihreetwuTcH7OniR7HqH_m8RBsCBCrnQ03J2-M57ZJGe0cwyCWKIol--vZy2ZJqkPjRIQHg4d4BHypHBLnpJNOdec5xoUgZWe0-IvOXVPmuf7dpemg0ognbc",
+      "types" : [ "bakery", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=9805173401259140859",
+      "vicinity" : "13th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

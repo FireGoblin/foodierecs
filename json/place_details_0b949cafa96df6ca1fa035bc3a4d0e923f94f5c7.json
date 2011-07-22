@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "854",
+            "short_name" : "854",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "4th Avenue",
+            "short_name" : "4th Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11232-1839",
+            "short_name" : "11232-1839",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "854 4th Avenue, Brooklyn, NY 11232-1839, United States",
+      "formatted_phone_number" : "(718) 788-6013",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6574250,
+            "lng" : -74.0014290
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0b949cafa96df6ca1fa035bc3a4d0e923f94f5c7",
+      "name" : "Twin Lin Garden Inc",
+      "reference" : "CnRrAAAA3emiCZZzI9rAJtKEkiO9fyQM9TXqGn8gSL5E9o4fuq9W9qN9oTlILSV4vjc_Y1PcVK8SNAyMUwDoHD32YUtm2ZGj-WrW2Y3sT9p9fxF0Vrd6i0YSaGLO_Pk_7ZI-GV6fKTvH20Z54L285bmPPrps-hIQRVZtRAqpHXtP7Z2RRvkT0hoUJXYZEDqQ8MpQ_gKxjacGwB046Vk",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=17267515835882753543",
+      "vicinity" : "4th Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

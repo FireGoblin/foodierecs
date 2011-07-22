@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "942",
+            "short_name" : "942",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Flatbush Avenue",
+            "short_name" : "Flatbush Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11226-4018",
+            "short_name" : "11226-4018",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "942 Flatbush Avenue, Brooklyn, NY 11226-4018, United States",
+      "formatted_phone_number" : "(718) 856-7022",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6484760,
+            "lng" : -73.9585720
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "0c64fbd56d93a873ed4e3c2745a67a475386be30",
+      "name" : "KFC",
+      "reference" : "CmRaAAAAmKjcdoiF2aruULwPGr0ZQcLqWKE6YPiaj5L1S4mU7ehfeTzE8ZJHnJGosgici0e_OZG9umdb_oY8WWYIKoKufxhnVnXU7kz6bZuUBZXfG4SF-ZNidvS_NeQ5dCzxsHk-EhDAkqIP8gaXfJj89KZOPx9QGhRYONJsWN8we9Y-shcVq0pbgAgslQ",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=17614770426461567086",
+      "vicinity" : "Flatbush Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}

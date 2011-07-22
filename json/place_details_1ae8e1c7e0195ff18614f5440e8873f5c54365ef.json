@@ -1,0 +1,49 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "2",
+            "short_name" : "2",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Ditmas Ave # A",
+            "short_name" : "Ditmas Ave # A",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11218-4929",
+            "short_name" : "11218-4929",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "2 Ditmas Ave # A, Brooklyn, NY 11218-4929, United States",
+      "formatted_phone_number" : "(718) 435-2233",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.63527699999999,
+            "lng" : -73.9788720
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id" : "1ae8e1c7e0195ff18614f5440e8873f5c54365ef",
+      "name" : "Corner Cafe",
+      "rating" : 3.80,
+      "reference" : "CnRiAAAASJGyD0M5TXB1CnN2gVjNgPJrPh6yKAZzAjHnWCbpfO3eHdn42hy0ZV3iFv2B6alZ3kOjmCoYSzxaYgDrnrOZYWlKyuPfTvyvNnFgFouQdnqS9vY0-NMSte1wgY4GM3SrF3GzqJZmmcZlwqOh9wVVHxIQZtclz0QL77xysx0bmAWGSxoUtmuVPvEPXX1P8n_1f6y0cf5-aDs",
+      "types" : [ "restaurant", "food", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=13540970055181504763",
+      "vicinity" : "Ditmas Ave # A, Brooklyn"
+   },
+   "status" : "OK"
+}

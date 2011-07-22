@@ -1,0 +1,48 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "251",
+            "short_name" : "251",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Schenectady Avenue",
+            "short_name" : "Schenectady Avenue",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Brooklyn",
+            "short_name" : "Brooklyn",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "NY",
+            "short_name" : "NY",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "11213-3926",
+            "short_name" : "11213-3926",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "formatted_address" : "251 Schenectady Avenue, Brooklyn, NY 11213-3926, United States",
+      "formatted_phone_number" : "(718) 774-8753",
+      "geometry" : {
+         "location" : {
+            "lat" : 40.6700260,
+            "lng" : -73.93352899999999
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "0f55772142b8064cb33329582c31f5160cb136d4",
+      "name" : "Kim's Fish Market",
+      "reference" : "CnRpAAAAQbCowU1CN8d7CprCGAYx3HDjgtenWMoXa7Lgy3zJGa-IUCzXr4GMQlsE4qlOTpscOcR1oZQHPez2Esurxhyd4ax5rdJe5o-m28QKltTnbcUJrRw14-5j5l1JSE2t7acB_cuStq9z3ZOr7W456da9nBIQNtxDqKUKO6Hf89ezKxSjSxoU1PtibdbHB5UYBOlhlickOZMbOEU",
+      "types" : [ "grocery_or_supermarket", "food", "store", "establishment" ],
+      "url" : "http://maps.google.com/maps/place?cid=17079369693848190206",
+      "vicinity" : "Schenectady Avenue, Brooklyn"
+   },
+   "status" : "OK"
+}
