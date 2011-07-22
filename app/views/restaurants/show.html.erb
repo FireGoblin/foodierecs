@@ -68,6 +68,7 @@
 		
 		<div class="foodieList">
 			<b><%= "Foodies who like " + @restaurant.name %>:</b> <br/>
+			<% @foodie = true %>
 			<% unless @restaurant.opinions.empty? %>
 				<table class="opinions" summary="User opinions">
 					<%= render @opinions %>
