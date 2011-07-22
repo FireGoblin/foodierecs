@@ -1,3 +1,4 @@
 class User < ActiveRecord::Base
-	has_friendly_id :facebook_url, :use_slug => true
+	has_friendly_id :username, :use_slug => true
+	has_many :opnions
 end

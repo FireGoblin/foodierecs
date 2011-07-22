@@ -1,30 +1,90 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>First name:</b>
-  <%= @user.first_name %>
-</p>
-
-<p>
-  <b>Last name:</b>
-  <%= @user.last_name %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%= @user.email %>
-</p>
-
-<p>
-  <b>Facebook url:</b>
-  <%= @user.facebook_url %>
-</p>
-
-<p>
-  <b>Foodie:</b>
-  <%= @user.foodie %>
-</p>
+<html>
+<head>
 
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<title>Restaurant recommendations from Foodies - foodierecs</title>
+
+<%= stylesheet_link_tag "userStyle", "http://fonts.googleapis.com/css?family=Lobster+Two", 
+										"http://fonts.googleapis.com/css?family=News+Room" %>
+<%= javascript_include_tag :defaults %>
+
+
+<!--This is for displaying on iOS -->
+<meta name="viewport" content="width=500">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="apple-touch-icon-precomposed" href="../images/appleLogo.jpg" />
+
+
+<!--<script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bookmark_bubble.js"></script>-->
+<!--<script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bubble_example.js"></script>-->
+
+</head>
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500);" >
+<div id="fb-root"></div>
+	<!--
+	<div class="backgroundImageWrap">
+		<img src="../images/bar.jpg" class="backgroundImage" width="1264" height="790">
+	</div>
+	-->
+	<div id="userContent">
+		<div id="header">
+			foodierecs
+		</div>
+		
+		<div id="userInfo">
+			<div id="userName">
+				<%= @user.first_name + " " + @user.last_name %>
+			</div>
+			
+			<div id="userFoodieYes">
+				<% if @user.foodie%>
+					Foodie
+				<% else %>
+					Non-Foodie
+				<% end %>
+			</div>
+		</div>
+		
+		<div class="restaurantListHeader"><b>Restaurants Michael likes:</b> </div>
+		<div class="restaurantList">
+			<div class="restaurantNameLeft"><a href="">JoeDoe</a>
+				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
+				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
+				<div class="restaurantRecommend">
+					<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href="http://metaphoricallydelicious.com" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
+					<a href=""><img src="../images/not-for-foodies.jpg" /></a>
+				</div>
+			</div>
+			<div class="restaurantNameRight"><a href="">EEEEEEVENNNNNNN LLOOOGNONNNGNNNNNNGERRRRRRRR BY A LOOTTTTT</a>
+				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
+				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
+				<div class="restaurantRecommend">
+					<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href="http://metaphoricallydelicious.com" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
+					<a href=""><img src="../images/not-for-foodies.jpg" /></a>
+				</div>
+			</div>
+			<div class="restaurantNameLeft"><a href="">Reeeeeallllllyyyyyyyy LOOOOOOOOOOONG</a>
+				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
+				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
+				<div class="restaurantRecommend">
+					<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href="http://metaphoricallydelicious.com" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
+					<a href=""><img src="../images/not-for-foodies.jpg" /></a>
+				</div>
+			</div>
+			<div class="restaurantNameRight"><a href="">Reeeeeallllllyyyyyyyy LOOOOOOOOOOONG</a>
+				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
+				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
+				<div class="restaurantRecommend">
+					<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href="http://metaphoricallydelicious.com" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
+					<a href=""><img src="../images/not-for-foodies.jpg" /></a>
+				</div>
+			</div>
+		</div>		
+		
+		<!--Gotta make the border stretch all the way -->
+		<img src="../images/footer.jpg" />
+		
+	</div>
+
+</body>
+</html>

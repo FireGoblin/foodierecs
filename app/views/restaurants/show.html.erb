@@ -1,110 +1,102 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Name:</b>
-  <%= @restaurant.name %>
-</p>
-
-<p>
-  <b>Address:</b>
-  <%= @restaurant.address %>
-</p>
-
-<p>
-  <b>Street number:</b>
-  <%= @restaurant.street_number %>
-</p>
-
-<p>
-  <b>Street:</b>
-  <%= @restaurant.street %>
-</p>
-
-<p>
-  <b>Phone:</b>
-  <%= @restaurant.phone %>
-</p>
-
-<p>
-  <b>Lat:</b>
-  <%= @restaurant.lat %>
-</p>
-
-<p>
-  <b>Long:</b>
-  <%= @restaurant.long %>
-</p>
-
-<p>
-  <b>Icon:</b>
-  <%= @restaurant.icon %>
-</p>
-
-<p>
-  <b>Google:</b>
-  <%= @restaurant.google_id %>
-</p>
-
-<p>
-  <b>Reference:</b>
-  <%= @restaurant.reference %>
-</p>
-
-<p>
-  <b>Type1:</b>
-  <%= @restaurant.type1 %>
-</p>
-
-<p>
-  <b>Type2:</b>
-  <%= @restaurant.type2 %>
-</p>
-
-<p>
-  <b>Type3:</b>
-  <%= @restaurant.type3 %>
-</p>
-
-<p>
-  <b>Type4:</b>
-  <%= @restaurant.type4 %>
-</p>
-
-<p>
-  <b>Url:</b>
-  <%= @restaurant.url %>
-</p>
-
-<p>
-  <b>Vicinity:</b>
-  <%= @restaurant.vicinity %>
-</p>
-
-<p>
-  <b>Rating:</b>
-  <%= @restaurant.rating %>
-</p>
-
-<p>
-  <b>Foodie likes:</b>
-  <%= @restaurant.foodie_likes %>
-</p>
-
-<p>
-  <b>Foodie dislikes:</b>
-  <%= @restaurant.foodie_dislikes %>
-</p>
-
-<p>
-  <b>Normal likes:</b>
-  <%= @restaurant.normal_likes %>
-</p>
-
-<p>
-  <b>Normal dislikes:</b>
-  <%= @restaurant.normal_dislikes %>
-</p>
+<html>
+<head>
 
 
-<%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
-<%= link_to 'Back', restaurants_path %>
+<title>Restaurant recommendations from Foodies - foodierecs</title>
+
+<%= stylesheet_link_tag "restaurantStyle", "http://fonts.googleapis.com/css?family=Lobster+Two", 
+										"http://fonts.googleapis.com/css?family=News+Room" %>
+<%= javascript_include_tag :defaults %>
+
+
+<!--This is for displaying on iOS -->
+<meta name="viewport" content="width=500">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="apple-touch-icon-precomposed" href="../images/appleLogo.jpg" />
+
+<!--<script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bookmark_bubble.js"></script>
+<script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bubble_example.js"></script>-->
+
+</head>
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500);" >
+<div id="fb-root"></div>
+	<!--facebook connect-->
+	<script>
+	  window.fbAsyncInit = function() {
+    	FB.init({appId: '213050112074083', status: true, cookie: true,
+	             xfbml: true});
+	  };
+	  (function() {
+	    var e = document.createElement('script'); e.async = true;
+    	e.src = document.location.protocol +
+	      '//connect.facebook.net/en_US/all.js';
+    	document.getElementById('fb-root').appendChild(e);
+	  }());
+	</script>
+
+
+	<!--
+	<div class="backgroundImageWrap">
+		<img src="../images/bar.jpg" class="backgroundImage" width="1264" height="790">
+	</div>
+	-->
+	<div id="restaurantContent">
+		<div id="header">
+			foodierecs
+		</div>
+		
+		<div id="restaurantInfo">
+			<div id="restaurantName">
+				<%= @restaurant.name %>
+			</div>
+			
+			<div id="restaurantAddress">
+				<%= @restaurant.address %>
+			</div>
+		</div>
+		
+		<div class="restaurantRecommend">
+			<fb:like href="http://metaphoricallydelicious.com" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
+			<a href=""><img src="../images/not-for-foodies.jpg" /></a>
+		</div>
+		
+		<script>
+			FB.Event.subscribe('auth.sessionChange', function(response) {
+				alert("Hello World! Like created!");
+  			});
+		</script>
+		
+		<div class="foodieList">
+			<b>Foodies who like JoeDoe:</b> <br/>
+			<div class="foodieName"><a href="">Sidharth Kakkar</a>
+				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
+				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
+			</div>
+			<div class="foodieName"><a href="">Michael Overstreet</a>
+				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
+				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
+			</div>
+			<div class="foodieName"><a href="">Reeeeeallllllyyyyyyyy LOOOOOOOOOOONG</a>
+				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
+				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
+			</div>
+		</div>
+		
+		<div class="likeFacePile">
+			<b>Everyone who likes JoeDoe:</b> <br />
+			<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:facepile href="http://www.metaphoricallydelicious.com/2010/12/sushi-toro-chicago/" width="200" max_rows="5"></fb:facepile>
+		</div>
+		
+		<div class="commentsWrapper">
+		<div class="restaurantComments">
+			<div id="fb-root"></div>
+			<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+			<!--Replace the URL for this page and width here-->
+			<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:comments href="http://developers.facebook.com/docs/reference/plugins/comments/" num_posts="5" width="500"></fb:comments>
+		</div>
+		</div>
+		
+	</div>
+
+</body>
+</html>
