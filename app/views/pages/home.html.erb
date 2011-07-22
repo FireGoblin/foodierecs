@@ -50,7 +50,8 @@
 			<div id="fb-root"></div>
 		    <script>
 	  			FB.Event.subscribe('auth.login', function () {
-	      			window.location = "<%= url_for( :action => 'main', :controller => 'pages', :only_path => false ) %>";
+	      			alert(response);
+					window.location = "<%= url_for( :action => 'main', :controller => 'pages', :only_path => false ) %>";
 		 		});
 	 		</script>
     		<script>
