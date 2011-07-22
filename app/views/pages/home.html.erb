@@ -4,7 +4,8 @@
 <title>Restaurant recommendations from Foodies - foodierecs</title>
 
   <%= stylesheet_link_tag "homeStyle", "http://fonts.googleapis.com/css?family=Lobster+Two", "http://fonts.googleapis.com/css?family=News+Room" %>
-  <%= javascript_include_tag :defaults, "http://connect.facebook.net/en_US/all.js" %>
+  <%= javascript_include_tag :defaults, "http://connect.facebook.net/en_US/all.js", 					
+										"http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" %>
 
 <!--This is for displaying on iOS -->
 <meta name="viewport" content="width=500">
@@ -53,7 +54,25 @@
 	      			/*FB.api('/me', function(response) {
 					  alert(response.email);
 					});*/
-					window.location = "<%= url_for( :action => 'main', :controller => 'pages', :only_path => false ) %>";
+					//post the info we need
+					FB.api('/me', function(response) {
+						$.post( "<%= url_for( :controller => 'users', :only_path => false )", 
+							{ first_name: response.first_name, last_name: response.last_name,
+								username: response.username, gender: response.gender,
+								email:response.email }, 
+								function( isNewUser ) {
+									if( isNewUser ) { 
+										window.location = "<%= url_for( :action => 'becomeafoodie', :controller => 'pages', 
+																		:only_path => false ) %>"; 
+									}
+									else {
+										window.location = "<%= url_for( :action => 'main', :controller => 'pages', :only_path => false ) %>";
+									}
+								}
+						);
+					})
+					
+					//window.location = "<%= url_for( :action => 'main', :controller => 'pages', :only_path => false ) %>";
 		 		});
 	 		</script>
     		<script>
