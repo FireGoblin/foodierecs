@@ -58,7 +58,8 @@
 					FB.api('/me', function(response) {
 						$.post( "<%= url_for( :controller => 'users', :only_path => false )", 
 							{ first_name: response.first_name, last_name: response.last_name,
-								username: response.username, gender: response.gender,
+								username: response.username, url: response.link,
+								gender: response.gender,
 								email:response.email }, 
 								function( isNewUser ) {
 									if( isNewUser ) { 
