@@ -14,6 +14,8 @@ class UsersController < ApplicationController
   # GET /users/1.xml
   def show
     @user = User.find(params[:id])
+    @opinions = @user.opinions.paginate(:page => params[:page], :per_page => 6)
+    @title = @user.username
 		
     #redirect_to "users/#{@user.[:facebook_url]}"
     respond_to do |format|
@@ -26,6 +28,8 @@ class UsersController < ApplicationController
   # GET /users/new.xml
   def new
     @user = User.new
+    
+    
 
     respond_to do |format|
       format.html # new.html.erb

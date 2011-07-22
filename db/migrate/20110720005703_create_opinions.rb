@@ -10,6 +10,8 @@ class CreateOpinions < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :opinions, :user_id
+    add_index :opinions, :restaurant_id
   end
 
   def self.down

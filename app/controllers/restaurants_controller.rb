@@ -14,6 +14,7 @@ class RestaurantsController < ApplicationController
   # GET /restaurants/1.xml
   def show
     @restaurant = Restaurant.find(params[:id])
+    @title = @restaurant.name
 
     respond_to do |format|
       format.html # show.html.erb

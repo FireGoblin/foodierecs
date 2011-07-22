@@ -45,41 +45,16 @@
 			</div>
 		</div>
 		
-		<div class="restaurantListHeader"><b>Restaurants Michael likes:</b> </div>
+		<div class="restaurantListHeader"><b>Restaurants <%= @user.first_name %> likes:</b> </div>
+		
 		<div class="restaurantList">
-			<div class="restaurantNameLeft"><a href="">JoeDoe</a>
-				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
-				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
-				<div class="restaurantRecommend">
-					<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href="http://metaphoricallydelicious.com" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-					<a href=""><img src="../images/not-for-foodies.jpg" /></a>
-				</div>
-			</div>
-			<div class="restaurantNameRight"><a href="">EEEEEEVENNNNNNN LLOOOGNONNNGNNNNNNGERRRRRRRR BY A LOOTTTTT</a>
-				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
-				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
-				<div class="restaurantRecommend">
-					<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href="http://metaphoricallydelicious.com" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-					<a href=""><img src="../images/not-for-foodies.jpg" /></a>
-				</div>
-			</div>
-			<div class="restaurantNameLeft"><a href="">Reeeeeallllllyyyyyyyy LOOOOOOOOOOONG</a>
-				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
-				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
-				<div class="restaurantRecommend">
-					<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href="http://metaphoricallydelicious.com" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-					<a href=""><img src="../images/not-for-foodies.jpg" /></a>
-				</div>
-			</div>
-			<div class="restaurantNameRight"><a href="">Reeeeeallllllyyyyyyyy LOOOOOOOOOOONG</a>
-				<div class="foodieDish"><span class="recTag">eat:</span> The beef brisket sandwich</div>
-				<div class="foodieDrink"><span class="recTag">drink:</span> The awesome spicy drink whose name I totally forgot</div>
-				<div class="restaurantRecommend">
-					<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href="http://metaphoricallydelicious.com" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-					<a href=""><img src="../images/not-for-foodies.jpg" /></a>
-				</div>
-			</div>
-		</div>		
+			<% unless @user.opinions.empty? %>
+				<table class="opinions" summary="User opinions">
+					<%= render @opinions %>
+				</table>
+				<%= will_paginate @opinions %>
+			<% end %>
+		</div>
 		
 		<!--Gotta make the border stretch all the way -->
 		<img src="../images/footer.jpg" />
