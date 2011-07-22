@@ -19,6 +19,9 @@ FoodierecsTwo::Application.routes.draw do
   
   #root :to => 'pages#index'
   root :to => 'pages#home'
+  
+  match 'main' => 'pages#main'
+  match 'becomeafoodie' => 'pages#becomeafoodie'
  # match 'restaurant/one-if-by-land-two-if-by-sea' => 'pages#restaurant'
   #match 'restaurant/#{x}'
 

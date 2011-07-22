@@ -5,4 +5,11 @@ class PagesController < ApplicationController
 	
 	def index
 	end
+	
+	def main
+	end
+	
+	def becomeafoodie
+	end
+	
 end

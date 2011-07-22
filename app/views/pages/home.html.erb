@@ -4,11 +4,7 @@
 <title>Restaurant recommendations from Foodies - foodierecs</title>
 
   <%= stylesheet_link_tag "homeStyle", "http://fonts.googleapis.com/css?family=Lobster+Two", "http://fonts.googleapis.com/css?family=News+Room" %>
-  <%= javascript_include_tag :defaults %>
-
-<!--The google fonts we are using -->
-<link href="http://fonts.googleapis.com/css?family=lobstertwo" rel="stylesheet" type="text/css" />
-<link href="http://fonts.googleapis.com/css?family=News+Room" rel="stylesheet" type="text/css" />
+  <%= javascript_include_tag :defaults, "http://connect.facebook.net/en_US/all.js" %>
 
 <!--This is for displaying on iOS -->
 <meta name="viewport" content="width=500">
@@ -21,6 +17,20 @@
 </head>
 <!--the onload code is for iOS-->
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500);" >
+	<div id="fb-root"></div>
+  	<script>
+    	window.fbAsyncInit = function() {
+      	//Replace appId with your own
+      	FB.init({appId: '213050112074083', status: true, cookie: true,
+               	xfbml: true});
+    	};
+    	(function() {
+	  		var e = document.createElement('script'); e.async = true;
+      		e.src = document.location.protocol +
+       		'//connect.facebook.net/en_US/all.js';
+   			document.getElementById('fb-root').appendChild(e);
+  		}());
+  	</script>
 
 	<div id="homeContent">
 		<div id="homeTitle">
@@ -38,14 +48,18 @@
 		
 		<div id="fbLogin">
 			<div id="fb-root"></div>
-		    <script src="http://connect.facebook.net/en_US/all.js"></script>
+		    <script>
+	  			FB.Event.subscribe('auth.login', function () {
+	      			window.location = "<%= url_for( :action => 'main', :controller => 'pages', :only_path => false ) %>";
+		 		});
+	 		</script>
     		<script>
 	        	FB.init({ 
     	        appId:'213050112074083', cookie:true, 
         	    status:true, xfbml:true 
 	         });
 		    </script>
-    		<fb:login-button perms="user_checkins,user_likes,email,publish_stream" redirect_uri="http://foodierecs.com/help">
+    		<fb:login-button perms="email,publish_stream" redirect_uri="http://strong-frost-562.heroku.com/main">
     			Login with Facebook
     		</fb:login-button>
     	</div>
