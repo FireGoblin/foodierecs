@@ -6,7 +6,6 @@ count = 0
 Dir.foreach('../total') do |item|
 	next if item == '.' || item == '..'
   count += 1
-  next if count < 1200
   if(count % 100 == 0)
   	puts("#{count}")
 	end
@@ -21,10 +20,21 @@ Dir.foreach('../total') do |item|
   
   if(result_r["address_components"])
   	number = result_r["address_components"][0];
+  	street = result_r["address_components"][1];
+  	borough = result_r["address_components"][2];
   	
-  
-  Restaurant.create!(:name => result_r["name"], :formatted_name => formatted_name, :address => result_r["formatted_address"], :street_number => result_r["address_components"][0]["short_name"], :street => result_r["address_components"][1]["short_name"], :phone => result_r["formatted_phone_number"], :lat => result_r["geometry"]["location"]["lat"], :long => result_r["geometry"]["location"]["lng"], :icon => result_r["icon"], :google_id => result_r["id"], :reference => result_r["reference"], :type1 => result_r["types"][0], :type2 => result_r["types"][1], :type3 => result_r["types"][2], :type4 => result_r["types"][3], :url => result_r["url"], :vicinity => result_r["vicinity"], :rating => result_r["rating"],
-  :foodie_likes => 0, :foodie_dislikes => 0, :normal_likes => 0, :normal_dislikes => 0, :borough => result_r["address_components"][2]["short_name"])
+  	if(number)
+  		number = number["short_name"]
+  	end
+  	if(street)	
+  		street = street["short_name"]
+		end
+		if(borough)
+  		borough = borough["short_name"]
+  	end
+  	
+  Restaurant.create!(:name => result_r["name"], :formatted_name => formatted_name, :address => result_r["formatted_address"], :street_number => number, :street => street, :phone => result_r["formatted_phone_number"], :lat => result_r["geometry"]["location"]["lat"], :long => result_r["geometry"]["location"]["lng"], :icon => result_r["icon"], :google_id => result_r["id"], :reference => result_r["reference"], :type1 => result_r["types"][0], :type2 => result_r["types"][1], :type3 => result_r["types"][2], :type4 => result_r["types"][3], :url => result_r["url"], :vicinity => result_r["vicinity"], :rating => result_r["rating"],
+  :foodie_likes => 0, :foodie_dislikes => 0, :normal_likes => 0, :normal_dislikes => 0, :borough => borough)
   
 	else
 		
