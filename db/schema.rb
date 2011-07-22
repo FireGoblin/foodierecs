@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110721232135) do
+ActiveRecord::Schema.define(:version => 20110722045155) do
 
   create_table "feeds", :force => true do |t|
     t.integer  "feed_id"
@@ -96,6 +96,8 @@ ActiveRecord::Schema.define(:version => 20110721232135) do
     t.boolean  "foodie"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "gender"
+    t.string   "username"
   end
 
 end
