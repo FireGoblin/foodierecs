@@ -21,7 +21,7 @@
 <script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bubble_example.js"></script>-->
 
 </head>
-<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); $('#dialog').dialog({ autoOpen:false, modal:true });" >
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); $('#dialog').dialog({ autoOpen:false, modal:true, close:function( ev, ui ){ dialogCloseFunc( ev, ui ); } });" >
 <div id="fb-root"></div>
 	<!--facebook connect-->
 	<script>
@@ -36,7 +36,15 @@
     	document.getElementById('fb-root').appendChild(e);
 	  }());
 	</script>
-
+	<script>
+		function dialogCloseFunc( ev, ui )
+		{
+			$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
+				{ 'opinion[user_id]': 6, 'opinion[restaurant_id]': <%= @restaurant.id %>,
+					'opinion[foodie]': true, 'opinion[like]': 1 }
+				);
+		}
+	</script>
 
 	<!--
 	<div class="backgroundImageWrap">
