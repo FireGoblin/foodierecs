@@ -50,8 +50,8 @@ class UsersController < ApplicationController
  respond_to do |format|
 
       if @user.save
-
-        format.html { redirect_to(@user, :notice => 'User was successfully created.') }
+        format.html {"new"}
+        #format.html { redirect_to('pages#becomeafoodie', :notice => 'User was successfully created.') }
 
         format.xml  { render :xml => @user, :status => :created, :location => @user }
 
@@ -64,7 +64,8 @@ class UsersController < ApplicationController
       end
     end
 
-		render 'pages#becomeafoodie'
+		render :text => "new"
+		#render 'pages#becomeafoodie'
   #  end
   end
 
