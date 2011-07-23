@@ -5,8 +5,11 @@
 <title>Restaurant recommendations from Foodies - foodierecs</title>
 
 <%= stylesheet_link_tag "restaurantStyle", "http://fonts.googleapis.com/css?family=Lobster+Two", 
-										"http://fonts.googleapis.com/css?family=News+Room" %>
-<%= javascript_include_tag :defaults %>
+										"http://fonts.googleapis.com/css?family=News+Room",
+										"http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" %>
+<%= javascript_include_tag :defaults, "http://connect.facebook.net/en_US/all.js", 		
+										"http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js",
+										"http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" %>
 
 
 <!--This is for displaying on iOS -->
@@ -14,9 +17,11 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <link rel="apple-touch-icon-precomposed" href="../images/appleLogo.jpg" />
 
-<!--<script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bookmark_bubble.js"></script>
-<script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bubble_example.js"></script>-->
-
+<!--<script>
+  $(document).ready(function() {
+    
+  });
+  </script>-->
 </head>
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500);" >
 <div id="fb-root"></div>
@@ -60,9 +65,16 @@
 			<a href=""><img src="../images/not-for-foodies.jpg" /></a>
 		</div>
 		
+		<div id="dialog" title="Recommendations" style="display:none" >
+			What should you order to eat here: <input type="text" name="eat" /> <br />
+			What should you order to drink here:<input type="text" name="drink" />
+		</div>
+		
 		<script>
-			FB.Event.subscribe('auth.sessionChange', function(response) {
-				alert("Hello World! Like created!");
+			FB.Event.subscribe('edge.create', function(response) {
+				//alert("Hello World! Like created!");
+				$("#dialog").show();
+				$("#dialog").dialog();
   			});
 		</script>
 		
