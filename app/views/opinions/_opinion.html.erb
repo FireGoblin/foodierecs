@@ -11,7 +11,7 @@
 <% else !@restaurant.nil? %>
 <% @user_temp = User.find(opinion.user_id) %>
 <% if opinion.foodie == @foodie%>
-<div class="foodieName"><%= link_to @user_temp.username, user_path(@user_temp) %>
+<div class="foodieName"><%= link_to @user_temp.first_name+' '+@user_temp.last_name, user_path(@user_temp) %>
 				<div class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></div>
 				<div class="foodieDrink"><span class="recTag">drink:</span><%= opinion.to_drink %></div>
 			</div>

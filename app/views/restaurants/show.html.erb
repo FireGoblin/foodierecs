@@ -64,22 +64,22 @@
 		</div>
 		
 		<div id="dialog" title="Recommendations" style="display:none" >
-			<% @opinion = Opinion.where( :restaurant_id => @restaurant.id, :user_id => 3 ) %>
+			<% @opinion = Opinion.new %>
 			<%= render :partial => 'opinions/form' %>
 		</div>
 	
 		<script>
 			FB.Event.subscribe('edge.create', function(response) {
-				$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
-					{ 'opinion[user_id]': 3, 'opinion[restaurant_id]': <%= @restaurant.id %>,
+				/*$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
+					{ 'opinion[user_id]': 6, 'opinion[restaurant_id]': <%= @restaurant.id %>,
 						'opinion[foodie]': true, 'opinion[like]': 1 }
-					);
+					); */
 					
 				//REPLACE ABOVE WITH DATA FROM SESSION: USER_ID, FOODIE
 				
 				//MAKE THE DIALOG OPEN THIS OPINION
 				//alert("Hello World! Like created!");
-				
+				//$dialog.dialog('open');
 				$("#dialog").dialog('open');
   			});
 		</script>
