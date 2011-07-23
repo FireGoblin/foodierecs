@@ -14,8 +14,7 @@
   <% @opinion.restaurant_id = @restaurant.id %> 
 
   <div class="field">
-  	<% f.label :restaurant_id %>
-  	<% f.text_field :restaurant_id %>
+  	<%= f.hidden_field :restaurant_id %>
   </div>
   <div class="field">
     <%= f.label :to_eat %><br />
