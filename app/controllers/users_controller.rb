@@ -45,19 +45,16 @@ class UsersController < ApplicationController
   # POST /users.xml
   def create
     @user = User.new(params[:user])
-
-    respond_to do |format|
-      if @user.save
-        #format.html { redirect_to(@user, :notice => 'User was successfully created.')
-        #format.xml  { render :xml => @user, :status => :created, :location => @user }
-        
-        render 'pages#becomeafoodie'
-      else
-      	render 'pages#main'
-      	
-        #format.html { render :action => "new" }
-        #format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
-      end
+    
+    if(User.find(@user[:username]))
+    	sign_in @user
+    	#flash[:succes] = "Welcome to Foodierecs!"
+    	render 'pages#main'
+    else
+    	@user.save
+    	#flash[:succes] = "Welcome to Foodierecs!"
+    	sign_in @user
+    	render 'pages#becomeafoodie'
     end
   end
 
