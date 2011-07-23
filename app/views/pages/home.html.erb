@@ -65,7 +65,12 @@
 								'user[email]':response.email },
 							function(response){
 								if(response=="new") {
-									window.location = "<%= url_for( :action => 'becomeafoodie', :controller => 'pages', :only_path => false ) %>";
+									window.location = "<%= url_for( :action => 'becomeafoodie', :controller => 'pages', 
+																	:only_path => false ) %>";
+								}
+								else {
+									window.location = "<%= url_for( :action => 'main', :controller => 'pages', 
+																	:only_path => false ) %>";
 								}
 							}
 						);

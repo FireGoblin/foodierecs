@@ -45,8 +45,8 @@ class UsersController < ApplicationController
   # POST /users.xml
   def create
     @user = User.new(params[:user])
-  
-    #if(!User.find(@user[:username]))
+
+    if(User.where(:username => @user.username ) == [] )
  respond_to do |format|
 
       if @user.save
@@ -62,9 +62,11 @@ class UsersController < ApplicationController
         format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
 
       end
+      render :text => "new"
     end
-
-		render :text => "new"
+  else
+    render :text => "old"
+  end
 		#render 'pages#becomeafoodie'
   #  end
   end
