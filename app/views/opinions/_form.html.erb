@@ -10,22 +10,12 @@
       </ul>
     </div>
   <% end %>
+  
+  <% @opinion.restaurant_id = @restaurant.id %> 
 
   <div class="field">
-    <%= f.label :user_id %><br />
-    <%= f.text_field :user_id %>
-  </div>
-  <div class="field">
-    <%= f.label :restaurant_id %><br />
-    <%= f.text_field :restaurant_id %>
-  </div>
-  <div class="field">
-    <%= f.label :foodie %><br />
-    <%= f.check_box :foodie %>
-  </div>
-  <div class="field">
-    <%= f.label :like %><br />
-    <%= f.text_field :like %>
+  	<% f.label :restaurant_id %>
+  	<% f.text_field :restaurant_id %>
   </div>
   <div class="field">
     <%= f.label :to_eat %><br />

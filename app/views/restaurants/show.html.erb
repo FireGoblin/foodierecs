@@ -63,15 +63,16 @@
 		</div>
 		
 		<div id="dialog" title="Recommendations" style="display:none" >
-			What should you order to eat here: <input type="text" name="eat" /> <br />
-			What should you order to drink here:<input type="text" name="drink" />
+			<% @opinion = Opinion.new %>
+			<%= render :partial => 'opinions/form' %>
 		</div>
-		
+	
 		<script>
 			FB.Event.subscribe('edge.create', function(response) {
 				//USE @RESTAURANT.ID AND THE CURRENT USER'S ID TO ADD A ROW TO OPINIONS TABLE
 				//THEN EDIT THAT OPINION USING A FORM THAT EDITS THE TO_EAT AND TO_DRINK FIELDS INSIDE THE DIALOG DIV ABOVE
 				//alert("Hello World! Like created!");
+				
 				$("#dialog").show();
 				$("#dialog").dialog();
   			});
