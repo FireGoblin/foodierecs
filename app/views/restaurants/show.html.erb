@@ -21,7 +21,7 @@
 <script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bubble_example.js"></script>-->
 
 </head>
-<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500);" >
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); $('#dialog').dialog({ autoOpen:false, modal:true });" >
 <div id="fb-root"></div>
 	<!--facebook connect-->
 	<script>
@@ -64,18 +64,23 @@
 		</div>
 		
 		<div id="dialog" title="Recommendations" style="display:none" >
-			<% @opinion = Opinion.new %>
+			<% @opinion = Opinion.where( :restaurant_id => @restaurant.id, :user_id => 3 ) %>
 			<%= render :partial => 'opinions/form' %>
 		</div>
 	
 		<script>
 			FB.Event.subscribe('edge.create', function(response) {
-				//USE @RESTAURANT.ID AND THE CURRENT USER'S ID TO ADD A ROW TO OPINIONS TABLE
-				//THEN EDIT THAT OPINION USING A FORM THAT EDITS THE TO_EAT AND TO_DRINK FIELDS INSIDE THE DIALOG DIV ABOVE
+				$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
+					{ 'opinion[user_id]': 3, 'opinion[restaurant_id]': <%= @restaurant.id %>,
+						'opinion[foodie]': true, 'opinion[like]': 1 }
+					);
+					
+				//REPLACE ABOVE WITH DATA FROM SESSION: USER_ID, FOODIE
+				
+				//MAKE THE DIALOG OPEN THIS OPINION
 				//alert("Hello World! Like created!");
 				
-				$("#dialog").show();
-				$("#dialog").dialog();
+				$("#dialog").dialog('open');
   			});
 		</script>
 		
