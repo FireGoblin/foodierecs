@@ -51,29 +51,24 @@
 			<div id="fb-root"></div>
 		    <script>
 	  			FB.Event.subscribe('auth.login', function () {
+					//window.location = "<%= url_for( :action => 'main', :controller => 'pages', :only_path => false ) %>";
 	      			/*FB.api('/me', function(response) {
 					  alert(response.email);
 					});*/
 					//post the info we need
+					alert( 'about to ask fb for stuff' );
 					FB.api('/me', function(response) {
-						$.post( "<%= url_for( :controller => 'users', :only_path => false ) %>", 
-							{ first_name: response.first_name, last_name: response.last_name,
-								username: response.username, url: response.link,
-								gender: response.gender,
-								email:response.email }, 
-								function( isNewUser ) {
-									if( isNewUser ) { 
-										window.location = "<%= url_for( :action => 'becomeafoodie', :controller => 'pages', 
-																		:only_path => false ) %>"; 
-									}
-									else {
-										window.location = "<%= url_for( :action => 'main', :controller => 'pages', :only_path => false ) %>";
-									}
+						alert( response.first_name );
+						$.post( "http://luckypeaches.com/echopost.php",
+							{ 'first_name': "Sidharth" }, 
+								function( data ) {
+									alert( 'data' );
+									
 								}
 						);
+						alert( 'posted' );
 					})
 					
-					//window.location = "<%= url_for( :action => 'main', :controller => 'pages', :only_path => false ) %>";
 		 		});
 	 		</script>
     		<script>
