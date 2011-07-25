@@ -93,6 +93,7 @@ html {
 	
 	float:left;
 	width: 300px;
+	min-height: 150px;
 }
 
 .foodieList a{
@@ -115,9 +116,16 @@ html {
 }
 
 .likeFacePile{
-	margin: 30px 30px 30px 20px;
+	margin: 30px 30px 10px 20px;
 	
 	float:right;
+	width: 300px;
+}
+
+#map_canvas{
+	margin: 10px 30px 10px 20px;
+	float: right;
+	height: 170px;
 	width: 300px;
 }
 

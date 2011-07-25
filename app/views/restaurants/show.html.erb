@@ -20,8 +20,31 @@
 <!--<script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bookmark_bubble.js"></script>
 <script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bubble_example.js"></script>-->
 
+<!-- To show the google maps widget -->
+<script type="text/javascript"
+    src="http://maps.googleapis.com/maps/api/js?sensor=false">
+</script>
+
+<script type="text/javascript"> 
+  function mapsInitialize() {
+    var myLatlng = new google.maps.LatLng(<%= @restaurant.lat %>,<%= @restaurant.long %>);
+    var myOptions = {
+      zoom: 15,
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+    var marker = new google.maps.Marker({
+        position: myLatlng, 
+        map: map,
+        title:"City Cafe"
+    });   
+  }
+</script>
+
 </head>
-<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); $('#dialog').dialog({ autoOpen:false, modal:true, close:function( ev, ui ){ dialogCloseFunc( ev, ui ); } });" >
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); $('#dialog').dialog({ autoOpen:false, modal:true, close:function( ev, ui ){ dialogCloseFunc( ev, ui ); } }); mapsInitialize()" >
 <div id="fb-root"></div>
 	<!--facebook connect-->
 	<script>
@@ -67,9 +90,23 @@
 		</div>
 		
 		<div class="restaurantRecommend">
-			<fb:like href="http://metaphoricallydelicious.com" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-			<a href=""><img src="../images/not-for-foodies.jpg" /></a>
+			<fb:like href="<%=request.fullpath%>" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
+			<% if ( !Opinion.where( :user_id => 6, :restaurant_id => @restaurant.id ).exists? ) %>
+				<a href=""><img id="notForFoodies" src="../images/not-for-foodies.jpg" /></a>
+			<% end %>
 		</div>
+		
+		<script>
+			$('#notForFoodies').click(function(){
+				//TODO: 1. REPLACE USER ID AND FOODIE FROM SESSION
+				//TODO: 2. DO A CHECK TO MAKE SURE WE DON'T ADD DUPLICATE ROWS OF THIS
+				$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
+					{ 'opinion[user_id]': 6, 'opinion[restaurant_id]': <%= @restaurant.id %>,
+						'opinion[foodie]': true, 'opinion[like]': -1 }
+					);
+				alert( 'Marked as not for foodies!' );
+			})
+		</script>
 		
 		<div id="dialog" title="Recommendations" style="display:none" >
 			<% @opinion = Opinion.new %>
@@ -107,6 +144,8 @@
 			<b><%= "Everyone who likes " + @restaurant.name %>:</b> <br />
 			<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:facepile href="<%= request.url; %>" width="200" max_rows="5"></fb:facepile>
 		</div>
+		
+		<div id="map_canvas"></div>
 		
 		<div class="commentsWrapper">
 		<div class="restaurantComments">
