@@ -45,7 +45,7 @@ html {
 
 #foodieContent h1{
 	font-family: 'News Cycle',"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-	font-size: 20px;
+	font-size: 25px;
 	
 	margin: 20px;
 }
@@ -60,5 +60,10 @@ html {
 #foodieContent p{
 	font-family: 'News Cycle',"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
 	margin: 5px 20px 10px 20px;
+}
+
+#foodieContent p a{
+	text-decoration: none;
+	color: #1477bb;
 }
 
