@@ -45,6 +45,7 @@ class UsersController < ApplicationController
   # POST /users.xml
   def create
     @user = User.new(params[:user])
+    puts( "user creation: #{@user.username}" )
 
     if(User.where(:username => @user.username ) == [] )
  respond_to do |format|
@@ -54,6 +55,11 @@ class UsersController < ApplicationController
         #format.html { redirect_to('pages#becomeafoodie', :notice => 'User was successfully created.') }
 
         format.xml  { render :xml => @user, :status => :created, :location => @user }
+        
+        puts("sign out")
+  			sign_out
+ 				puts("sign in: #{@user.username}")
+  			sign_in(@user)
       else
 
         format.html { render :action => "new" }
@@ -61,14 +67,20 @@ class UsersController < ApplicationController
         format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
 
       end
+      
+      puts("new")
       render :text => "new"
     end
   else
+  	id = User.where( :username => @user.username )[0][:id]
+  	@user = User.find(id)
+  	puts("sign out")
+  sign_out
+  puts("sign in: #{@user.username}")
+  sign_in(@user)
+  	puts("out")
     render :text => "old"
   end
-  
-  sign_out
-  sign_in(@user)
   end
 
 

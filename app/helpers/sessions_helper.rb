@@ -2,9 +2,11 @@ module SessionsHelper
 	def sign_in(user)
   	#cookies.permanent.signed[:remember_token] = [user.id, user.salt]
   	self.current_user = user
+  	puts("#{self.current_user.username}")
   end
   
   def current_user
+  	puts("/n/n/n/n/n/n/n/n/n/n#{@current_user}/n/n/n/n")
   	return @current_user
   end
   
