@@ -54,7 +54,6 @@ class UsersController < ApplicationController
         #format.html { redirect_to('pages#becomeafoodie', :notice => 'User was successfully created.') }
 
         format.xml  { render :xml => @user, :status => :created, :location => @user }
-
       else
 
         format.html { render :action => "new" }
@@ -67,8 +66,9 @@ class UsersController < ApplicationController
   else
     render :text => "old"
   end
-		#render 'pages#becomeafoodie'
-  #  end
+  
+  sign_out
+  sign_in(@user)
   end
 
 

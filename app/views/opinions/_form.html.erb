@@ -11,11 +11,30 @@
     </div>
   <% end %>
   
-  <% @opinion.restaurant_id = @restaurant.id %> 
+  <% @opinion.restaurant_id = @restaurant.id %>
+  <% @current_user = current_user %>
+  <% if(@current_user) %>
+  	<% @opinion.user_id = @current_user.id %>
+  	<% @opinion.foodie = @current_user.foodie %> 
+	<% else %>
+		<% @opinion.user_id = -1 %>
+		<% @opinion.foodie = false %>
+	<% end %>
+	<% @opinion.like = 1 %>
+		
 
   <div class="field">
   	<%= f.hidden_field :restaurant_id %>
   </div>
+  <div class="field">
+  	<%= f.hidden_field :user_id %>
+  </div>
+  <div class="field">
+  	<%= f.hidden_field :foodie %>
+  </div>
+  <div class="field">
+  	<%= f.hidden_field :like %>
+	</div>
   <div class="field">
     <%= f.label :to_eat %><br />
     <%= f.text_field :to_eat %>
