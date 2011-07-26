@@ -2,7 +2,7 @@ class CreateRestaurants < ActiveRecord::Migration
   def self.up
     create_table :restaurants do |t|
       t.string :name, :limit => 400
-      t.string :address
+      t.string :address, :limit => 400
       t.string :street_number
       t.string :street
       t.string :phone
