@@ -38,38 +38,24 @@
 		<div id="mainRecommendations">
 			<div class="mainSectionTitle">Recommendations</div>
 			<div class="sectionList">
-				<div class="restaurant">1. <a href="">This is the name of an amazing restaurant</a> (45 E Amsterdam ave. Recommended by <a href="">Bhaswanth Nalabothula</a>) 
-					<div class="restaurantRecommend">
-						<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href="http://metaphoricallydelicious.com" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-						<a href=""><img src="../images/not-for-foodies.jpg" /></a>
-					</div>
-				</div>
-				<div class="restaurant">2. <a href="">Joedoe</a> (45 E 1st St. Recommended by <a href="">Sidharth Kakkar</a>)
-					<div class="restaurantRecommend">
-						<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href="http://metaphoricallydelicious.com" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-						<a href=""><img src="../images/not-for-foodies.jpg" /></a>
-					</div>				
-				</div>				
-				<div class="restaurant">3. <a href="">Joedoe</a> (45 E 1st St. Recommended by <a href="">Sidharth Kakkar</a>) </div>
-				
-				
-				
-				
-				
-				
-				
-				<a href="">see more...</a> 
+				<% puts("\n\n\n#{@recommended.count}\n\n\n") %>
+				<% unless @recommended.empty? %>
+					<%= render 'recommended' %>
+			<% end %>
+			
+ 
 			</div>
 		</div>
 		
 		<div id="mainRatePlaces">
 			<div class="mainSectionTitle">Rate some places (to get better recommendations)</div>
 			<div class="sectionList">
-				<div class="restaurant">1. <a href="">Joedoe</a> (45 E 1st St. Recommended by <a href="">Sidharth Kakkar</a>) </div>
+				<% puts("\n\n\n#{@places_to_rate.count}\n\n\n") %>
+				<% unless @places_to_rate.empty? %>
+					<%= render 'places_to_rate' %>
+			<% end %>
 				
-				
-				
-				<a href="">see more...</a> 
+
 			</div>
 		</div>
 		
@@ -81,10 +67,11 @@
 				</div>
 			</div>
 			<div class="sectionList">
-				<div class="restaurant">1. <a href="">Joedoe</a> (45 E 1st St. Recommended by <a href="">Sidharth Kakkar</a>) </div>
-				
-				
-				<a href="">see more...</a> 
+				<% puts("\n\n\n#{@recently_rated.count}\n\n\n") %>
+				<% unless @recently_rated.empty? %>
+					<%= render 'recently_rated' %>
+			<% end %>
+
 			</div>
 		</div>
 	</div>

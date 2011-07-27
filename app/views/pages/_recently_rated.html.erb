@@ -1,0 +1,8 @@
+<% count = 1 %>
+<% @recently_rated.each do |recently_rated| %>
+<% restaurant = Restaurant.find(recently_rated.restaurant_id)%>
+<% user = User.find(recently_rated.user_id) %>
+<% puts("\n\n\nrecently_rated\n\n\n") %>
+<div class="restaurant"><%= count %>. <%= link_to restaurant.name, restaurant_path(restaurant) %> (<%= restaurant.address %> <%= link_to user.first_name + " " + user.last_name, user_path(user) %> ) </div>
+<% count += 1 %>
+<% end %>

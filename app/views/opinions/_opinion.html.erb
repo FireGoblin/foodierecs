@@ -1,3 +1,4 @@
+<% puts("\n\nopinion printout\n\n")%>
 <% if !@user.nil?%>
 <% @restaurant_temp = Restaurant.find(opinion.restaurant_id) %>
 <div class="restaurantNameLeft"><%= link_to @restaurant_temp.name, restaurant_path(@restaurant_temp) %>
