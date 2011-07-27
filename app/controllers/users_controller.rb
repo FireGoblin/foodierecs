@@ -45,42 +45,16 @@ class UsersController < ApplicationController
   # POST /users.xml
   def create
     @user = User.new(params[:user])
-    puts( "user creation: #{@user.username}" )
 
-    if(User.where(:username => @user.username ) == [] )
- respond_to do |format|
-
+    respond_to do |format|
       if @user.save
-        format.html {"new"}
-        #format.html { redirect_to('pages#becomeafoodie', :notice => 'User was successfully created.') }
-
-        format.xml  { render :xml => @user, :status => :created, :location => @user }
-        
-        puts("sign out")
-  			sign_out
- 				puts("sign in: #{@user.username}")
-  			sign_in(@user)
+        format.html { redirect_to(@user, :notice => 'User was successfully updated.') }
+        format.xml  { head :ok }
       else
-
-        format.html { render :action => "new" }
-
+        format.html { render :action => "edit" }
         format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
-
       end
-      
-      puts("new")
-      render :text => "new"
     end
-  else
-  	id = User.where( :username => @user.username )[0][:id]
-  	@user = User.find(id)
-  	puts("sign out")
-  sign_out
-  puts("sign in: #{@user.username}")
-  sign_in(@user)
-  	puts("out")
-    render :text => "old"
-  end
   end
 
 

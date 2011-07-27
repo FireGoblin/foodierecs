@@ -8,9 +8,9 @@ class PagesController < ApplicationController
 	end
 	
 	def main
-		@recommended = restaurantRecommendations(User.find(7))
+		@recommended = restaurantRecommendations(current_user)
 		@recommended = @recommended.paginate(:page => params[:page])
-		@places_to_rate = placesToRate(User.find(7))
+		@places_to_rate = placesToRate(current_user)
 		@places_to_rate = @places_to_rate.paginate(:page => params[:page])
 		@recently_rated = recentlyRated
 		@recently_rated = @recently_rated.paginate(:page => params[:page])

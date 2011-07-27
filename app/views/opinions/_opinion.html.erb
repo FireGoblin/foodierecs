@@ -1,6 +1,6 @@
 <% puts("\n\nopinion printout\n\n")%>
 <% if !@user.nil?%>
-<% @restaurant_temp = Restaurant.find(opinion.restaurant_id) %>
+<% @restaurant_temp = opinion.restaurant %>
 <div class="restaurantNameLeft"><%= link_to @restaurant_temp.name, restaurant_path(@restaurant_temp) %>
 				<div class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></div>
 				<div class="foodieDrink"><span class="recTag">drink:</span> <%= opinion.to_drink %></div>
@@ -10,7 +10,7 @@
 				</div>
 			</div>
 <% else !@restaurant.nil? %>
-<% @user_temp = User.find(opinion.user_id) %>
+<% @user_temp = opinion.user %>
 <% if opinion.foodie == @foodie%>
 <div class="foodieName"><%= link_to @user_temp.first_name+' '+@user_temp.last_name, user_path(@user_temp) %>
 				<div class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></div>
