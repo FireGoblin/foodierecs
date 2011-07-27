@@ -1,20 +1,24 @@
 <% puts("\n\nopinion printout\n\n")%>
 <% if !@user.nil?%>
-<% @restaurant_temp = opinion.restaurant %>
-<div class="restaurantNameLeft"><%= link_to @restaurant_temp.name, restaurant_path(@restaurant_temp) %>
-				<div class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></div>
-				<div class="foodieDrink"><span class="recTag">drink:</span> <%= opinion.to_drink %></div>
-				<div class="restaurantRecommend">
-					<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href="http://metaphoricallydelicious.com" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-					<a href=""><img src="../images/not-for-foodies.jpg" /></a>
-				</div>
-			</div>
+	
+	<% @restaurant_temp = opinion.restaurant %>
+	<div class="restaurantNameLeft"><%= link_to @restaurant_temp.name, restaurant_path(@restaurant_temp) %>
+		<div class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></div>
+		<div class="foodieDrink"><span class="recTag">drink:</span> <%= opinion.to_drink %></div>
+		<div class="restaurantRecommend">
+			<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href="http://metaphoricallydelicious.com" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
+				<a href=""><img src="../images/not-for-foodies.jpg" /></a>
+		</div>
+	</div>
+	
 <% else !@restaurant.nil? %>
-<% @user_temp = opinion.user %>
-<% if opinion.foodie == @foodie%>
-<div class="foodieName"><%= link_to @user_temp.first_name+' '+@user_temp.last_name, user_path(@user_temp) %>
-				<div class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></div>
-				<div class="foodieDrink"><span class="recTag">drink:</span><%= opinion.to_drink %></div>
-			</div>
-<% end %>
+
+	<% @user_temp = opinion.user %>
+	<% if opinion.foodie == @foodie%>
+	<div class="foodieName"><%= link_to @user_temp.first_name+' '+@user_temp.last_name, user_path(@user_temp) %>
+		<div class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></div>
+		<div class="foodieDrink"><span class="recTag">drink:</span><%= opinion.to_drink %></div>
+	</div>
+	<% end %>
+	
 <% end %>
