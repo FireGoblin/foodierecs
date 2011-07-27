@@ -39,8 +39,12 @@
 			<div class="mainSectionTitle">Recommendations</div>
 			<div class="sectionList">
 				<% puts("\n\n\n#{@recommended.count}\n\n\n") %>
+				<% @count = 1 %>
 				<% unless @recommended.empty? %>
-					<%= render 'recommended' %>
+					<table class="opinions" summary="User opinions">
+					<%= render @recommended %>
+				</table>
+				<%= will_paginate @recommended %>
 			<% end %>
 			
  
@@ -51,8 +55,12 @@
 			<div class="mainSectionTitle">Rate some places (to get better recommendations)</div>
 			<div class="sectionList">
 				<% puts("\n\n\n#{@places_to_rate.count}\n\n\n") %>
+				<% @count = 1 %>
 				<% unless @places_to_rate.empty? %>
-					<%= render 'places_to_rate' %>
+					<table class="opinions" summary="User opinions">
+					<%= render @places_to_rate %>
+				</table>
+				<%= will_paginate @places_to_rate %>
 			<% end %>
 				
 
@@ -68,8 +76,12 @@
 			</div>
 			<div class="sectionList">
 				<% puts("\n\n\n#{@recently_rated.count}\n\n\n") %>
+				<% @count = 1 %>
 				<% unless @recently_rated.empty? %>
-					<%= render 'recently_rated' %>
+					<table class="opinions" summary="User opinions">
+					<%= render @recently_rated %>
+				</table>
+				<%= will_paginate @recently_rated %>
 			<% end %>
 
 			</div>
