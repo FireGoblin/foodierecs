@@ -41,7 +41,7 @@ module PagesHelper
 	end
 	
 	def recentlyRated
-		the_opinions = Opinion.find(:all, :order => "id desc", :limit => 20).reverse
+		the_opinions = Opinion.find(:all, :limit => 20).reverse
 		#the_restaurants = Array.new
 		
 		#the_opinions.each do |i|
