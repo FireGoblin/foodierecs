@@ -63,8 +63,8 @@
 		function dialogCloseFunc( ev, ui )
 		{
 			$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
-				{ 'opinion[user_id]': 6, 'opinion[restaurant_id]': <%= @restaurant.id %>,
-					'opinion[foodie]': true, 'opinion[like]': 1 }
+					{ 'opinion[user_id]': <% current_user.id %>, 'opinion[restaurant_id]': <%= @restaurant.id %>,
+						'opinion[foodie]': <% current_user.foodie %>, 'opinion[like]': -1 }
 				);
 		}
 	</script>
@@ -91,19 +91,19 @@
 		
 		<div class="restaurantRecommend">
 			<fb:like href="<%=request.fullpath%>" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-			<% if ( !Opinion.where( :user_id => 6, :restaurant_id => @restaurant.id ).exists? ) %>
+			<% if ( !Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).exists? ) %>
 				<a href=""><img id="notForFoodies" src="../images/not-for-foodies.jpg" /></a>
 			<% end %>
 		</div>
 		
 		<script>
 			$('#notForFoodies').click(function(){
-				//TODO: 1. REPLACE USER ID AND FOODIE FROM SESSION
-				//TODO: 2. DO A CHECK TO MAKE SURE WE DON'T ADD DUPLICATE ROWS OF THIS
-				$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
-					{ 'opinion[user_id]': 6, 'opinion[restaurant_id]': <%= @restaurant.id %>,
-						'opinion[foodie]': true, 'opinion[like]': -1 }
-					);
+				<% hash = Hash.new %>
+				<% hash['user_id'] = current_user.id %>
+				<% hash['restaurant_id'] = @restaurant.id %>
+				<% hash['foodie'] = current_user.foodie %>
+				<% hash['like'] = -1 %>
+				<% Opinion.create_from_hash!(hash) %>
 				alert( 'Marked as not for foodies!' );
 			})
 		</script>
@@ -111,7 +111,6 @@
 		<div id="dialog" title="Recommendations" style="display:none" >
 			<% @opinion = Opinion.new %>
 			<%= render :partial => 'opinions/form' %>
-			<%= render :partial => 'opinions/dislike_form' %>
 		</div>
 	
 		<script>

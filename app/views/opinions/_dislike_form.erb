@@ -15,7 +15,9 @@
   <% @current = current_user %>
   <% @opinion.user_id = @current.id %>
   <% @opinion.foodie = @current.foodie %> 
-	<% @opinion.like = 1 %>
+	<% @opinion.like = -1 %>
+	<% @opinion.to_eat = ""%>
+	<% @opinion.to_drink = ""%>
 		
 
   <div class="field">
@@ -31,12 +33,10 @@
   	<%= f.hidden_field :like %>
 	</div>
   <div class="field">
-    <%= f.label :to_eat %><br />
-    <%= f.text_field :to_eat %>
+    <%= f.hiden_field :to_eat %>
   </div>
   <div class="field">
-    <%= f.label :to_drink %><br />
-    <%= f.text_field :to_drink %>
+    <%= f.hidden_field :to_drink %>
   </div>
   <div class="actions">
     <%= f.submit %>
