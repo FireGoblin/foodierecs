@@ -71,8 +71,8 @@
 		function dialogCloseFunc( ev, ui )
 		{
 			$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
-					{ 'opinion[user_id]': <% current_user.id %>, 'opinion[restaurant_id]': <%= @restaurant.id %>,
-						'opinion[foodie]': <% current_user.foodie %>, 'opinion[like]': 1 }
+					{ 'opinion[user_id]': <%= current_user.id %>, 'opinion[restaurant_id]': <%= @restaurant.id %>,
+						'opinion[foodie]': <%= current_user.foodie %>, 'opinion[like]': 1 }
 				);
 		}
 	</script>
