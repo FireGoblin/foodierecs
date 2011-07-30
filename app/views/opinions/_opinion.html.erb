@@ -41,7 +41,7 @@
 <% #puts(restaurant_path(restaurant))%>
 <div class="restaurantRecommend"> <div>
 	<div id="fb-root"></div>
-	<fb:like href="<%= "http://metaphoricallydelicious.com"  send="false" 
+	<fb:like href="<%= "http://foodierecs.heroku.com"+restaurant_path(restaurant) %>"  send="false" 
 			layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
 	<a href=""><img src="../images/not-for-foodies.jpg"></a>
 	</div>

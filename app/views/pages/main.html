@@ -19,6 +19,20 @@
 
 </head>
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500);" >
+	<div id="fb-root"></div>
+		<!--facebook connect-->
+		<script>
+		  window.fbAsyncInit = function() {
+	    	FB.init({appId: '213050112074083', status: true, cookie: true,
+		             xfbml: true});
+		  };
+		  (function() {
+		    var e = document.createElement('script'); e.async = true;
+	    	e.src = document.location.protocol +
+		      '//connect.facebook.net/en_US/all.js';
+	    	document.getElementById('fb-root').appendChild(e);
+		  }());
+		</script>
 	<!--
 	<div class="backgroundImageWrap">
 		<img src="../images/bar.jpg" class="backgroundImage" width="1264" height="790">
@@ -28,6 +42,21 @@
 		<div id="header">
 			foodierecs
 		</div>
+		
+		<script>
+			FB.Event.subscribe('edge.create', function(response) {
+				
+					
+				//REPLACE ABOVE WITH DATA FROM SESSION: USER_ID, FOODIE
+				
+				//MAKE THE DIALOG OPEN THIS OPINION
+				//alert("Hello World! Like created!");
+				//$dialog.dialog('open');
+				alert( 'inside subscribe edge.create' );
+				alert( response );
+				//$("#dialog").dialog('open');
+  			});
+		</script>
 		
 		<div id="mainNotes">
 			foodierecs maintains a small group of foodies to give recommendations, most of whom are nominated and voted upon. <br />
