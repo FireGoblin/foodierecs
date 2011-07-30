@@ -98,7 +98,7 @@
 		</div>
 		
 		<div class="restaurantRecommend">
-			<fb:like href="<%=request.domain+request.fullpath%>" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
+			<fb:like href="<%="foodierecs.heroku.com"+request.fullpath%>" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
 			<% if ( !Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).exists? ) %>
 				<a href=""><img id="notForFoodies" src="../images/not-for-foodies.jpg" /></a>
 			<% end %>
