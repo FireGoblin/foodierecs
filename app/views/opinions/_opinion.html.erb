@@ -6,7 +6,9 @@
 		<div class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></div>
 		<div class="foodieDrink"><span class="recTag">drink:</span> <%= opinion.to_drink %></div>
 		<div class="restaurantRecommend">
-			<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href=<% "http://foodierecs.com" + restaurant_path(restaurant) %> send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
+			<div id="fb-root"></div>
+			<% puts "\n\n\n\n"+Rails_root+restaurant_path(restaurant)+"\n\n\n\n\n" %>
+			<script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href="<%= Rails_root+restaurant_path(restaurant) %>" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
 				<a href=""><img src="../images/not-for-foodies.jpg" /></a>
 		</div>
 	</div>
@@ -14,7 +16,7 @@
 <% elsif !@restaurant.nil? %>
 
 	<% @user_temp = opinion.user %>
-	<% if opinion.foodie == @foodie%>
+	<% if opinion.foodie == @foodie %>
 	<div class="foodieName"><%= link_to @user_temp.first_name+' '+@user_temp.last_name, user_path(@user_temp) %>
 		<div class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></div>
 		<div class="foodieDrink"><span class="recTag">drink:</span><%= opinion.to_drink %></div>
@@ -23,16 +25,22 @@
 	
 <% else %>
 
-		<% restaurant = opinion.restaurant%>
+<% restaurant = opinion.restaurant %>
 <% user = opinion.user %>
 <% puts("\n\n\nrecommended\n\n\n") %>
-<div class="restaurant"><%= @count %>. <%= link_to restaurant.name, restaurant_path(restaurant) %> (<%= restaurant.address %> <%= link_to user.first_name + " " + user.last_name, user_path(user) %> ) </div>
-<% puts(restaurant_path(restaurant))%>
-<div class="restaurantRecommend">
-						<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like 		href= <% "http://foodierecs.com" + restaurant_path(restaurant) %>  send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-						<a href=""><img src="../images/not-for-foodies.jpg" /></a>
-					</div>
-					
-					<% @count += 1 %>
-	
+<div class="restaurant">
+	<%= @count %>. <%= link_to restaurant.name, restaurant_path(restaurant) %> 
+					(<%= restaurant.street_number + " " + restaurant.vicinity %>. Recommended by 
+					<%= link_to user.first_name + " " + user.last_name, user_path(user) %> ) 
+</div>
+<% #puts(restaurant_path(restaurant))%>
+<div class="restaurantRecommend"> <div>
+	<div id="fb-root"></div>
+	<div>
+	<fb:like href="<%= "http://foodierecs.com"+restaurant_path(restaurant) %>"  send="false" 
+			layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
+	<a href=""><img src="../images/not-for-foodies.jpg"></a>
+	</div>
+</div></div>
+<% @count += 1 %>	
 <% end %>

@@ -17,14 +17,33 @@ module PagesHelper
 					end
 				end
 				if(commonality >= threshold)
-					the_restaurants[the_restaurants.count] = i
+					the_restaurants[the_restaurants.count] = i.restaurant
 				end
 				commonality = 0
 			end
 		end
 		
+		the_restaurants = the_restaurants.uniq
+		if( the_restaurants.count < 100 )
+		  Opinion.all.each do |i|
+	      if( i.user != user && i.foodie && i.like > 0 && !( the_restaurants.include? i.restaurant ) )
+          the_restaurants[ the_restaurants.count ] = i.restaurant
+        end
+        if( the_restaurants.count > 100 )
+          break
+        end
+	    end
+    end
+    
+    the_opinions = Array.new
+		the_restaurants.each do |i|
+	    opinions_arr = i.opinions.where( :like => 1, :foodie => true )
+	    opinions_arr.shuffle
+	    the_opinions[ the_opinions.count ] = opinions_arr[0]
+	  end
+		
 		puts("\n\n\n#{the_restaurants.count}\n\n\n")
-		return the_restaurants
+		return the_opinions
 	end
 	
 	def placesToRate(user)

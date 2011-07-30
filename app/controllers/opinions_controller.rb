@@ -40,6 +40,7 @@ class OpinionsController < ApplicationController
   # POST /opinions
   # POST /opinions.xml
   def create
+    puts "shiite"
     @opinion = Opinion.new(params[:opinion])
 
     respond_to do |format|

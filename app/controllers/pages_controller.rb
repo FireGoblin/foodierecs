@@ -19,4 +19,7 @@ class PagesController < ApplicationController
 	def becomeafoodie
 	end
 	
+	def recommendations
+  end
+	
 end
