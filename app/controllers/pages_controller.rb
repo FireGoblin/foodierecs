@@ -20,6 +20,7 @@ class PagesController < ApplicationController
 	end
 	
 	def recommendations
+	  @recommended = restaurantRecommendations(current_user)
   end
 	
 end

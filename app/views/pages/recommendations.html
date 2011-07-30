@@ -28,12 +28,6 @@
 		<div id="header">
 			foodierecs
 		</div>
-		
-		<div id="mainNotes">
-			foodierecs maintains a small group of foodies to give recommendations, most of whom are nominated and voted upon. <br />
-			to learn more about the process, <a href=<% '/becomeafoodie' %>>click here</a> <br />
-			to see everything you have rated, <a href=<% users_path(current_user) %>>click here</a> <br />
-		</div>
 		<script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script>
 		<div id="mainRecommendations">
 			<div class="mainSectionTitle">Recommendations</div>
@@ -51,49 +45,6 @@
 				Login and rate places to get recommendations
 			</div>
 			<% end %>
-			<%= link_to( "see more ...", "/pages/recommendations") %>
-			</div>
-		</div>
-		
-		<div id="mainRatePlaces">
-			<div class="mainSectionTitle">Rate some places (to get better recommendations)</div>
-			<div class="sectionList">
-				<% puts("\n\n\n#{@places_to_rate.count}\n\n\n") %>
-				<% if(current_user) %>
-				<% @count = 1 %>
-				<% unless @places_to_rate.empty? %>
-					<table class="opinions" summary="User opinions">
-					<%= render @places_to_rate %>
-				</table>
-				<%= will_paginate @places_to_rate %>
-			<% end %>
-			<% else %>
-			<div id="mainNotes">
-				Login to see places to rate
-			</div>
-			<% end %>
-				
-
-			</div>
-		</div>
-		
-		<div id="mainRecent">
-			<div class="mainSectionTitle">
-				Recently rated
-				<div class="mainSectionSubTitle">
-					<a href="">Click here</a> to subscribe to a weekly feed
-				</div>
-			</div>
-			<div class="sectionList">
-				<% puts("\n\n\n#{@recently_rated.count}\n\n\n") %>
-				<% @count = 1 %>
-				<% unless @recently_rated.empty? %>
-					<table class="opinions" summary="User opinions">
-					<%= render @recently_rated %>
-				</table>
-				<%= will_paginate @recently_rated %>
-				<% end %>=
-
 			</div>
 		</div>
 	</div>

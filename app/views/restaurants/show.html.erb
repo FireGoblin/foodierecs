@@ -38,8 +38,13 @@
     var marker = new google.maps.Marker({
         position: myLatlng, 
         map: map,
-        title:"City Cafe"
+        title: "<%= @restaurant.name.squeeze(" ").tr("(),?!':.[]", "") %>"
     });   
+
+	google.maps.event.addListener(marker, 'click', function() {
+	    infowindow = new google.maps.InfoWindow();
+		infowindow.setContent( "some string" );
+	  });
   }
 </script>
 
