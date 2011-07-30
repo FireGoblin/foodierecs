@@ -119,12 +119,13 @@
 				alert( 'Marked as not for foodies!' );
 			})
 		</script>
-		<%end%>
+		
 		
 		<div id="dialog" title="Recommendations" style="display:none" >
 			<% @opinion = Opinion.new %>
 			<%= render :partial => 'opinions/form' %>
 		</div>
+		<%end%>
 	
 		<script>
 			FB.Event.subscribe('edge.create', function(response) {
