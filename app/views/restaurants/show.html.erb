@@ -41,15 +41,16 @@
         title: "<%= @restaurant.name.squeeze(" ").tr("(),?!':.[]", "") %>"
     });   
 
-	var infowindow = new google.maps.InfoWindow({  
-	  content: 'Hello world'  
-	});
-	
-	google.maps.event.addListener(marker, 'click', function() {
-		infowindow.open(map, marker);
-	  });
   }
 </script>
+
+<!--Facebook Meta Tags -->
+<meta property="og:title" content="<%= @restaurant.name.squeeze(" ").tr("(),?!':.[]", "") %> - foodierecs" />
+<meta property="og:type" content="restaurant" />
+<meta property="og:url" content="<%= "http://foodierecs.heroku.com"+request.fullpath %>" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content="foodierecs.com" />
+<meta property="fb:app_id" content="213050112074083" />
 
 </head>
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); $('#dialog').dialog({ autoOpen:false, modal:true, close:function( ev, ui ){ dialogCloseFunc( ev, ui ); } }); mapsInitialize()" >
@@ -98,7 +99,7 @@
 		</div>
 		
 		<div class="restaurantRecommend">
-			<fb:like href="<%="foodierecs.heroku.com"+request.fullpath%>" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
+			<fb:like href="<%="http://foodierecs.heroku.com"+request.fullpath%>" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
 			<% if ( !Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).exists? ) %>
 				<a href=""><img id="notForFoodies" src="../images/not-for-foodies.jpg" /></a>
 			<% end %>
