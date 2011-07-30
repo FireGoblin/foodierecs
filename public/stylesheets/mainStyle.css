@@ -102,8 +102,38 @@ html {
 	padding-left: 5px;
 }
 
+.restaurantWithPct{
+	margin: 25px 0;
+}
+
 .restaurant{
 	margin-bottom: 5px;
+	line-height: 16px;
+}
+
+.pct{
+	background-color: #1477bb;
+	color: #ffffff;
+	width: 50px;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Lobster Two',"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	
+	float: left;
+	line-height: 15px;
+	padding: 8px 0px;
+	margin-top: 2px;
+}
+
+.pct .foodies{
+	font-size: 12px;
+	font-family: 'Lobster Two',"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+}
+
+.restaurantWithoutPct{
+	margin-left: 5px;
+	width: 620px;
+	margin-left: 60px;
 }
 
 .recTag{

@@ -1,14 +1,30 @@
 <% puts("\n\n\nrecommended\n\n\n") %>
 <div class="restaurant">
 	<%= @count %>. <%= link_to restaurant.name, restaurant_path(restaurant) %> 
-					(<%= restaurant.street_number + " " + restaurant.vicinity %>
+					(<%= restaurant.street_number + " " + restaurant.vicinity %> )
 </div>
 <% #puts(restaurant_path(restaurant))%>
 <div class="restaurantRecommend"> <div>
 	<div id="fb-root"></div>
 	<fb:like href="<%= "http://foodierecs.com"+restaurant_path(restaurant) %>"  send="false" 
 			layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-	<a href=""><img src="../images/not-for-foodies.jpg"></a>
+	<a href="javascript:function Z(){Z=''}Z()">
+		<img id="notForFoodies<%=restaurant.id%>" src="../images/not-for-foodies.jpg">
+	</a>
 	</div>
+	
+	<%if( !current_user.nil? )%>
+	<script>
+		$('#notForFoodies<%=restaurant.id%>').click(function(){
+			$.post( "/opinions", { 'opinion[user_id]': <%=current_user.id%>, 'opinion[restaurant_id]': <%=restaurant.id%>,
+				 					'opinion[foodie]': <%=current_user.foodie%>, 'opinion[like]': -1 },
+				function( data ){
+					alert( 'Marked as not for foodies!' );
+				})
+		});
+	</script>
+	<%end%>
+
+	
 </div>
 <% @count += 1 %>	

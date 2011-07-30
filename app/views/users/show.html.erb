@@ -43,6 +43,17 @@
 					Non-Foodie
 				<% end %>
 			</div>
+			
+			<div id="nomination">
+				<% if Nomination.where( :user_id => @user.id ).exists? && current_user.foodie %>
+					<!--We need to check whether this person has already voted -->					
+					<% if !Nomination.where( :user_id => @user.id, :voter => current_user.id ).exists? %>
+						you can vote!
+					<% end %>
+				<% elsif !@user.foodie && current_user.foodie %>
+					To nominate <%= @user.first_name + " " + @user.last_name %> as a foodie, click <a href="">here</a>
+				<% end %>
+			</div>
 		</div>
 		
 		<div class="restaurantListHeader"><b>Restaurants <%= @user.first_name %> likes:</b> </div>

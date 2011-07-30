@@ -72,6 +72,16 @@ html {
 	padding: 0 0 0 20px;
 }
 
+#nomination{
+	width: 400px;
+	padding: 0 0 0 20px;
+}
+
+#nomination a{
+	text-decoration: none;
+	color: #1477bb;
+}
+
 .restaurantListHeader{
 	margin: 10px 20px 0 20px;
 }

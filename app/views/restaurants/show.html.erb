@@ -109,15 +109,13 @@
 		
 		<%if( !current_user.nil? )%>
 		<script>
-			$('#notForFoodies').click(function(){
-				<% hash = Hash.new %>
-				<% hash['user_id'] = current_user.id %>
-				<% hash['restaurant_id'] = @restaurant.id %>
-				<% hash['foodie'] = current_user.foodie %>
-				<% hash['like'] = -1 %>
-				<% Opinion.create_from_hash!(hash) %>
-				alert( 'Marked as not for foodies!' );
-			})
+		$('#notForFoodies').click(function(){
+			$.post( "/opinions", { 'opinion[user_id]': <%=current_user.id%>, 'opinion[restaurant_id]': <%=@restaurant.id%>,
+				 					'opinion[foodie]': <%=current_user.foodie%>, 'opinion[like]': -1 },
+				function( data ){
+					alert( 'Marked as not for foodies!' );
+				})
+		});
 		</script>
 		
 		

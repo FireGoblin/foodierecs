@@ -11,7 +11,7 @@
     </div>
   <% end %>
   
-  <% @opinion.restaurant_id = @restaurant.id %>
+  <% @opinion.restaurant_id = -1 %>
   <% @current = current_user %>
   <% @opinion.user_id = @current.id %>
   <% @opinion.foodie = @current.foodie %> 

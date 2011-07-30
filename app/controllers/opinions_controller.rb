@@ -40,18 +40,20 @@ class OpinionsController < ApplicationController
   # POST /opinions
   # POST /opinions.xml
   def create
-    puts "shiite"
     @opinion = Opinion.new(params[:opinion])
 
-    respond_to do |format|
-      if @opinion.save
-        format.html { redirect_to(@opinion, :notice => 'Opinion was successfully created.') }
-        format.xml  { render :xml => @opinion, :status => :created, :location => @opinion }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @opinion.errors, :status => :unprocessable_entity }
-      end
+    if @opinion.save
+      render :text => "OK"
+    else
+      render :text => "FAIL"
     end
+    #respond_to do |format|
+    #  if @opinion.save
+    #    render :text => "OK"
+    #  else
+    #    render :text => "FAIL"
+    #  end
+    #end
   end
 
   # PUT /opinions/1

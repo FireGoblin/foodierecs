@@ -8,6 +8,11 @@ class PagesController < ApplicationController
 	end
 	
 	def main
+	  if( current_user.nil? )
+	    #WHY DOESN'T THIS WORK?????
+	    redirect_to "auth/facebook"
+    end
+    
 		@recommended = restaurantRecommendations(current_user)
 		@recommended = @recommended.paginate(:page => params[:page], :per_page => 5)
 		@places_to_rate = placesToRate(current_user)

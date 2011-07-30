@@ -45,7 +45,7 @@
 	});
 	
 	google.maps.event.addListener(marker<%= rec.id %>, 'click', function() {
-		infowindow<%= rec.id %>.open(map, marker<%= rec.id %>);
+		infowindow<%= rec.id %>.open(map<%= rec.id %>, marker<%= rec.id %>);
 	  });
 	
 	<% end %>

@@ -86,4 +86,12 @@ class RestaurantsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def findId
+    @restaurant = Restaurant.find( params[ :formatted_name ] )
+    
+    #puts "\n\n\n" + @restaurant.id + "\n\n\n"
+    
+    render :text => @restaurant.id
+  end
 end
