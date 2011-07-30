@@ -49,11 +49,13 @@ module PagesHelper
 	def placesToRate(user)
 		the_restaurants = Array.new
 		users_opinions = user.opinions
-		Opinion.all.each do |i|
-			if(i.user_id != user.id && users_opinions.where(:restaurant_id => i.restaurant_id) == [])
-				the_restaurants[the_restaurants.count] = i
-			end
-		end
+		raw_arr = Restaurant.where( "rating > ?", "4.0" )
+		shortlist = raw_arr.sample( 100 );
+		shortlist.each do |res|
+	    if ( res.opinions.where( :user_id => user.id ) == [] )
+	      the_restaurants[ the_restaurants.count ] = res
+      end
+	  end
 		
 		puts("\n\n\n#{the_restaurants.count}\n\n\n")
 		return the_restaurants
@@ -61,6 +63,7 @@ module PagesHelper
 	
 	def recentlyRated
 		the_opinions = Opinion.find(:all, :limit => 20).reverse
+
 		#the_restaurants = Array.new
 		
 		#the_opinions.each do |i|

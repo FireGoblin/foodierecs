@@ -106,8 +106,22 @@ html {
 	margin-bottom: 5px;
 }
 
+.recTag{
+	color: #C81010;
+}
+
+.foodieDish{
+	font-size: 12px;
+	padding-left: 20px;
+}
+
+.foodieDrink{
+	font-size: 12px;
+	padding-left: 20px;
+}
+
 #mainRecommendations{
-	margin: 15px 0px 0px 20px;	
+	margin: 15px 0px 10px 20px;	
 }
 
 #mainRatePlaces{
@@ -118,4 +132,9 @@ html {
 	margin: 15px 0px 0px 20px;
 }
 
+#map_canvas{
+	height: 300px;
+	width: 660px;
+	margin: 20px auto;
+}
 

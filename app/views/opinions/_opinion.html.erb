@@ -3,14 +3,19 @@
 	
 	<% restaurant = opinion.restaurant %>
 	<div class="restaurantNameLeft"><%= link_to restaurant.name, restaurant_path(restaurant) %>
-		<div class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></div>
-		<div class="foodieDrink"><span class="recTag">drink:</span> <%= opinion.to_drink %></div>
-		<div class="restaurantRecommend">
+		<div class="restaurantRecommend"> <div>
 			<div id="fb-root"></div>
-			<% puts "\n\n\n\n"+Rails_root+restaurant_path(restaurant)+"\n\n\n\n\n" %>
-			<script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script><fb:like href="<%= Rails_root+restaurant_path(restaurant) %>" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-				<a href=""><img src="../images/not-for-foodies.jpg" /></a>
+			<fb:like href="<%= "http://foodierecs.com"+restaurant_path(restaurant) %>"  send="false" 
+					layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
+			<a href=""><img src="../images/not-for-foodies.jpg"></a>
+			</div>
 		</div>
+		<% if !opinion.to_eat.nil? && !opinion.to_eat.empty? %>
+			<div class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></div>
+		<%end%>
+		<% if !opinion.to_drink.nil? && !opinion.to_drink.empty? %>
+			<div class="foodieDrink"><span class="recTag">drink:</span> <%= opinion.to_drink %></div>
+		<%end%>
 	</div>
 	
 <% elsif !@restaurant.nil? %>
@@ -36,11 +41,16 @@
 <% #puts(restaurant_path(restaurant))%>
 <div class="restaurantRecommend"> <div>
 	<div id="fb-root"></div>
-	<div>
-	<fb:like href="<%= "http://foodierecs.com"+restaurant_path(restaurant) %>"  send="false" 
+	<fb:like href="<%= "http://metaphoricallydelicious.com"  send="false" 
 			layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
 	<a href=""><img src="../images/not-for-foodies.jpg"></a>
 	</div>
-</div></div>
+</div>
+<% if !opinion.to_eat.nil? && !opinion.to_eat.empty? %>
+	<div class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></div>
+<%end%>
+<% if !opinion.to_drink.nil? && !opinion.to_drink.empty? %>
+	<div class="foodieDrink"><span class="recTag">drink:</span> <%= opinion.to_drink %></div>
+<%end%>
 <% @count += 1 %>	
 <% end %>

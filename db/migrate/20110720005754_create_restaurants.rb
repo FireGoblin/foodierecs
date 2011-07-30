@@ -10,7 +10,6 @@ class CreateRestaurants < ActiveRecord::Migration
       t.float :long
       t.string :icon, :limit => 400
       t.string :google_id, :limit => 400
-      t.string :reference, :limit => 500
       t.string :type1, :limit => 400
       t.string :type2, :limit => 400
       t.string :type3, :limit => 400

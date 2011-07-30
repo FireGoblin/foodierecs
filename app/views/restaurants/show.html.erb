@@ -41,9 +41,12 @@
         title: "<%= @restaurant.name.squeeze(" ").tr("(),?!':.[]", "") %>"
     });   
 
+	var infowindow = new google.maps.InfoWindow({  
+	  content: 'Hello world'  
+	});
+	
 	google.maps.event.addListener(marker, 'click', function() {
-	    infowindow = new google.maps.InfoWindow();
-		infowindow.setContent( "some string" );
+		infowindow.open(map, marker);
 	  });
   }
 </script>

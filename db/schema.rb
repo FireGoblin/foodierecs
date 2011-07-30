@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110730043516) do
+ActiveRecord::Schema.define(:version => 20110730060032) do
 
   create_table "authorizations", :force => true do |t|
     t.string   "provider"
@@ -66,7 +66,6 @@ ActiveRecord::Schema.define(:version => 20110730043516) do
     t.float    "long"
     t.string   "icon"
     t.string   "google_id"
-    t.string   "reference"
     t.string   "type1"
     t.string   "type2"
     t.string   "type3"
