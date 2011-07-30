@@ -102,11 +102,12 @@
 		
 		<div class="restaurantRecommend">
 			<fb:like href="<%="http://foodierecs.heroku.com"+request.fullpath%>" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-			<% if ( !Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).exists? ) %>
+			<% if ( !current_user.nil? && !Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).exists? ) %>
 				<a href=""><img id="notForFoodies" src="../images/not-for-foodies.jpg" /></a>
 			<% end %>
 		</div>
 		
+		<%if( !current_user.nil? )%>
 		<script>
 			$('#notForFoodies').click(function(){
 				<% hash = Hash.new %>
@@ -118,6 +119,7 @@
 				alert( 'Marked as not for foodies!' );
 			})
 		</script>
+		<%end%>
 		
 		<div id="dialog" title="Recommendations" style="display:none" >
 			<% @opinion = Opinion.new %>
