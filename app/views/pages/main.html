@@ -71,13 +71,13 @@
 		</script>
 		
 		<div id="mainNotes">
-			foodierecs maintains a small group of foodies to give recommendations, most of whom are nominated and voted upon. <br />
-			to learn more about the process, <a href=<% '/becomeafoodie' %>>click here</a> <br />
-			to see everything you have rated, <a href=<% users_path(current_user) %>>click here</a> <br />
+			foodierecs maintains a <b>small group of foodies to give recommendations</b>. foodies are nominated and voted upon. <br />
+			to learn more about the process, <%= link_to( 'click here', '/becomeafoodie' )%> <br />
+			to see everything you have rated, <%= link_to('click here', user_path(current_user) ) %> <br />
 		</div>
 		<script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script>
 		<div id="mainRecommendations">
-			<div class="mainSectionTitle">Recommendations</div>
+			<div class="mainSectionTitle">Recommendations from Foodies</div>
 			<div class="sectionList">
 				<% puts("\n\n\n#{@recommended.count}\n\n\n") %>
 				<% if(current_user) %>

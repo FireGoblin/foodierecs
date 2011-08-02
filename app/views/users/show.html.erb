@@ -53,6 +53,17 @@
 				<% elsif !@user.foodie && current_user.foodie %>
 					To nominate <%= @user.first_name + " " + @user.last_name %> as a foodie, click <a href="">here</a>
 				<% end %>
+				
+				<% if Nomination.where( :user_id => @user.id ).exists? 
+					votesFor = Nomination.count( :conditions => [ "user_id = ? AND vote = 1", @user.id] )
+					votesAgainst = Nomination.count( :conditions => [ "user_id = ? AND vote = 0", @user.id] )
+					#hard-coding a minimum number of yes's!!
+					minYes = 5
+					votesNeeded = ( votesAgainst > minYes ? votesAgainst : minYes ) - votesFor%>
+					<!--If there's a nomination at all, we want to show how that's going -->
+					<%=@user.first_name%> has been nominated to be a foodie! <br />
+					There are <%=votesFor%> votes for, <%=votesAgainst%> votes against. <%=votesNeeded%> more votes are needed.
+				<% end %>
 			</div>
 		</div>
 		

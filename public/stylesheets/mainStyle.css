@@ -54,6 +54,11 @@ html {
 	color: #1477bb;
 }	
 
+#mainNotes b{
+	font-size: 15px;
+	color: #C81010;
+}
+
 .mainSectionTitle{
 	font-family: 'Lobster Two',"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
 	font-size: 30px;
@@ -86,6 +91,15 @@ html {
 	padding-left: 20px;
 }
 
+.withFoodie{
+	float:right;
+	margin: 7px 80px 0 0;
+}
+
+.noFoodie{
+	margin: 5px 0px;
+}
+
 .restaurantRecommend iframe{
 	float: left;
 }
@@ -107,8 +121,11 @@ html {
 }
 
 .restaurant{
-	margin-bottom: 5px;
 	line-height: 16px;
+}
+
+.restaurant .addressAndName{
+	font-size: 12px;
 }
 
 .pct{

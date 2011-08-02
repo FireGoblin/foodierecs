@@ -38,26 +38,27 @@
 	<div class="restaurantWithoutPct">
 		<div class="restaurant">
 			 <%= link_to restaurant.name, restaurant_path(restaurant) %> 
+			<span class="addressAndName">
 							(<%= restaurant.street_number + " " + restaurant.vicinity %>. Recommended by 
-							<%= link_to user.first_name + " " + user.last_name, user_path(user) %> ) 
+							<%= link_to user.first_name + " " + user.last_name, user_path(user) %>) 
+			</span>
 		</div>
 		<% #puts(restaurant_path(restaurant))%>
-		<div class="restaurantRecommend"> 
-			<div id="fb-root"></div>
-			<fb:like href="<%= "http://foodierecs.heroku.com"+restaurant_path(restaurant) %>"  send="false" 
-					layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-			<a href="javascript:function Z(){Z=''}Z()"> <!--this code makes it look like a link, even though it's not -->
-				<img id="notForFoodies<%=restaurant.id%>" src="../images/not-for-foodies.jpg">
-			</a>
-		</div>
-		
-
 		<% if !opinion.to_eat.nil? && !opinion.to_eat.empty? %>
 			<span class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></span>
 		<%end%>
 		<% if !opinion.to_drink.nil? && !opinion.to_drink.empty? %>
 			<span class="foodieDrink"><span class="recTag">drink:</span> <%= opinion.to_drink %></span>
 		<%end%>
+
+		<span class="restaurantRecommend withFoodie"> 
+			<div id="fb-root"></div>
+			<fb:like href="<%= "http://foodierecs.heroku.com"+restaurant_path(restaurant) %>"  send="false" 
+					layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
+			<a href="javascript:function Z(){Z=''}Z()"> <!--this code makes it look like a link, even though it's not -->
+				<img id="notForFoodies<%=restaurant.id%>" src="../images/not-for-foodies.jpg">
+			</a>
+		</span>
 	</div>
 </div>
 

@@ -1,10 +1,12 @@
 <% puts("\n\n\nrecommended\n\n\n") %>
 <div class="restaurant">
 	<%= @count %>. <%= link_to restaurant.name, restaurant_path(restaurant) %> 
-					(<%= restaurant.street_number + " " + restaurant.vicinity %> )
+	<span class="addressAndName">
+					(<%= restaurant.street_number + " " + restaurant.vicinity %>)
+	</span>
 </div>
 <% #puts(restaurant_path(restaurant))%>
-<div class="restaurantRecommend"> <div>
+<div class="restaurantRecommend noFoodie"> <div>
 	<div id="fb-root"></div>
 	<fb:like href="<%= "http://foodierecs.com"+restaurant_path(restaurant) %>"  send="false" 
 			layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
