@@ -1,6 +1,5 @@
-<h1>Editing opinion</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @opinion %> |
-<%= link_to 'Back', opinions_path %>
+<%= form_for :Opinion, @opinion, :url => { :action => "edit" }, :html => {:class => "nifty_form"} do |f| %>
+  <%= f.text_field :to_eat %>
+  <%= f.text_field :to_drink %>
+  <%= submit_tag "Submit" %>
+<% end %>

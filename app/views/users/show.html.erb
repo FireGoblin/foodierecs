@@ -121,7 +121,33 @@
 						page.reload
 					end
 					%>
+				<% elsif @user.foodie == false && @user.id == current_user.id %>
+					<!--Self nomination -->
+					<% numRated = Opinion.count( :conditions => [ "user_id = ?", @user.id ] ) 
+					if numRated < 10 %>
+						You may nominate yourself to be a foodie once you have rated at least 50 places. <br />
+						You have rated <%=numRated%> places so far. 
+						To understand how foodies work, click <%=link_to "here", "/becomeafoodie"%>
+					<%else%>
+						If you'd like to self-nominate yourself to be a foodie, click 
+							<a href="javascript:function Z(){Z=''}Z()" id="selfNominate">here</a>
+						<script>
+							$('#selfNominate').click( function(){
+								$.post( "/nominations", { 'nomination[user_id]': <%=@user.id%>, 
+															'nomination[vote]': true,
+															'nomination[voter]': <%=current_user.id%>,
+															'nomination[nominator]': 1,
+														},
+									function( data ){
+										alert( 'Foodie nomination submitted!' );
+										$('#votingButtons').hide();
+										window.location.reload();
+									})
+							});
+						</script>
+					<%end%>
 				<% end %>
+				
 			</div>
 		</div>
 		
