@@ -51,9 +51,15 @@
 
 <% restaurant = opinion.restaurant %>
 <% user = opinion.user %>
-<% puts("\n\n\nrecommended\n\n\n") %>
 <div class="restaurantWithPct">
-	<div class="pct">100%<br /><span class="foodies">foodies</span></div>
+	<% totalFoodieVotes = restaurant.foodie_likes + restaurant.foodie_dislikes
+	if( totalFoodieVotes == 0 )
+		foodiePct = 0.0
+	else
+		foodiePct = restaurant.foodie_likes * 100 / totalFoodieVotes 
+	end %>
+	<div class="pct"><%=foodiePct.to_i %>%<br />
+		<span class="foodies">foodies</span></div>
 	<div class="restaurantWithoutPct">
 		<div class="restaurant">
 			 <%= link_to restaurant.name, restaurant_path(restaurant) %> 
