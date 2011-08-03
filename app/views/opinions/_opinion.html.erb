@@ -7,7 +7,11 @@
 			<div id="fb-root"></div>
 			<fb:like href="<%= "http://foodierecs.com"+restaurant_path(restaurant) %>"  send="false" 
 					layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-			<a href=""><img src="../images/not-for-foodies.jpg"></a>
+			<% if !Opinion.where( :restaurant_id => restaurant.id, :user_id => current_user.id ).exists? %>
+			<a href="javascript:function Z(){Z=''}Z()"> <!--this code makes it look like a link, even though it's not -->
+				<img id="notForFoodies<%=restaurant.id%>" src="../images/not-for-foodies.jpg">
+			</a>
+			<% end %>
 			</div>
 		</div>
 		<% if !opinion.to_eat.nil? && !opinion.to_eat.empty? %>
@@ -18,10 +22,25 @@
 		<%end%>
 	</div>
 	
+	<%if( !current_user.nil? )%>
+	<script>
+		$('#notForFoodies<%=restaurant.id%>').click(function(){
+			$.post( "/opinions", { 'opinion[user_id]': <%=current_user.id%>, 'opinion[restaurant_id]': <%=restaurant.id%>,
+				 					'opinion[foodie]': <%=current_user.foodie%>, 'opinion[like]': -1 },
+				function( data ){
+					//TO DO: WHY DOES IT NEVER GET IN HERE???
+					alert( 'Marked as not for foodies!' );
+				})
+				alert( 'Marked as not for foodies!' );
+				$('#notForFoodies<%=restaurant.id%>').hide();
+		});
+	</script>
+	<%end%>
+	
 <% elsif !@restaurant.nil? %>
 
 	<% @user_temp = opinion.user %>
-	<% if opinion.foodie == @foodie %>
+	<% if opinion.foodie == @foodie && opinion.like > 0 %>
 	<div class="foodieName"><%= link_to @user_temp.first_name+' '+@user_temp.last_name, user_path(@user_temp) %>
 		<div class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></div>
 		<div class="foodieDrink"><span class="recTag">drink:</span><%= opinion.to_drink %></div>
@@ -55,9 +74,11 @@
 			<div id="fb-root"></div>
 			<fb:like href="<%= "http://foodierecs.heroku.com"+restaurant_path(restaurant) %>"  send="false" 
 					layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
+			<% if !Opinion.where( :restaurant_id => restaurant.id, :user_id => current_user.id ).exists? %>
 			<a href="javascript:function Z(){Z=''}Z()"> <!--this code makes it look like a link, even though it's not -->
 				<img id="notForFoodies<%=restaurant.id%>" src="../images/not-for-foodies.jpg">
 			</a>
+			<% end %>
 		</span>
 	</div>
 </div>
@@ -68,8 +89,11 @@
 		$.post( "/opinions", { 'opinion[user_id]': <%=current_user.id%>, 'opinion[restaurant_id]': <%=restaurant.id%>,
 			 					'opinion[foodie]': <%=current_user.foodie%>, 'opinion[like]': -1 },
 			function( data ){
+				//TO DO: WHY DOES IT NEVER GET IN HERE???
 				alert( 'Marked as not for foodies!' );
 			})
+			alert( 'Marked as not for foodies!' );
+			$('#notForFoodies<%=restaurant.id%>').hide();
 	});
 </script>
 <%end%>

@@ -10,9 +10,11 @@
 	<div id="fb-root"></div>
 	<fb:like href="<%= "http://foodierecs.com"+restaurant_path(restaurant) %>"  send="false" 
 			layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
+	<% if !Opinion.where( :restaurant_id => restaurant.id, :user_id => current_user.id ).exists? %>
 	<a href="javascript:function Z(){Z=''}Z()">
 		<img id="notForFoodies<%=restaurant.id%>" src="../images/not-for-foodies.jpg">
 	</a>
+	<% end %>
 	</div>
 	
 	<%if( !current_user.nil? )%>
@@ -21,8 +23,11 @@
 			$.post( "/opinions", { 'opinion[user_id]': <%=current_user.id%>, 'opinion[restaurant_id]': <%=restaurant.id%>,
 				 					'opinion[foodie]': <%=current_user.foodie%>, 'opinion[like]': -1 },
 				function( data ){
+					//TO DO: WHY DOES IT NEVER GET IN HERE???
 					alert( 'Marked as not for foodies!' );
 				})
+			alert( 'Marked as not for foodies!' );
+			$('#notForFoodies<%=restaurant.id%>').hide();
 		});
 	</script>
 	<%end%>

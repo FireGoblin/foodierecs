@@ -6,8 +6,9 @@
 
 <%= stylesheet_link_tag "userStyle", "http://fonts.googleapis.com/css?family=Lobster+Two", 
 										"http://fonts.googleapis.com/css?family=News+Room" %>
-<%= javascript_include_tag :defaults %>
-
+<%= javascript_include_tag "http://connect.facebook.net/en_US/all.js", 																										
+							"http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js",
+							"http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" %>
 
 <!--This is for displaying on iOS -->
 <meta name="viewport" content="width=500">
@@ -48,10 +49,55 @@
 				<% if Nomination.where( :user_id => @user.id ).exists? && current_user.foodie %>
 					<!--We need to check whether this person has already voted -->					
 					<% if !Nomination.where( :user_id => @user.id, :voter => current_user.id ).exists? %>
-						you can vote!
+						<div id="votingButtons">
+							Vote on <%=@user.first_name%>'s nomination: 
+							<a href="javascript:function Z(){Z=''}Z()" id="yayLink">Yay</a> or 
+							<a href="javascript:function Z(){Z=''}Z()" id="nayLink">Nay</a> <br />
+						</div>
+						<script>
+							$('#yayLink').click( function(){
+								$.post( "/nominations", { 'nomination[user_id]': <%=@user.id%>, 
+															'nomination[vote]': 1,
+															'nomination[voter]': <%=current_user.id%>,
+															'nomination[nominator]': 0,
+														},
+									function( data ){
+										alert( 'Yay vote Submitted!' );
+										$('#votingButtons').hide();
+										window.location.reload();
+									})
+							});
+							$('#nayLink').click( function(){
+								$.post( "/nominations", { 'nomination[user_id]': <%=@user.id%>, 
+															'nomination[vote]': 0,
+															'nomination[voter]': <%=current_user.id%>,
+															'nomination[nominator]': 0,
+														},
+									function( data ){
+										alert( 'Nay vote Submitted!' );
+										$('#votingButtons').hide();
+										window.location.reload();
+									})
+							});
+						</script>
 					<% end %>
 				<% elsif !@user.foodie && current_user.foodie %>
-					To nominate <%= @user.first_name + " " + @user.last_name %> as a foodie, click <a href="">here</a>
+					To nominate <%= @user.first_name + " " + @user.last_name %> as a foodie, 
+						click <a href="javascript:function Z(){Z=''}Z()" id="nominateAsFoodie">here</a>
+					<script>
+						$('#nominateAsFoodie').click( function(){
+							$.post( "/nominations", { 'nomination[user_id]': <%=@user.id%>, 
+														'nomination[vote]': true,
+														'nomination[voter]': <%=current_user.id%>,
+														'nomination[nominator]': 1,
+													},
+								function( data ){
+									alert( 'Foodie nomination submitted!' );
+									$('#votingButtons').hide();
+									window.location.reload();
+								})
+						});
+					</script>
 				<% end %>
 				
 				<% if Nomination.where( :user_id => @user.id ).exists? 
@@ -63,6 +109,18 @@
 					<!--If there's a nomination at all, we want to show how that's going -->
 					<%=@user.first_name%> has been nominated to be a foodie! <br />
 					There are <%=votesFor%> votes for, <%=votesAgainst%> votes against. <%=votesNeeded%> more votes are needed.
+					<% #Let's check to see if this person's nomination has been fulfilled
+					if( votesNeeded <= 0 )
+						#Hurrah, he's a new foodie!
+						#TODO: SEND AN EMAIL
+						user = User.where( :id => @user.id ).first
+						user.foodie = 1
+						user.save
+						Nomination.destroy_all :user_id => @user.id
+						Opinion.update_all( "foodie = 1", :user_id => @user.id )
+						page.reload
+					end
+					%>
 				<% end %>
 			</div>
 		</div>

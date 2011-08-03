@@ -44,22 +44,22 @@ class OpinionsController < ApplicationController
 
     if @opinion.save
       #we need to update the restaurant table
-      @rest = Restaurant.where( :id => @opinion.restaurant_id )
-      puts "\n\n\nrestaurant id is #{restaurant.id}\n\n\n"
-      if current_user.foodie
+      rest = Restaurant.where( :id => @opinion.restaurant_id ).first
+      puts "\n\n\nrestaurant id is #{rest.id}\n\n\n"
+      if @opinion.user_id
         if @opinion.like == 1
-          @rest.foodie_likes += 1
+          rest.foodie_likes += 1
         else
-          @rest.foodie_dislikes += 1
+          rest.foodie_dislikes += 1
         end
       else
         if @opinion.like == 1
-          @rest.nonfoodie_likes += 1
+          rest.nonfoodie_likes += 1
         else
-          @rest.nonfoodie_dislikes += 1
+          rest.nonfoodie_dislikes += 1
         end
       end
-      @rest.save   
+      rest.save   
 
       render :text => "OK"
     else
