@@ -172,11 +172,12 @@ jQuery.extend({
   			});
 			<% if Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).exists? %>
 			FB.Event.subscribe('edge.remove', function(response) {
-				$.post( "/opinions", { 'id': <%=Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).first.id %>,
+				$.delete_( "/opinions", { 'opinion[ id ]': <%=Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).first.id %> })
+				/*$.post( "/opinions", { 'id': <%=Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).first.id %>,
 					 					'method': 'DELETE' },
 					function( data ){
 						alert( 'Marked as not for foodies!' );
-					})					
+					})					*/
   			});
 			<% end %>
 		</script>
