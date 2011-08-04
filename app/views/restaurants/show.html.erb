@@ -42,6 +42,7 @@
     });   
 
   }
+
 </script>
 
 <!--Facebook Meta Tags -->
@@ -51,6 +52,32 @@
 <meta property="og:image" content="" />
 <meta property="og:site_name" content="foodierecs.com" />
 <meta property="fb:app_id" content="213050112074083" />
+
+<script>
+//so we can make delete requests
+function _ajax_request(url, data, callback, type, method) {
+    if (jQuery.isFunction(data)) {
+        callback = data;
+        data = {};
+    }
+    return jQuery.ajax({
+        type: method,
+        url: url,
+        data: data,
+        success: callback,
+        dataType: type
+        });
+}
+
+jQuery.extend({
+    put: function(url, data, callback, type) {
+        return _ajax_request(url, data, callback, type, 'PUT');
+    },
+    delete_: function(url, data, callback, type) {
+        return _ajax_request(url, data, callback, type, 'DELETE');
+    }
+});
+</script>
 
 </head>
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); $('#dialog').dialog({ autoOpen:false, modal:true, close:function( ev, ui ){ dialogCloseFunc( ev, ui ); } }); mapsInitialize()" >
@@ -74,7 +101,10 @@
 		{
 			$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
 					{ 'opinion[user_id]': <%= current_user.id %>, 'opinion[restaurant_id]': <%= @restaurant.id %>,
-						'opinion[foodie]': <%= current_user.foodie %>, 'opinion[like]': 1 }
+						'opinion[foodie]': <%= current_user.foodie %>, 'opinion[like]': 1 }, 
+						function(){
+							window.location.reload();
+						}
 				);
 		}
 	</script>
@@ -140,6 +170,15 @@
 				alert( response );
 				$("#dialog").dialog('open');
   			});
+			<% if Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).exists? %>
+			FB.Event.subscribe('edge.remove', function(response) {
+				$.post( "/opinions", { 'id': <%=Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).first.id %>,
+					 					'method': 'DELETE' },
+					function( data ){
+						alert( 'Marked as not for foodies!' );
+					})					
+  			});
+			<% end %>
 		</script>
 		
 		<div class="foodieList">
