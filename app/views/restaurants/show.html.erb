@@ -172,7 +172,23 @@ jQuery.extend({
   			});
 			<% if Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).exists? %>
 			FB.Event.subscribe('edge.remove', function(response) {
-				$.delete_( "/opinions", { 'opinion[ id ]': <%=Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).first.id %> })
+				jQuery.ajax({
+				  url: '/opinions/<%=Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).first.id %>',
+				  type: "DELETE",
+				  data: {
+				    markdown: 'true'
+				  },
+				  success: function(data) {
+				    alert("Done!")
+				  },
+				  error: function(data, statusCode) {
+				    alert("ERROR")
+				  }
+				});
+				
+				/*$.delete_( "/opinions", { 'opinion[ id ]': 
+				<%=Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).first.id %> })*/
+				
 				/*$.post( "/opinions", { 'id': <%=Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).first.id %>,
 					 					'method': 'DELETE' },
 					function( data ){

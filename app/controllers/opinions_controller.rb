@@ -96,11 +96,13 @@ class OpinionsController < ApplicationController
   # DELETE /opinions/1
   # DELETE /opinions/1.xml
   def destroy
+    puts "\n\n\n IN OPINION DESTROY \n\n\n"
     @opinion = Opinion.find(params[:id])
     @opinion.destroy
 
-    respond_to do |format|
-      render :text => "OK"
-    end
+    render :text => "OK"
+    #respond_to do |format|
+    #  render :text => "OK"
+    #end
   end
 end

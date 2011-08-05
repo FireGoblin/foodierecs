@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
   		# Log the authorizing user in.
   		self.current_user = @auth.user
   		puts("\n\n#{self.current_user}\n\n")
-
+      session[ :user ] = @auth.user
   		redirect_to '/main'
 		else
   		# Create a new user or add an auth to existing user, depending on
