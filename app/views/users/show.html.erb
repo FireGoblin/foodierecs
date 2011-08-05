@@ -101,8 +101,18 @@
 				<% end %>
 				
 				<% if Nomination.where( :user_id => @user.id ).exists? 
-					votesFor = Nomination.count( :conditions => [ "user_id = ? AND vote = 1", @user.id] )
-					votesAgainst = Nomination.count( :conditions => [ "user_id = ? AND vote = 0", @user.id] )
+					#votesFor = Nomination.count( :conditions => [ "user_id = ?", @user.id] )
+					#votesAgainst = Nomination.count( :conditions => [ "user_id = ?", @user.id] )
+					votes = Nomination.where("user_id = ?", @user.id)
+					votesFor = 0
+					votesAgainst = 0
+					votes.each do |i|
+						if i.vote 
+							votesFor += 1
+						else
+							voteAgainst +=1
+						end
+					end
 					#hard-coding a minimum number of yes's!!
 					minYes = 5
 					votesNeeded = ( votesAgainst > minYes ? votesAgainst : minYes ) - votesFor%>

@@ -44,16 +44,16 @@
 		<%= render :partial => 'opinions/form' %>
 	</div>
 	<%end%>
-	<!--
-	<div class="backgroundImageWrap">
-		<img src="../images/bar.jpg" class="backgroundImage" width="1264" height="790">
-	</div>
-	-->
+
 	<div id="mainContent">
 		<div id="header">
 			foodierecs
 		</div>
-		
+			<!--
+	<div class="backgroundImageWrap">
+		<img src="../images/bar.jpg" class="backgroundImage" width="1264" height="790">
+	</div>
+	-->
 		<script>
 			FB.Event.subscribe('edge.create', function(response) {
 				$.post('restaurants/findid/' + response.split( '/' )[ 4 ], function(data) {
