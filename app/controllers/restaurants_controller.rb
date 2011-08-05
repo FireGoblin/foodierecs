@@ -88,6 +88,14 @@ class RestaurantsController < ApplicationController
   end
   
   def findId
+    puts "\n\nprinting session info"
+    session.each do |key, value|
+      puts "#{key.to_s} #{value.to_s}"
+    end
+    request.cookies.each do |key, value| 
+      puts "#{key.to_s} #{value.to_s}" 
+    end
+    
     @restaurant = Restaurant.find( params[ :formatted_name ] )
     
     #puts "\n\n\n" + @restaurant.id + "\n\n\n"

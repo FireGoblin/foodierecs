@@ -126,16 +126,16 @@ end %>
 		
 		<div class="restaurantRecommend">
 			<fb:like href="<%="http://foodierecs.heroku.com"+request.fullpath%>" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-			<% if ( !current_user.nil? && !Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).exists? ) %>
+			<% if ( !session[ :user_id ].nil? && !Opinion.where( :user_id => session[ :user_id ], :restaurant_id => @restaurant.id ).exists? ) %>
 				<a href=""><img id="notForFoodies" src="../images/not-for-foodies.jpg" /></a>
 			<% end %>
 		</div>
 		
-		<%if( !current_user.nil? )%>
+		<%if( !session[ :user_id ].nil? )%>
 		<script>
 		$('#notForFoodies').click(function(){
-			$.post( "/opinions", { 'opinion[user_id]': <%=current_user.id%>, 'opinion[restaurant_id]': <%=@restaurant.id%>,
-				 					'opinion[foodie]': <%=current_user.foodie%>, 'opinion[like]': -1 },
+			$.post( "/opinions", { 'opinion[user_id]': <%=session[ :user_id ]%>, 'opinion[restaurant_id]': <%=@restaurant.id%>,
+				 					'opinion[foodie]': <%=User.find_by_id(session[:user_id]).foodie%>, 'opinion[like]': -1 },
 				function( data ){
 					alert( 'Marked as not for foodies!' );
 				})
@@ -154,10 +154,10 @@ end %>
 				//basically, we pretend like the user doesn't want to add a to eat/to drink and add the row
 				//then, if they do add it, this row will get deleted and replaced by the new one. nice!
 				//alternatively, if they aren't signed in, we'll send them to authorization
-				<% if !session[ :user ].nil? %>
+				<% if !session[ :user_id ].nil? %>
 				$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
-						{ 'opinion[user_id]': <%= current_user.id %>, 'opinion[restaurant_id]': <%= @restaurant.id %>,
-							'opinion[foodie]': <%= current_user.foodie %>, 'opinion[like]': 1 } );
+						{ 'opinion[user_id]': <%= session[ :user_id ] %>, 'opinion[restaurant_id]': <%= @restaurant.id %>,
+							'opinion[foodie]': <%= User.find_by_id(session[:user_id]).foodie %>, 'opinion[like]': 1 } );
 				<% else %>
 				 	window.location = "/"
 				<% end %>
@@ -165,11 +165,11 @@ end %>
 				$('#opinion_restaurant_id').attr( 'value', <%=@restaurant.id%> );
 				$("#dialog").dialog('open');
   			});
-			<% #puts "\n\n session user id is " + session[ :user ].id.to_s + "\n\n\n" %>
-			<% if !session[ :user ].nil? && Opinion.where( :user_id => session[ :user ].id, :restaurant_id => @restaurant.id ).exists? %>
+			<% #puts "\n\n session user id is " + session[ :user_id ].to_s + "\n\n\n" %>
+			<% if !session[ :user_id ].nil? && Opinion.where( :user_id => session[ :user_id ], :restaurant_id => @restaurant.id ).exists? %>
 			FB.Event.subscribe('edge.remove', function(response) {
 				jQuery.ajax({
-				  url: '/opinions/<%=Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).first.id %>',
+				  url: '/opinions/<%=Opinion.where( :user_id => session[ :user_id ], :restaurant_id => @restaurant.id ).first.id %>',
 				  type: "DELETE",
 				  data: {
 				    markdown: 'true'

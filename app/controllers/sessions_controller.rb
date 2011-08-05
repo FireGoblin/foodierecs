@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  
+=begin  
   def create
 		auth = request.env['omniauth.auth']
   	if @auth = Authorization.find_from_hash(auth)
@@ -16,11 +16,10 @@ class SessionsController < ApplicationController
     	redirect_to '/becomeafoodie'
 		end
 	end
-	
+=end
 	def new
     @user = User.find(params[:id])
     if( !@user.nil? )
-      session[ :user ] = @user
       session[ :user_id ] = @user.id
     end
     redirect_to '/main'

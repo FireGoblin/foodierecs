@@ -8,13 +8,13 @@ class PagesController < ApplicationController
 	end
 	
 	def main
-	  if( session[ :user ].nil? )
+	  if( session[ :user_id ].nil? )
 	    redirect_to "/"
     else
     
-	  	@recommended = restaurantRecommendations( session[ :user ] )
+	  	@recommended = restaurantRecommendations( session[ :user_id ] )
   		@recommended = @recommended.paginate(:page => params[:page], :per_page => 5)
-  		@places_to_rate = placesToRate( session[ :user ] )
+  		@places_to_rate = placesToRate( session[ :user_id ] )
   		@places_to_rate = @places_to_rate.paginate(:page => params[:page], :per_page => 9)
   		@recently_rated = recentlyRated
   		@recently_rated = @recently_rated.paginate(:page => params[:page], :per_page => 5)
@@ -25,7 +25,7 @@ class PagesController < ApplicationController
 	end
 	
 	def recommendations
-	  @recommended = restaurantRecommendations(current_user)
+	  @recommended = restaurantRecommendations( session[ :user_id ] )
   end
 	
 end

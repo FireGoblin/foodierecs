@@ -54,9 +54,9 @@ end %>
 			</div>
 			
 			<div id="nomination">
-				<% if !current_user.nil? && Nomination.where( :user_id => @user.id ).exists? && current_user.foodie %>
+				<% if !session[ :user ].nil? && Nomination.where( :user_id => @user.id ).exists? && User.find_by_id(session[:user_id]).foodie %>
 					<!--We need to check whether this person has already voted -->					
-					<% if !Nomination.where( :user_id => @user.id, :voter => current_user.id ).exists? %>
+					<% if !Nomination.where( :user_id => @user.id, :voter => session[ :user_id ] ).exists? %>
 						<div id="votingButtons">
 							Vote on <%=@user.first_name%>'s nomination: 
 							<a href="javascript:function Z(){Z=''}Z()" id="yayLink">Yay</a> or 
@@ -66,7 +66,7 @@ end %>
 							$('#yayLink').click( function(){
 								$.post( "/nominations", { 'nomination[user_id]': <%=@user.id%>, 
 															'nomination[vote]': 1,
-															'nomination[voter]': <%=current_user.id%>,
+															'nomination[voter]': <%=session[ :user_id ]%>,
 															'nomination[nominator]': 0,
 														},
 									function( data ){
@@ -78,7 +78,7 @@ end %>
 							$('#nayLink').click( function(){
 								$.post( "/nominations", { 'nomination[user_id]': <%=@user.id%>, 
 															'nomination[vote]': 0,
-															'nomination[voter]': <%=current_user.id%>,
+															'nomination[voter]': <%=session[ :user_id ]%>,
 															'nomination[nominator]': 0,
 														},
 									function( data ){
@@ -89,14 +89,14 @@ end %>
 							});
 						</script>
 					<% end %>
-				<% elsif !current_user.nil? && !@user.foodie && current_user.foodie %>
+				<% elsif !session[ :user_id ].nil? && !@user.foodie && User.find_by_id(session[:user_id]).foodie %>
 					To nominate <%= @user.first_name + " " + @user.last_name %> as a foodie, 
 						click <a href="javascript:function Z(){Z=''}Z()" id="nominateAsFoodie">here</a>
 					<script>
 						$('#nominateAsFoodie').click( function(){
 							$.post( "/nominations", { 'nomination[user_id]': <%=@user.id%>, 
 														'nomination[vote]': true,
-														'nomination[voter]': <%=current_user.id%>,
+														'nomination[voter]': <%=session[ :user_id ]%>,
 														'nomination[nominator]': 1,
 													},
 								function( data ){
@@ -139,7 +139,7 @@ end %>
 						page.reload
 					end
 					%>
-				<% elsif !current_user.nil? && @user.foodie == false && @user.id == current_user.id %>
+				<% elsif !session[ :user_id ].nil? && @user.foodie == false && @user.id == session[ :user_id ] %>
 					<!--Self nomination -->
 					<% numRated = Opinion.count( :conditions => [ "user_id = ?", @user.id ] ) 
 					if numRated < 10 %>
@@ -153,7 +153,7 @@ end %>
 							$('#selfNominate').click( function(){
 								$.post( "/nominations", { 'nomination[user_id]': <%=@user.id%>, 
 															'nomination[vote]': true,
-															'nomination[voter]': <%=current_user.id%>,
+															'nomination[voter]': <%=session[ :user_id ]%>,
 															'nomination[nominator]': 1,
 														},
 									function( data ){
