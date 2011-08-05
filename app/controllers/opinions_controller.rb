@@ -41,7 +41,10 @@ class OpinionsController < ApplicationController
   # POST /opinions.xml
   def create
     @opinion = Opinion.new(params[:opinion])
-
+    
+    #Let's see if there's already such an opinoin, if there is, we remove it
+    Opinion.destroy_all( :user_id => @opinion.user_id, :restaurant_id => @opinion.restaurant_id );
+    
     if @opinion.save
       #we need to update the restaurant table
       rest = Restaurant.where( :id => @opinion.restaurant_id ).first
@@ -97,8 +100,7 @@ class OpinionsController < ApplicationController
     @opinion.destroy
 
     respond_to do |format|
-      format.html { redirect_to(opinions_url) }
-      format.xml  { head :ok }
+      render :text => "OK"
     end
   end
 end
