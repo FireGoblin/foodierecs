@@ -17,12 +17,26 @@
 <% backgroundPic = rand( 6 ) + 1 
 session[ :background_pic ] = backgroundPic %>
 
+
 </head>
 <!--the onload code is for iOS-->
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); 
 				$('html').css( 'background', 
 									'url(../images/background<%=session[ :background_pic ]%>.jpg) no-repeat center center fixed' );" >
 	<div id="fb-root"></div>
+  	<script>
+    	window.fbAsyncInit = function() {
+      	//Replace appId with your own
+      	FB.init({appId: '213050112074083', status: true, cookie: true,
+               	xfbml: true});
+    	};
+    	(function() {
+	  		var e = document.createElement('script'); e.async = true;
+      		e.src = document.location.protocol +
+       		'//connect.facebook.net/en_US/all.js';
+   			document.getElementById('fb-root').appendChild(e);
+  		}());
+  	</script>
   	
   	<% puts ("test time") %>
 
@@ -41,11 +55,64 @@ session[ :background_pic ] = backgroundPic %>
 		</div>
 		
 		<div id="fbLogin">
+			<!--
 			<div id="fb-root"></div>
     			<a href="auth/facebook" class="auth_provider">
     				<%= image_tag "facebook_64.png", :size => "64x64", :alt => "Facebook" %>
     				Login with Facebook
     			</a> 
+			-->
+		    <script>
+	  			FB.Event.subscribe('auth.login', function () {
+					FB.api('/me', function(response) {
+						/*
+						$.post( "<%= url_for( :controller => 'users', :only_path => false ) %>", 
+							{ 'user[first_name]': response.first_name, 'user[last_name]': response.last_name,
+								'user[username]': response.username, 'user[facebook_url]': response.link,
+								'user[gender]': response.gender,
+								'user[email]':response.email },
+							function(response){
+								if(response=="new") {
+									window.location = "<%= url_for( :action => 'becomeafoodie', :controller => 'pages', 
+																	:only_path => false ) %>";
+								}
+								else {
+									window.location = "<%= url_for( :action => 'main', :controller => 'pages', 
+																	:only_path => false ) %>";
+								}
+							}
+						);*/
+						$.post( "users/exists/" + response.username, function( data ){
+							if( data == "NO" ){
+								//need to create this user
+								$.post( "<%= url_for( :controller => 'users', :only_path => false ) %>", 
+									{ 'user[first_name]': response.first_name, 'user[last_name]': response.last_name,
+										'user[username]': response.username, 'user[facebook_url]': response.link,
+										'user[gender]': response.gender,
+										'user[email]':response.email },
+									function(response){
+										//response should be the new user id
+										window.location = "/session/new/" + data;
+									} );
+							}
+							else{
+								window.location = "/session/new/" + data;
+							}
+						});
+						alert( response.first_name + " " + response.last_name + " logged in" );
+					})
+					
+		 		});
+	 		</script>
+    		<script>
+	        	FB.init({ 
+    	        appId:'213050112074083', cookie:true, 
+        	    status:true, xfbml:true 
+	         });
+		    </script>
+    		<fb:login-button perms="email,publish_stream">
+    			Login with Facebook
+    		</fb:login-button>
     	</div>
 		
 	</div>

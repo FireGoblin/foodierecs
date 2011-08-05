@@ -21,6 +21,7 @@ FoodierecsTwo::Application.routes.draw do
   root :to => 'pages#home'
   
   match '/auth/:provider/callback', :to => 'sessions#create'
+  match 'session/new/:id' => 'sessions#new'
   
   match '/main' => 'pages#main'
   match '/becomeafoodie' => 'pages#becomeafoodie'
@@ -29,6 +30,8 @@ FoodierecsTwo::Application.routes.draw do
   
   match '/restaurants/findid/:formatted_name' => 'restaurants#findId'
   match '/opinion/deleteid/:formatted_name' => 'opinions#deleteid'
+  
+  match '/users/exists/:username' => 'users#exists'
  # match 'restaurant/one-if-by-land-two-if-by-sea' => 'pages#restaurant'
   #match 'restaurant/#{x}'
 

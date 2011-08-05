@@ -16,4 +16,14 @@ class SessionsController < ApplicationController
     	redirect_to '/becomeafoodie'
 		end
 	end
+	
+	def new
+    @user = User.find(params[:id])
+    if( !@user.nil? )
+      session[ :user ] = @user
+      session[ :user_id ] = @user.id
+    end
+    redirect_to '/main'
+  end
+
 end

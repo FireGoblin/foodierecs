@@ -24,6 +24,18 @@ class UsersController < ApplicationController
       format.xml  { render :xml => @user }
     end
   end
+  
+  # GET /users/username
+  # GET /users/username.xml
+  def exists
+    @user = User.find(params[:username])
+    
+    if !@user.nil?
+      render :text => @user.id
+    else
+      render :text => "NO"
+    end
+  end
 
   # GET /users/new
   # GET /users/new.xml
@@ -48,8 +60,9 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to(@user, :notice => 'User was successfully updated.') }
-        format.xml  { head :ok }
+        render :text => @user.id
+        #format.html { redirect_to(@user, :notice => 'User was successfully updated.') }
+        #format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
