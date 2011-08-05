@@ -8,7 +8,7 @@
 <% #puts(restaurant_path(restaurant))%>
 <div class="restaurantRecommend noFoodie"> <div>
 	<div id="fb-root"></div>
-	<fb:like href="<%= "http://foodierecs.com"+restaurant_path(restaurant) %>"  send="false" 
+	<fb:like href="<%= "http://foodierecs.heroku.com"+restaurant_path(restaurant) %>"  send="false" 
 			layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
 	<% if !Opinion.where( :restaurant_id => restaurant.id, :user_id => current_user.id ).exists? %>
 	<a href="javascript:function Z(){Z=''}Z()">

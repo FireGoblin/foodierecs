@@ -105,4 +105,12 @@ class OpinionsController < ApplicationController
     #  render :text => "OK"
     #end
   end
+  
+  def deleteid
+    @restaurant = Restaurant.find( params[ :formatted_name ] )
+    @opinion = Opinion.where( :restaurant_id => @restaurant.id, :user_id => current_user.id ).first;
+    @opinion.destroy
+    
+    render :text => "OK"
+  end
 end

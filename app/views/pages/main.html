@@ -21,7 +21,7 @@
 <script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bubble_example.js"></script>-->
 
 </head>
-<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); $('#dialog').dialog({ autoOpen:false, modal:true, close:function( ev, ui ){ dialogCloseFunc( ev, ui ); } });" >
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); $('#dialog').dialog({ autoOpen:false, modal:true });" >
 	<div id="fb-root"></div>
 		<!--facebook connect-->
 		<script>
@@ -38,7 +38,7 @@
 		</script>
 	</script>
 	<%if( !current_user.nil? )%>
-	
+
 	<div id="dialog" title="Recommendations" style="display:none" >
 		<% @opinion = Opinion.new %>
 		<%= render :partial => 'opinions/form' %>
@@ -57,16 +57,23 @@
 		<script>
 			FB.Event.subscribe('edge.create', function(response) {
 				$.post('restaurants/findid/' + response.split( '/' )[ 4 ], function(data) {
+					//basically, we pretend like the user doesn't want to add a to eat/to drink and add the row
+					//then, if they do add it, this row will get deleted and replaced by the new one. nice!
+					$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
+							{ 'opinion[user_id]': <%= current_user.id %>, 'opinion[restaurant_id]': data,
+								'opinion[foodie]': <%= current_user.foodie %>, 'opinion[like]': 1 }
+						);
 				  $('#opinion_restaurant_id').attr( 'value', data );
 				});
-				//REPLACE ABOVE WITH DATA FROM SESSION: USER_ID, FOODIE
-				
-				//MAKE THE DIALOG OPEN THIS OPINION
-				//alert("Hello World! Like created!");
-				//$dialog.dialog('open');
-				//alert( 'inside subscribe edge.create' );
-				//alert( response );
+
 				$("#dialog").dialog('open');
+  			});
+
+			FB.Event.subscribe('edge.remove', function(response) {
+				$.post('opinion/deleteid/' + response.split( '/' )[ 4 ], function(data) {
+					alert( data );
+				});
+				
   			});
 		</script>
 		
