@@ -19,8 +19,16 @@
 <!--<script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bookmark_bubble.js"></script>-->
 <!--<script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bubble_example.js"></script>-->
 
+
+<% if session[ :background_pic ].nil? 
+	backgroundPic = rand( 6 ) + 1 
+	session[ :background_pic ] = backgroundPic
+end %>
+
 </head>
-<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500);" >
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500);
+				$('html').css( 'background', 
+					'url(../images/background<%=session[ :background_pic ]%>.jpg) no-repeat center center fixed' );" >
 <div id="fb-root"></div>
 	<!--
 	<div class="backgroundImageWrap">
@@ -46,7 +54,7 @@
 			</div>
 			
 			<div id="nomination">
-				<% if Nomination.where( :user_id => @user.id ).exists? && current_user.foodie %>
+				<% if !current_user.nil? && Nomination.where( :user_id => @user.id ).exists? && current_user.foodie %>
 					<!--We need to check whether this person has already voted -->					
 					<% if !Nomination.where( :user_id => @user.id, :voter => current_user.id ).exists? %>
 						<div id="votingButtons">
@@ -81,7 +89,7 @@
 							});
 						</script>
 					<% end %>
-				<% elsif !@user.foodie && current_user.foodie %>
+				<% elsif !current_user.nil? && !@user.foodie && current_user.foodie %>
 					To nominate <%= @user.first_name + " " + @user.last_name %> as a foodie, 
 						click <a href="javascript:function Z(){Z=''}Z()" id="nominateAsFoodie">here</a>
 					<script>
@@ -131,7 +139,7 @@
 						page.reload
 					end
 					%>
-				<% elsif @user.foodie == false && @user.id == current_user.id %>
+				<% elsif !current_user.nil? && @user.foodie == false && @user.id == current_user.id %>
 					<!--Self nomination -->
 					<% numRated = Opinion.count( :conditions => [ "user_id = ?", @user.id ] ) 
 					if numRated < 10 %>

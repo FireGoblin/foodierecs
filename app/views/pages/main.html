@@ -20,8 +20,21 @@
 <!--<script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bookmark_bubble.js"></script>
 <script type="text/javascript" src="<?php echo $this->config->system_url(); ?>assets/js/bubble_example.js"></script>-->
 
+<%if current_user.nil? %>
+<script>
+	window.location = "/auth/facebook"
+</script>
+<% end %>
+
+<% if session[ :background_pic ].nil? 
+	backgroundPic = rand( 6 ) + 1 
+	session[ :background_pic ] = backgroundPic
+end %>
+
 </head>
-<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); $('#dialog').dialog({ autoOpen:false, modal:true });" >
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); $('#dialog').dialog({ autoOpen:false, modal:true });
+				$('html').css( 'background', 
+					'url(../images/background<%=session[ :background_pic ]%>.jpg) no-repeat center center fixed' );" >
 	<div id="fb-root"></div>
 		<!--facebook connect-->
 		<script>
@@ -59,10 +72,12 @@
 				$.post('restaurants/findid/' + response.split( '/' )[ 4 ], function(data) {
 					//basically, we pretend like the user doesn't want to add a to eat/to drink and add the row
 					//then, if they do add it, this row will get deleted and replaced by the new one. nice!
+					<%if !current_user.nil? %>
 					$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
 							{ 'opinion[user_id]': <%= current_user.id %>, 'opinion[restaurant_id]': data,
 								'opinion[foodie]': <%= current_user.foodie %>, 'opinion[like]': 1 }
 						);
+					<% end %>
 				  $('#opinion_restaurant_id').attr( 'value', data );
 				});
 

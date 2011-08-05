@@ -79,8 +79,16 @@ jQuery.extend({
 });
 </script>
 
+
+<% if session[ :background_pic ].nil? 
+	backgroundPic = rand( 6 ) + 1 
+	session[ :background_pic ] = backgroundPic
+end %>
+
 </head>
-<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); $('#dialog').dialog({ autoOpen:false, modal:true, close:function( ev, ui ){ dialogCloseFunc( ev, ui ); } }); mapsInitialize()" >
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); $('#dialog').dialog({ autoOpen:false, modal:true }); mapsInitialize();
+				$('html').css( 'background', 
+					'url(../images/background<%=session[ :background_pic ]%>.jpg) no-repeat center center fixed' );" >
 <div id="fb-root"></div>
 	<!--facebook connect-->
 	<script>
@@ -95,20 +103,6 @@ jQuery.extend({
     	document.getElementById('fb-root').appendChild(e);
 	  }());
 	</script>
-	<% if !current_user.nil? %>
-	<script>
-		function dialogCloseFunc( ev, ui )
-		{
-			$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
-					{ 'opinion[user_id]': <%= current_user.id %>, 'opinion[restaurant_id]': <%= @restaurant.id %>,
-						'opinion[foodie]': <%= current_user.foodie %>, 'opinion[like]': 1 }, 
-						function(){
-							window.location.reload();
-						}
-				);
-		}
-	</script>
-	<%end%>
 
 	<!--
 	<div class="backgroundImageWrap">
@@ -157,20 +151,20 @@ jQuery.extend({
 	
 		<script>
 			FB.Event.subscribe('edge.create', function(response) {
-				/*$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
-					{ 'opinion[user_id]': 6, 'opinion[restaurant_id]': <%= @restaurant.id %>,
-						'opinion[foodie]': true, 'opinion[like]': 1 }
-					); */
-					
-				//REPLACE ABOVE WITH DATA FROM SESSION: USER_ID, FOODIE
-				
-				//MAKE THE DIALOG OPEN THIS OPINION
-				//alert("Hello World! Like created!");
-				//$dialog.dialog('open');
-				alert( response );
+				//basically, we pretend like the user doesn't want to add a to eat/to drink and add the row
+				//then, if they do add it, this row will get deleted and replaced by the new one. nice!
+				//alternatively, if they aren't signed in, we'll send them to authorization
+				<% if !current_user.nil? %>
+				$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
+						{ 'opinion[user_id]': <%= current_user.id %>, 'opinion[restaurant_id]': <%= @restaurant.id %>,
+							'opinion[foodie]': <%= current_user.foodie %>, 'opinion[like]': 1 } );
+				<% else %>
+				 	window.location = "/auth/facebook/"
+				<% end %>
 				$("#dialog").dialog('open');
   			});
-			<% if Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).exists? %>
+
+			<% if !current_user.nil? && Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).exists? %>
 			FB.Event.subscribe('edge.remove', function(response) {
 				jQuery.ajax({
 				  url: '/opinions/<%=Opinion.where( :user_id => current_user.id, :restaurant_id => @restaurant.id ).first.id %>',
