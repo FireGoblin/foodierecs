@@ -18,6 +18,8 @@ class SessionsController < ApplicationController
 	end
 =end
 	def new
+	  puts "\n\nNEW SESSION\n\n"
+	  
     @user = User.find(params[:id])
     if( !@user.nil? )
       session[ :user_id ] = @user.id
