@@ -1,4 +1,6 @@
 class RestaurantsController < ApplicationController
+	before_filter :admin_user,  :only => [:index, :edit, :update, :destroy]
+	
   # GET /restaurants
   # GET /restaurants.xml
   def index
@@ -88,10 +90,24 @@ class RestaurantsController < ApplicationController
   end
   
   def findId
+    puts "\n\nprinting session info"
+    session.each do |key, value|
+      puts "#{key.to_s} #{value.to_s}"
+    end
+    request.cookies.each do |key, value| 
+      puts "#{key.to_s} #{value.to_s}" 
+    end
+    
     @restaurant = Restaurant.find( params[ :formatted_name ] )
     
     #puts "\n\n\n" + @restaurant.id + "\n\n\n"
     
     render :text => @restaurant.id
   end
+  
+   private
+  
+  	def admin_user
+  		redirect_to(root_path) unless User.find_by_id(session[:user_id]).admin?
+  	end
 end

@@ -70,7 +70,7 @@
 			<div id="map_canvas"></div>
 			<div class="sectionList">
 				<% puts("\n\n\n#{@recommended.count}\n\n\n") %>
-				<% if(current_user) %>
+				<% if(!session[ :user_id ].nil?) %>
 				<% @count = 1 %>
 				<% unless @recommended.empty? %>
 					<table class="opinions" summary="User opinions">

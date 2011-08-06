@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+	before_filter :admin_user,  :only => [:index, :edit, :update, :destroy]
+	
   # GET /users
   # GET /users.xml
   def index
@@ -57,6 +59,8 @@ class UsersController < ApplicationController
   # POST /users.xml
   def create
     @user = User.new(params[:user])
+    
+    @user.admin = false
 
     respond_to do |format|
       if @user.save
@@ -98,4 +102,10 @@ class UsersController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  private
+  
+  	def admin_user
+  		redirect_to(root_path) unless User.find_by_id(session[:user_id]).admin?
+  	end
 end

@@ -1,4 +1,6 @@
 class OpinionsController < ApplicationController
+	before_filter :admin_user,  :only => [:index, :edit, :update, :destroy]
+	
   # GET /opinions
   # GET /opinions.xml
   def index
@@ -63,7 +65,7 @@ class OpinionsController < ApplicationController
         end
       end
       rest.save   
-
+      
       render :text => "OK"
     else
       render :text => "FAIL"
@@ -108,9 +110,15 @@ class OpinionsController < ApplicationController
   
   def deleteid
     @restaurant = Restaurant.find( params[ :formatted_name ] )
-    @opinion = Opinion.where( :restaurant_id => @restaurant.id, :user_id => current_user.id ).first;
+    @opinion = Opinion.where( :restaurant_id => @restaurant.id, :user_id => session[ :user_id ] ).first;
     @opinion.destroy
     
     render :text => "OK"
   end
+  
+   private
+  
+  	def admin_user
+  		redirect_to(root_path) unless User.find_by_id(session[:user_id]).admin?
+  	end
 end

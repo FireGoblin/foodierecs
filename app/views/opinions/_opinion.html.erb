@@ -7,7 +7,7 @@
 			<div id="fb-root"></div>
 			<fb:like href="<%= "http://foodierecs.com"+restaurant_path(restaurant) %>"  send="false" 
 					layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-			<% if !Opinion.where( :restaurant_id => restaurant.id, :user_id => current_user.id ).exists? %>
+			<% if !Opinion.where( :restaurant_id => restaurant.id, :user_id => session[ :user_id ] ).exists? %>
 			<a href="javascript:function Z(){Z=''}Z()"> <!--this code makes it look like a link, even though it's not -->
 				<img id="notForFoodies<%=restaurant.id%>" src="../images/not-for-foodies.jpg">
 			</a>
@@ -22,11 +22,11 @@
 		<%end%>
 	</div>
 	
-	<%if( !current_user.nil? )%>
+	<%if( !session[ :user_id ].nil? )%>
 	<script>
 		$('#notForFoodies<%=restaurant.id%>').click(function(){
-			$.post( "/opinions", { 'opinion[user_id]': <%=current_user.id%>, 'opinion[restaurant_id]': <%=restaurant.id%>,
-				 					'opinion[foodie]': <%=current_user.foodie%>, 'opinion[like]': -1 },
+			$.post( "/opinions", { 'opinion[user_id]': <%=session[ :user_id ]%>, 'opinion[restaurant_id]': <%=restaurant.id%>,
+				 					'opinion[foodie]': <%=User.find_by_id(session[:user_id]).foodie%>, 'opinion[like]': -1 },
 				function( data ){
 					//TO DO: WHY DOES IT NEVER GET IN HERE???
 					alert( 'Marked as not for foodies!' );
@@ -80,7 +80,7 @@
 			<div id="fb-root"></div>
 			<fb:like href="<%= "http://foodierecs.heroku.com"+restaurant_path(restaurant) %>"  send="false" 
 					layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-			<% if !Opinion.where( :restaurant_id => restaurant.id, :user_id => current_user.id ).exists? %>
+			<% if !Opinion.where( :restaurant_id => restaurant.id, :user_id => session[ :user_id ] ).exists? %>
 			<a href="javascript:function Z(){Z=''}Z()"> <!--this code makes it look like a link, even though it's not -->
 				<img id="notForFoodies<%=restaurant.id%>" src="../images/not-for-foodies.jpg">
 			</a>
@@ -89,11 +89,11 @@
 	</div>
 </div>
 
-<%if( !current_user.nil? )%>
+<%if( !session[ :user_id ].nil? )%>
 <script>
 	$('#notForFoodies<%=restaurant.id%>').click(function(){
-		$.post( "/opinions", { 'opinion[user_id]': <%=current_user.id%>, 'opinion[restaurant_id]': <%=restaurant.id%>,
-			 					'opinion[foodie]': <%=current_user.foodie%>, 'opinion[like]': -1 },
+		$.post( "/opinions", { 'opinion[user_id]': <%=session[ :user_id ]%>, 'opinion[restaurant_id]': <%=restaurant.id%>,
+			 					'opinion[foodie]': <%=User.find_by_id(session[:user_id]).foodie%>, 'opinion[like]': -1 },
 			function( data ){
 				//TO DO: WHY DOES IT NEVER GET IN HERE???
 				alert( 'Marked as not for foodies!' );

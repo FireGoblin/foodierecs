@@ -1,4 +1,6 @@
 class NominationsController < ApplicationController
+	before_filter :admin_user,  :only => [:index, :edit, :update, :destroy]
+	
   # GET /nominations
   # GET /nominations.xml
   def index
@@ -80,4 +82,10 @@ class NominationsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+   private
+  
+  	def admin_user
+  		redirect_to(root_path) unless User.find_by_id(session[:user_id]).admin?
+  	end
 end

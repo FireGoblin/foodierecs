@@ -12,7 +12,7 @@
   <% end %>
   
   <% @opinion.restaurant_id = @restaurant.id %>
-  <% @current = current_user %>
+  <% @current = session[ :user_id ] %>
   <% @opinion.user_id = @current.id %>
   <% @opinion.foodie = @current.foodie %> 
 	<% @opinion.like = -1 %>

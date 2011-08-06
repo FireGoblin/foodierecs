@@ -1,8 +1,9 @@
 module PagesHelper
-	def restaurantRecommendations(user)
+	def restaurantRecommendations(user_id)
 		threshold = 1
 		commonality = 0
 		the_restaurants = Array.new
+		user = User.find_by_id(user_id)
 		users_opinions = user.opinions
 		Opinion.all.each do |i|
 			if(i.user != user && i.foodie && i.like > 0 && users_opinions.where(:restaurant_id => i.restaurant_id) == [])
@@ -45,8 +46,9 @@ module PagesHelper
 		return the_opinions
 	end
 	
-	def placesToRate(user)
+	def placesToRate(user_id)
 		the_restaurants = Array.new
+		user = User.find_by_id(user_id)
 		users_opinions = user.opinions
 		raw_arr = Restaurant.where( "rating > ?", "4.0" )
 		shortlist = raw_arr.sample( 100 );
