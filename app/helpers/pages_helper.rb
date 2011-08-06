@@ -1,5 +1,4 @@
 module PagesHelper
-	
 	def restaurantRecommendations(user)
 		threshold = 1
 		commonality = 0
