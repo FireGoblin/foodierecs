@@ -81,6 +81,12 @@ html {
 	color: #1477bb;
 }
 
+#map_canvas{
+	height: 300px;
+	width: 660px;
+	margin: 20px auto;
+}
+
 .restaurantListHeader{
 	margin: 10px 20px 0 20px;
 }
@@ -95,6 +101,7 @@ html {
 	float: left;
 	width: 330px;
 	margin-bottom: 20px;
+	min-height: 80px;
 }
 
 .restaurantNameRight{

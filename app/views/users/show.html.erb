@@ -8,7 +8,8 @@
 										"http://fonts.googleapis.com/css?family=News+Room" %>
 <%= javascript_include_tag "http://connect.facebook.net/en_US/all.js", 																										
 							"http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js",
-							"http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" %>
+							"http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js",
+							"http://maps.googleapis.com/maps/api/js?sensor=false" %>
 
 <!--This is for displaying on iOS -->
 <meta name="viewport" content="width=500">
@@ -25,8 +26,38 @@
 	session[ :background_pic ] = backgroundPic
 end %>
 
+<script type="text/javascript"> 
+  function mapsInitialize() {
+    var myLatlng = new google.maps.LatLng(40.731389,-73.967857);
+    var myOptions = {
+      zoom: 10,
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+	<% @user.opinions.each do |rec| %>
+	 myLatlng = new google.maps.LatLng(<%= rec.restaurant.lat %>,<%= rec.restaurant.long %>);
+    var marker<%= rec.id %> = new google.maps.Marker({
+        position: myLatlng, 
+        map: map,
+        title: "<%= rec.restaurant.name.squeeze(" ").tr("(),?!':.[]", "") %>"
+    });   
+
+	var infowindow<%= rec.id %> = new google.maps.InfoWindow({  
+	  content: "<%= rec.restaurant.name.squeeze(" ").tr("(),?!':.[]", "") %>"
+	});
+	
+	google.maps.event.addListener(marker<%= rec.id %>, 'click', function() {
+		infowindow<%= rec.id %>.open(map, marker<%= rec.id %>);
+	  });
+	
+	<% end %>
+  }
+</script>
+
 </head>
-<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500);
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); mapsInitialize();
 				$('html').css( 'background', 
 					'url(../images/background<%=session[ :background_pic ]%>.jpg) no-repeat center center fixed' );" >
 <div id="fb-root"></div>
@@ -169,6 +200,8 @@ end %>
 				
 			</div>
 		</div>
+		
+		<div id="map_canvas"></div>
 		
 		<div class="restaurantListHeader"><b>Restaurants <%= @user.first_name %> likes:</b> </div>
 		

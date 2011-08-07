@@ -37,7 +37,7 @@ class PagesController < ApplicationController
   	  end
   	  
   	  
-  	  if(@places_to_rated)
+  	  if(@places_to_rate)
   	  	@places_to_rate = @places_to_rate - recommended_restaurants - rated_restaurants
   		end
   		

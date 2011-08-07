@@ -50,11 +50,14 @@ module PagesHelper
 		the_restaurants = Array.new
 		user = User.find_by_id(user_id)
 		users_opinions = user.opinions
-		raw_arr = Restaurant.where( "rating > ?", "4.0" )
-		shortlist = raw_arr.sample( 100 );
-		shortlist.each do |res|
-	    if ( res.opinions.where( :user_id => user.id ) == [] )
+		Restaurant.order( "rateable DESC" )
+		raw_arr = Restaurant.where( "rating > ? OR rateable > 2", "4.0" )
+		raw_arr.each do |res|
+		  if ( res.opinions.where( :user_id => user.id ) == [] )
 	      the_restaurants[ the_restaurants.count ] = res
+      end
+      if( the_restaurants.count > 100 )
+        break
       end
 	  end
 		
