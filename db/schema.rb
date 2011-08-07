@@ -10,112 +10,113 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110806033058) do
+ActiveRecord::Schema.define(:version => 20110807193715) do
 
   create_table "authorizations", :force => true do |t|
-    t.string   "provider"
-    t.string   "uid"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string    "provider"
+    t.string    "uid"
+    t.integer   "user_id"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   create_table "feeds", :force => true do |t|
-    t.integer  "feed_id"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer   "feed_id"
+    t.integer   "user_id"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   create_table "mappings", :force => true do |t|
-    t.integer  "restaurant_id1"
-    t.integer  "restaurant_id2"
-    t.integer  "foodies"
-    t.integer  "nonfoodie"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer   "restaurant_id1"
+    t.integer   "restaurant_id2"
+    t.integer   "foodies"
+    t.integer   "nonfoodie"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   create_table "nominations", :force => true do |t|
-    t.integer  "user_id"
-    t.boolean  "vote"
-    t.integer  "voter"
-    t.boolean  "nominator"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer   "user_id"
+    t.boolean   "vote"
+    t.integer   "voter"
+    t.boolean   "nominator"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   create_table "opinions", :force => true do |t|
-    t.integer  "user_id"
-    t.integer  "restaurant_id"
-    t.boolean  "foodie"
-    t.integer  "like"
-    t.string   "to_eat"
-    t.string   "to_drink"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer   "user_id"
+    t.integer   "restaurant_id"
+    t.boolean   "foodie"
+    t.integer   "like"
+    t.string    "to_eat"
+    t.string    "to_drink"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   create_table "restaurants", :force => true do |t|
-    t.string   "name"
-    t.string   "address"
-    t.string   "street_number"
-    t.string   "street"
-    t.string   "phone"
-    t.float    "lat"
-    t.float    "long"
-    t.string   "icon"
-    t.string   "google_id"
-    t.string   "type1"
-    t.string   "type2"
-    t.string   "type3"
-    t.string   "type4"
-    t.string   "url"
-    t.string   "vicinity"
-    t.float    "rating"
-    t.integer  "foodie_likes"
-    t.integer  "foodie_dislikes"
-    t.integer  "normal_likes"
-    t.integer  "normal_dislikes"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "formatted_name"
-    t.string   "borough"
+    t.string    "name"
+    t.string    "address"
+    t.string    "street_number"
+    t.string    "street"
+    t.string    "phone"
+    t.float     "lat"
+    t.float     "long"
+    t.string    "icon"
+    t.string    "google_id"
+    t.string    "type1"
+    t.string    "type2"
+    t.string    "type3"
+    t.string    "type4"
+    t.string    "url"
+    t.string    "vicinity"
+    t.float     "rating"
+    t.integer   "foodie_likes"
+    t.integer   "foodie_dislikes"
+    t.integer   "normal_likes"
+    t.integer   "normal_dislikes"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.string    "formatted_name"
+    t.string    "borough"
+    t.integer   "rateable"
   end
 
   create_table "sessions", :force => true do |t|
-    t.string   "session_id", :null => false
-    t.text     "data"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string    "session_id", :null => false
+    t.text      "data"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
 
   create_table "slugs", :force => true do |t|
-    t.string   "name"
-    t.integer  "sluggable_id"
-    t.integer  "sequence",                     :default => 1, :null => false
-    t.string   "sluggable_type", :limit => 40
-    t.string   "scope"
-    t.datetime "created_at"
+    t.string    "name"
+    t.integer   "sluggable_id"
+    t.integer   "sequence",                     :default => 1, :null => false
+    t.string    "sluggable_type", :limit => 40
+    t.string    "scope"
+    t.timestamp "created_at"
   end
 
   add_index "slugs", ["name", "sluggable_type", "sequence", "scope"], :name => "index_slugs_on_n_s_s_and_s", :unique => true
   add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
 
   create_table "users", :force => true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "email"
-    t.string   "facebook_url"
-    t.boolean  "foodie"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "gender"
-    t.string   "username"
-    t.boolean  "admin"
+    t.string    "first_name"
+    t.string    "last_name"
+    t.string    "email"
+    t.string    "facebook_url"
+    t.boolean   "foodie"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.string    "gender"
+    t.string    "username"
+    t.boolean   "admin"
   end
 
 end
