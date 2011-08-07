@@ -1,7 +1,7 @@
 <script>
 FB.Event.subscribe('edge.remove', function(response) {
-	$.post('opinion/deleteid/' + response.split( '/' )[ 4 ], function(data) {
-		alert( data );
+	$.post('opinion/deleteid/' + response.split( '/' )[ 4 ] + '/<%= session[ :user_id ]%>', function(data) {
+		//alert( data );
 	});
 });
 </script>

@@ -29,7 +29,7 @@ FoodierecsTwo::Application.routes.draw do
   match '/recommendations' => 'pages#recommendations'
   
   match '/restaurants/findid/:formatted_name' => 'restaurants#findId'
-  match '/opinion/deleteid/:formatted_name' => 'opinions#deleteid'
+  match '/opinion/deleteid/:formatted_name/:user_id' => 'opinions#deleteid'
   
   match '/users/exists/:username' => 'users#exists'
  # match 'restaurant/one-if-by-land-two-if-by-sea' => 'pages#restaurant'

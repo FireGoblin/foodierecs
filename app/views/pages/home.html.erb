@@ -65,23 +65,6 @@ session[ :background_pic ] = backgroundPic %>
 		    <script>
 	  			FB.Event.subscribe('auth.login', function () {
 					FB.api('/me', function(response) {
-						/*
-						$.post( "<%= url_for( :controller => 'users', :only_path => false ) %>", 
-							{ 'user[first_name]': response.first_name, 'user[last_name]': response.last_name,
-								'user[username]': response.username, 'user[facebook_url]': response.link,
-								'user[gender]': response.gender,
-								'user[email]':response.email },
-							function(response){
-								if(response=="new") {
-									window.location = "<%= url_for( :action => 'becomeafoodie', :controller => 'pages', 
-																	:only_path => false ) %>";
-								}
-								else {
-									window.location = "<%= url_for( :action => 'main', :controller => 'pages', 
-																	:only_path => false ) %>";
-								}
-							}
-						);*/
 						$.post( "users/exists/" + response.username, function( data ){
 							if( data == "NO" ){
 								//need to create this user
@@ -99,7 +82,6 @@ session[ :background_pic ] = backgroundPic %>
 								window.location = "/session/new/" + data;
 							}
 						});
-						alert( response.first_name + " " + response.last_name + " logged in" );
 					})
 					
 		 		});

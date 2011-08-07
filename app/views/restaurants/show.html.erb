@@ -163,24 +163,12 @@ end %>
 				$('#opinion_restaurant_id').attr( 'value', <%=@restaurant.id%> );
 				$("#dialog").dialog('open');
   			});
-			<% #puts "\n\n session user id is " + session[ :user_id ].to_s + "\n\n\n" %>
-			<% if !session[ :user_id ].nil? && Opinion.where( :user_id => session[ :user_id ], :restaurant_id => @restaurant.id ).exists? %>
-			FB.Event.subscribe('edge.remove', function(response) {
-				jQuery.ajax({
-				  url: '/opinions/<%=Opinion.where( :user_id => session[ :user_id ], :restaurant_id => @restaurant.id ).first.id %>',
-				  type: "DELETE",
-				  data: {
-				    markdown: 'true'
-				  },
-				  success: function(data) {
-				    alert("Done!")
-				  },
-				  error: function(data, statusCode) {
-				    alert("ERROR")
-				  }
-				});
-  			});
-			<% end %>
+		</script>
+
+		<% if !session[ :user_id ].nil? && Opinion.where( :user_id => session[ :user_id ], :restaurant_id => @restaurant.id ).exists? %>
+			<!--To capture un-likes -->
+			<%= render 'layouts/unlike' %>
+		<% end %>
 		</script>
 		
 		<div class="foodieList">
