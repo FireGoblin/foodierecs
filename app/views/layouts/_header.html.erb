@@ -1,5 +1,5 @@
 <div id="header">
-	foodierecs
+	<a href="/" style="text-decoration: none; color: #ffffff;">foodierecs</a>
 	<div id="cse-search-form" style="width: 300px; float:right;">Loading</div>
 	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
 	<script type="text/javascript"> 
@@ -8,7 +8,8 @@
 	    var customSearchControl = new google.search.CustomSearchControl('010788010935488984076:nx5q4gvaf28');
 	    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
 	    var options = new google.search.DrawOptions();
-	    options.setSearchFormRoot('cse-search-form');    
+	    options.setSearchFormRoot('cse-search-form');
+	    options.setAutoComplete(true);    
 	    customSearchControl.draw('cse', options);
 	  }, true);
 	</script>
@@ -140,5 +141,9 @@
 	  .gs-promotion .gs-visibleUrl-short {
 	    color: #00CC00;
 	  }
+	  .cse .gsc-control-cse, .gsc-control-cse  {
+		padding: 0 !important;
+	  }
 	</style>
 </div>
+<div id="cse" style="width:100%;"></div> 

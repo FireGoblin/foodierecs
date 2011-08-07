@@ -1,7 +1,6 @@
 <html>
 <head>
 
-
 <title>Restaurant recommendations from Foodies - foodierecs</title>
 
 <%= stylesheet_link_tag "mainStyle", "http://fonts.googleapis.com/css?family=Lobster+Two", 
@@ -45,7 +44,7 @@
 	});
 	
 	google.maps.event.addListener(marker<%= rec.id %>, 'click', function() {
-		infowindow<%= rec.id %>.open(map<%= rec.id %>, marker<%= rec.id %>);
+		infowindow<%= rec.id %>.open(map, marker<%= rec.id %>);
 	  });
 	
 	<% end %>
@@ -60,9 +59,7 @@
 	</div>
 	-->
 	<div id="mainContent">
-		<div id="header">
-			foodierecs
-		</div>
+		<%= render 'layouts/header' %> 
 		<script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script>
 		
 		<div id="mainRecommendations">

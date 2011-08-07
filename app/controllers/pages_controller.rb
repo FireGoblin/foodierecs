@@ -51,7 +51,11 @@ class PagesController < ApplicationController
 	end
 	
 	def recommendations
-	  @recommended = restaurantRecommendations( session[ :user_id ] )
+    if( session[ :user_id ].nil? )
+      redirect_to "/"
+    else
+	    @recommended = restaurantRecommendations( session[ :user_id ] )
+    end
   end
 	
 end

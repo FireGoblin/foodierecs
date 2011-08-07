@@ -78,7 +78,7 @@
 
 		<span class="restaurantRecommend withFoodie"> 
 			<div id="fb-root"></div>
-			<fb:like href="<%= "http://foodierecs.heroku.com"+restaurant_path(restaurant) %>"  send="false" 
+			<fb:like href="<%= "http://foodierecs.com"+restaurant_path(restaurant) %>"  send="false" 
 					layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
 			<% if !Opinion.where( :restaurant_id => restaurant.id, :user_id => session[ :user_id ] ).exists? %>
 			<a href="javascript:function Z(){Z=''}Z()"> <!--this code makes it look like a link, even though it's not -->

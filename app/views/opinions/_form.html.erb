@@ -32,11 +32,11 @@
 	</div>
   <div class="field">
     <%= f.label :to_eat %><br />
-    <%= f.text_field :to_eat %>
+    <%= f.text_field :to_eat, :size => 20, :maxlength => 50 %>
   </div>
   <div class="field">
     <%= f.label :to_drink %><br />
-    <%= f.text_field :to_drink %>
+    <%= f.text_field :to_drink, :size => 20, :maxlength => 50 %>
   </div>
   <div class="actions">
     <%= f.submit %>

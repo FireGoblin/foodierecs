@@ -38,6 +38,14 @@ end %>
   <%puts "#{key.to_s} #{value.to_s}" %> 
 <% end %>
 
+<script>
+	$('#dialog').bind( "dialogclose", function( event, ui ) {
+		//TO DO: REMOVE THIS ONCE THE USER GETS LOGGED OUT WHEN LIKE IS HIT BUTTON PROBLEM SOLVED
+		//we do this because reloading will ensure they get re-logged in
+		window.location.reload();
+	});
+</script>
+
 </head>
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); $('#dialog').dialog({ autoOpen:false, modal:true });
 				$('html').css( 'background', 
@@ -89,14 +97,10 @@ end %>
 
 				$("#dialog").dialog('open');
   			});
-
-			FB.Event.subscribe('edge.remove', function(response) {
-				$.post('opinion/deleteid/' + response.split( '/' )[ 4 ], function(data) {
-					alert( data );
-				});
-				
-  			});
 		</script>
+		
+		<!--To capture un-likes -->
+		<%= render 'layouts/unlike' %>
 		
 		<div id="mainNotes">
 			foodierecs maintains a <b>small group of foodies to give recommendations</b>. foodies are nominated and voted upon. <br />

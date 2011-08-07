@@ -66,7 +66,12 @@ class OpinionsController < ApplicationController
       end
       rest.save   
       
-      render :text => "OK"
+      if @opinion.like == 1
+        #if it was a like, we should redirect to the page of the restaurant
+        redirect_to restaurant_path( @opinion.restaurant )
+      else
+        render :text => "OK"
+      end
     else
       render :text => "FAIL"
     end
@@ -110,7 +115,7 @@ class OpinionsController < ApplicationController
   
   def deleteid
     @restaurant = Restaurant.find( params[ :formatted_name ] )
-    @opinion = Opinion.where( :restaurant_id => @restaurant.id, :user_id => session[ :user_id ] ).first;
+    @opinion = Opinion.where( :restaurant_id => @restaurant.id, :user_id => params[ :user_id ] ).first;
     @opinion.destroy
     
     render :text => "OK"
