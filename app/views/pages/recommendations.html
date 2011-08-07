@@ -1,7 +1,6 @@
 <html>
 <head>
 
-
 <title>Restaurant recommendations from Foodies - foodierecs</title>
 
 <%= stylesheet_link_tag "mainStyle", "http://fonts.googleapis.com/css?family=Lobster+Two", 
@@ -41,7 +40,7 @@
     });   
 
 	var infowindow<%= rec.id %> = new google.maps.InfoWindow({  
-	  content: "<%= rec.restaurant.name.squeeze(" ").tr("(),?!':.[]", "") %>"
+	  content: "<%= rec.restaurant.name.squeeze(" ").tr("(),?!':.[]", "") %>\nTo eat: <%=rec.to_eat%>\nTo drink: <%=rec.to_drink%>"
 	});
 	
 	google.maps.event.addListener(marker<%= rec.id %>, 'click', function() {
