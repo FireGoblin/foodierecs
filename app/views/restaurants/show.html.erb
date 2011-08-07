@@ -48,7 +48,7 @@
 <!--Facebook Meta Tags -->
 <meta property="og:title" content="<%= @restaurant.name.squeeze(" ").tr("(),?!':.[]", "") %> - foodierecs" />
 <meta property="og:type" content="restaurant" />
-<meta property="og:url" content="<%= "http://foodierecs.heroku.com"+request.fullpath %>" />
+<meta property="og:url" content="<%= "http://foodierecs.com"+request.fullpath %>" />
 <meta property="og:image" content="" />
 <meta property="og:site_name" content="foodierecs.com" />
 <meta property="fb:app_id" content="213050112074083" />
@@ -123,7 +123,7 @@ end %>
 		</div>
 		
 		<div class="restaurantRecommend">
-			<fb:like href="<%="http://foodierecs.heroku.com"+request.fullpath%>" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
+			<fb:like href="<%="http://foodierecs.com"+request.fullpath%>" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
 			<% if ( !session[ :user_id ].nil? && !Opinion.where( :user_id => session[ :user_id ], :restaurant_id => @restaurant.id ).exists? ) %>
 				<a href=""><img id="notForFoodies" src="../images/not-for-foodies.jpg" /></a>
 			<% end %>
