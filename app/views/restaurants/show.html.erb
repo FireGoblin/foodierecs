@@ -112,6 +112,11 @@ end %>
 	<div id="restaurantContent">
 		<%= render 'layouts/header' %> 
 		
+		<div id="mainNotes">
+			foodierecs maintains a <b>small group of foodies to give recommendations</b>. foodies are nominated and voted upon. <br />
+			to see your recommendations, <%= link_to( 'click here', '/' )%> <br />
+		</div>
+		
 		<div id="restaurantInfo">
 			<div id="restaurantName">
 				<%= @restaurant.name %>

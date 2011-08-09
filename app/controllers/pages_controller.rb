@@ -13,7 +13,7 @@ class PagesController < ApplicationController
 	  if( session[ :user_id ].nil? )
 	    redirect_to "/"
     else
-  
+      puts "\n\nbeginning of main\n\n"
 	  	@recommended = restaurantRecommendations( session[ :user_id ] )
   		@recently_rated = recentlyRated
   		@places_to_rate = placesToRate( session[ :user_id ] )

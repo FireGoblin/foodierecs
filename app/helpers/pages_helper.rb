@@ -47,19 +47,50 @@ module PagesHelper
 	end
 	
 	def placesToRate(user_id)
+	  puts "\n\nbeginning of places to rate\n\n"
 		the_restaurants = Array.new
 		user = User.find_by_id(user_id)
 		users_opinions = user.opinions
-		Restaurant.order( "rateable DESC" )
-		raw_arr = Restaurant.where( "rating > ? OR rateable > 2", "4.0" )
-		raw_arr.each do |res|
-		  if ( res.opinions.where( :user_id => user.id ) == [] )
+		#raw_arr = Restaurant.order( "rateable DESC" )		
+		#raw_arr = Restaurant.where( "rating > ? OR rateable > 2", "4.0" )
+    raw_arr_five = Restaurant.where( "rateable = 5" );
+    raw_arr_four = Restaurant.where( "rateable = 4" );
+    raw_arr_three = Restaurant.where( "rateable = 3" );
+    raw_arr_rest = Restaurant.where( "rating > 3.5 AND rateable < 3" );
+
+    #now we put together the final array
+    raw_arr_five.shuffle.each do |res|
+      if ( res.opinions.where( :user_id => user.id ) == [] )
+	      the_restaurants[ the_restaurants.count ] = res
+      end
+      if( the_restaurants.count > 50 )
+        break
+      end
+    end
+    raw_arr_four.shuffle.each do |res|
+      if ( res.opinions.where( :user_id => user.id ) == [] )
+	      the_restaurants[ the_restaurants.count ] = res
+      end
+      if( the_restaurants.count > 75 )
+        break
+      end
+    end
+    raw_arr_three.shuffle.each do |res|
+      if ( res.opinions.where( :user_id => user.id ) == [] )
+	      the_restaurants[ the_restaurants.count ] = res
+      end
+      if( the_restaurants.count > 90 )
+        break
+      end
+    end
+    raw_arr_rest.shuffle.each do |res|
+      if ( res.opinions.where( :user_id => user.id ) == [] )
 	      the_restaurants[ the_restaurants.count ] = res
       end
       if( the_restaurants.count > 100 )
         break
       end
-	  end
+    end
 		
 		puts("\n\n\n#{the_restaurants.count}\n\n\n")
 		return the_restaurants
