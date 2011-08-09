@@ -1,5 +1,37 @@
 <div id="header">
 	<a href="/" style="text-decoration: none; color: #ffffff;">foodierecs</a>
+	<div id="search-form" style="width:300px; float:right;">
+		<input id="searchField" type="text" name="searchField" style="font-size:15px" /> 
+		<a href="javascript:function Z(){Z=''}Z()" style="text-decoration: none;">
+			<span id="searchButton" style="height:30px; font-size:15px; color: #fff;">Search</span>
+		</a>
+	</div>
+	<script>
+		$('#searchButton').click(function(){
+			doSearch();
+		});
+		$('#searchField').keypress(function(e){
+			if(e.which == 13){
+		    	doSearch();
+		    }
+		});
+		function doSearch(){
+			$('#cse').html( "Loading Search Results" );
+			$.post( '/restaurants/search', { 'query': $('#searchField').val() }, function( response ){
+				$('#cse').html( response );
+			});
+		}
+	</script>
+	<style type="text/css">
+		#cse{
+			padding-left: 10px 0 0 20px;
+		}
+		#cse a{
+			text-decoration: none;
+			color: #1477bb;
+		}
+	</style>
+	<!-- Removing until google indexes everything 
 	<div id="cse-search-form" style="width: 300px; float:right;">Loading</div>
 	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
 	<script type="text/javascript"> 
@@ -145,6 +177,6 @@
 	  .cse .gsc-control-cse, .gsc-control-cse  {
 		padding: 0 !important;
 	  }
-	</style>
+	</style>-->
 </div>
 <div id="cse" style="width:100%;"></div> 

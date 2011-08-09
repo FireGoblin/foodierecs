@@ -105,6 +105,22 @@ class RestaurantsController < ApplicationController
     render :text => @restaurant.id
   end
   
+  def search
+    results = Restaurant.where( "name LIKE ?", "%#{params[ :query ]}%" );
+    toRender = "Search Results:"
+    counter = 0
+    
+    results.each do |r|
+      toRender = toRender + "<div><a href=\""+url_for( r )+"\">"+r.name+ "</a></div>";
+      counter = counter + 1
+      if counter >= 10
+        break
+      end
+    end
+    
+    render :text => toRender
+  end
+  
    private
   
   	def admin_user
