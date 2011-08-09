@@ -107,7 +107,7 @@ class RestaurantsController < ApplicationController
   
   def search
     results = Restaurant.where( "name LIKE ?", "%#{params[ :query ]}%" );
-    toRender = "Search Results:"
+    toRender = "Search Results: " + results.count.to_s
     counter = 0
     
     results.each do |r|
