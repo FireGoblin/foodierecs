@@ -50,6 +50,9 @@ class PagesController < ApplicationController
 	def becomeafoodie
 	end
 	
+	def restaurant
+	end
+	
 	def recommendations
     if( session[ :user_id ].nil? )
       redirect_to "/"

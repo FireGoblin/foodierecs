@@ -1,0 +1,3 @@
+<% Restaurant.all.each do |r| %>
+	<%= link_to r.name, restaurants_path(r) %>
+<% end %>
