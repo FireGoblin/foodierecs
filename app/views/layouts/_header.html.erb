@@ -1,10 +1,11 @@
 <div id="header">
 	<a href="/" style="text-decoration: none; color: #ffffff;">foodierecs</a>
 	<div id="search-form" style="width:300px; float:right;">
-		<input id="searchField" type="text" name="searchField" style="font-size:15px" /> 
+		<form id="searchForm"><input id="searchField" type="text" name="searchField" style="font-size:15px" /> 
 		<a href="javascript:function Z(){Z=''}Z()" style="text-decoration: none;">
 			<span id="searchButton" style="height:30px; font-size:15px; color: #fff;">Search</span>
 		</a>
+		</form>
 	</div>
 	<script>
 		$('#searchButton').click(function(){
@@ -22,6 +23,29 @@
 			});
 		}
 	</script>
+	
+	<!-- FOR AUTOCOMPLETE -->
+	<script src='https://raw.github.com/flaptor/indextank-jquery/master/jquery.indextank.ize.js' type='text/javascript'></script>
+	<script src='https://raw.github.com/flaptor/indextank-jquery/master/jquery.indextank.autocomplete.js' type='text/javascript'></script> 
+	<link href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/themes/flick/jquery-ui.css' rel='stylesheet'>
+	<script type='text/javascript'> 
+		var publicApiUrl = "http://8taqg.api.indextank.com";
+		var indexName = "restaurantIndex";
+		
+		function autocompleteInit() {
+			// let the form be 'indextank-aware'
+			$("#searchForm").indextank_Ize(publicApiUrl, indexName);
+		    // let the query box have autocomplete
+		    $("#searchField").indextank_Autocomplete();
+		}
+		
+		$('#searchForm').submit(function( event ) {
+			event.preventDefault();
+			doSearch();
+		});
+	</script>
+	
+	
 	<style type="text/css">
 		#cse{
 			padding: 10px 0 0 20px;

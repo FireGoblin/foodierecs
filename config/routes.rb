@@ -32,15 +32,12 @@ FoodierecsTwo::Application.routes.draw do
   match '/restaurants/search' => 'restaurants#search'
   match '/opinion/deleteid/:formatted_name/:user_id' => 'opinions#deleteid'
   #temporary!
-  match '/restaurants/createindex' => 'restaurants#createindex'
+  match '/restaurant/createindex' => 'restaurants#createindex'
   
   match '/users/exists/:username' => 'users#exists'
   
   match ':id' => 'users#show'
   
- # match 'restaurant/one-if-by-land-two-if-by-sea' => 'pages#restaurant'
-  #match 'restaurant/#{x}'
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

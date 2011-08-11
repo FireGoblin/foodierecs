@@ -1,6 +1,6 @@
 class RestaurantsController < ApplicationController
 	before_filter :admin_user,  :only => [:index, :edit, :update, :destroy]
-	
+
   # GET /restaurants
   # GET /restaurants.xml
   def index
@@ -106,42 +106,28 @@ class RestaurantsController < ApplicationController
   end
   
   def search
-    results = Restaurant.where( "name LIKE ?", "#{params[ :query ]}%" );
-    toRender = "Search Results: " + results.count.to_s
-    counter = 0
-    
-    results.each do |r|
-      toRender = toRender + "<div><a href=\""+url_for( r )+"\">"+r.name+ "</a></div>";
-      counter = counter + 1
-      if counter >= 10
-        break
-      end
-    end
-    
-    render :text => toRender
-  end
-  
-  def createindex
     require 'rubygems'
     require 'indextank'
-
+    
     api_url = "http://:iFaogmnQtI163S@8taqg.api.indextank.com"
     api = IndexTank::Client.new api_url
 
     index = api.indexes "restaurantIndex"
-    #index.add
-
-    while not index.running?
-        sleep 0.5
-    end
-    count = 0
-    Restaurant.find_each do |r|
-      count += 1
-      docid = r.id
-      text = r.name + " " + r.formatted_name
-      index.document(docid).add({ :text => text })
-    end
-    render :text => "DONE"
+    
+    results = index.search( params[ :query ] )
+    toRender = "Search Results: " + results.count.to_s
+    counter = 0
+    
+    results['results'].each { |r|
+      restaurant = Restaurant.find_by_id( r[ 'docid' ] )
+      toRender = toRender + "<div><a href=\""+url_for( restaurant )+"\">"+restaurant.name+ "</a></div>";
+      counter = counter + 1
+      if counter >= 10
+        break
+      end
+    }
+    
+    render :text => toRender
   end
   
    private

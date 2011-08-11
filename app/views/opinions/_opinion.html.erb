@@ -62,9 +62,10 @@
 		<span class="foodies">foodies</span></div>
 	<div class="restaurantWithoutPct">
 		<div class="restaurant">
-			 <%= link_to restaurant.name, restaurant_path(restaurant) %> 
+			 <%= link_to restaurant.name, restaurant_path(restaurant)
+			street_num = restaurant.street_number == nil ? ( 0 ) : ( restaurant.street_number ) %> 
 			<span class="addressAndName">
-							(<%= restaurant.street_number + " " + restaurant.vicinity %>. Recommended by 
+							(<%= street_num.to_s + " " + restaurant.vicinity %>. Recommended by 
 							<%= link_to user.first_name + " " + user.last_name, user_path(user) %>) 
 			</span>
 		</div>

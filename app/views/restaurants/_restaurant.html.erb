@@ -2,7 +2,8 @@
 <div class="restaurant">
 	<%= @count %>. <%= link_to restaurant.name, restaurant_path(restaurant) %> 
 	<span class="addressAndName">
-					(<%= restaurant.street_number + " " + restaurant.vicinity %>)
+		<% street_num = restaurant.street_number == nil ? ( 0 ) : (restaurant.street_number) %>
+					(<%= street_num.to_s + " " + restaurant.vicinity %>)
 	</span>
 </div>
 <% #puts(restaurant_path(restaurant))%>
