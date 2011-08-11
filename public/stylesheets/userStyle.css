@@ -101,7 +101,8 @@ html {
 	float: left;
 	width: 330px;
 	margin-bottom: 20px;
-	min-height: 80px;
+	min-height: 100px;
+	height: 100px;
 }
 
 .restaurantNameRight{
