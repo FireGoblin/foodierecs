@@ -30,10 +30,10 @@ class UsersController < ApplicationController
   # GET /users/username
   # GET /users/username.xml
   def exists
-    @user = User.find(params[:username])
+    @user = User.where( "username = ?", params[:username] )
     
-    if !@user.nil?
-      render :text => @user.id
+    if !@user.empty?
+      render :text => @user.first.id
     else
       render :text => "NO"
     end
