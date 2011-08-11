@@ -1,6 +1,7 @@
 <% puts("\n\nopinion printout\n\n")%>
-<% if !@user.nil?%>
-	
+<% if !@user.nil? %>
+
+<% if opinion.like > 0 %>	
 	<% restaurant = opinion.restaurant %>
 	<div class="restaurantNameLeft"><%= link_to restaurant.name, restaurant_path(restaurant) %>
 		<div class="restaurantRecommend"> <div>
@@ -36,6 +37,7 @@
 		});
 	</script>
 	<%end%>
+<% end %>
 	
 <% elsif !@restaurant.nil? %>
 
