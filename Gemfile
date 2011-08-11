@@ -6,6 +6,8 @@ gem 'gravatar_image_tag', '1.0.0.pre2'
 gem 'will_paginate', '3.0.pre2'
 gem 'friendly_id', "3.2.1.1"
 gem 'omniauth'
+gem 'sunspot_rails'
+gem 'indextank'
 
 group :development do
 	gem 'rspec-rails', '2.6.1'

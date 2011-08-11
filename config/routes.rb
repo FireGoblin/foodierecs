@@ -31,6 +31,8 @@ FoodierecsTwo::Application.routes.draw do
   match '/restaurants/findid/:formatted_name' => 'restaurants#findId'
   match '/restaurants/search' => 'restaurants#search'
   match '/opinion/deleteid/:formatted_name/:user_id' => 'opinions#deleteid'
+  #temporary!
+  match '/restaurants/createindex' => 'restaurants#createindex'
   
   match '/users/exists/:username' => 'users#exists'
   

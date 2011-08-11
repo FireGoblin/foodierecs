@@ -121,6 +121,29 @@ class RestaurantsController < ApplicationController
     render :text => toRender
   end
   
+  def createindex
+    require 'rubygems'
+    require 'indextank'
+
+    api_url = "http://:iFaogmnQtI163S@8taqg.api.indextank.com"
+    api = IndexTank::Client.new api_url
+
+    index = api.indexes "restaurantIndex"
+    #index.add
+
+    while not index.running?
+        sleep 0.5
+    end
+    count = 0
+    Restaurant.find_each do |r|
+      count += 1
+      docid = r.id
+      text = r.name + " " + r.formatted_name
+      index.document(docid).add({ :text => text })
+    end
+    render :text => "DONE"
+  end
+  
    private
   
   	def admin_user
