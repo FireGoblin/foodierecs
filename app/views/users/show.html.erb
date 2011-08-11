@@ -59,7 +59,7 @@ end %>
 </head>
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); mapsInitialize();
 				$('html').css( 'background', 
-					'url(../images/background<%=session[ :background_pic ]%>.jpg) no-repeat center center fixed' );" >
+					'url(../images/background<%=session[ :background_pic ]%>.jpg) no-repeat center center fixed' ); autocompleteInit();" >
 <div id="fb-root"></div>
 	<!--
 	<div class="backgroundImageWrap">
