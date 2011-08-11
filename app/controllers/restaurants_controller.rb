@@ -115,7 +115,7 @@ class RestaurantsController < ApplicationController
     index = api.indexes "restaurantIndex"
     
     results = index.search( params[ :query ] )
-    toRender = "Search Results: " + results.count.to_s
+    toRender = "Search Results: " + results[ 'results' ].count.to_s
     counter = 0
     
     results['results'].each { |r|

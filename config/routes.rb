@@ -20,7 +20,7 @@ FoodierecsTwo::Application.routes.draw do
   #root :to => 'pages#index'
   root :to => 'pages#home'
   
-  match '/auth/:provider/callback', :to => 'sessions#create'
+  #match '/auth/:provider/callback', :to => 'sessions#create'
   match 'session/new/:id' => 'sessions#new'
   
   match '/main' => 'pages#main'

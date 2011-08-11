@@ -12,7 +12,7 @@ while not index.running?
     sleep 0.5
 end
 count = 0
-Restaurant.find_each( :conditions => "id > 3813" ) do |r|
+Restaurant.find_each( :conditions => "id > 16469" ) do |r|
   count += 1
   #if count % 100 == 0
 #    puts count
