@@ -43,6 +43,22 @@ html {
 
 }
 
+#mainNotes{
+	font-size: 14px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+#mainNotes a{
+	text-decoration: none;
+	color: #1477bb;
+}	
+
+#mainNotes b{
+	font-size: 15px;
+	color: #C81010;
+}
+
 #userInfo{
 
 }
