@@ -27,4 +27,8 @@ class SessionsController < ApplicationController
     redirect_to '/main'
   end
 
+  def destroy
+    session[ :user_id ] = nil
+    redirect_to '/main'
+  end
 end

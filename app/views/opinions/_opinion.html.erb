@@ -44,8 +44,12 @@
 	<% @user_temp = opinion.user %>
 	<% if opinion.foodie == @foodie && opinion.like > 0 %>
 	<div class="foodieName"><%= link_to @user_temp.first_name+' '+@user_temp.last_name, user_path(@user_temp) %>
-		<div class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></div>
-		<div class="foodieDrink"><span class="recTag">drink:</span><%= opinion.to_drink %></div>
+		<% if !opinion.to_eat.nil? && !opinion.to_eat.empty? %>
+			<div class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></div>
+		<%end%>
+		<% if !opinion.to_drink.nil? && !opinion.to_drink.empty? %>
+			<div class="foodieDrink"><span class="recTag">drink:</span><%= opinion.to_drink %></div>
+		<%end%>
 	</div>
 	<% end %>
 	

@@ -4,7 +4,7 @@
 <title>Restaurant recommendations from Foodies - foodierecs</title>
 
   <%= stylesheet_link_tag "homeStyle", "http://fonts.googleapis.com/css?family=Lobster+Two", "http://fonts.googleapis.com/css?family=News+Room" %>
-  <%= javascript_include_tag :defaults, "http://connect.facebook.net/en_US/all.js", 					
+  <%= javascript_include_tag :defaults, 				
 										"http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" %>
 
 <!--This is for displaying on iOS -->
@@ -25,10 +25,40 @@ session[ :background_pic ] = backgroundPic %>
 									'url(../images/background<%=session[ :background_pic ]%>.jpg) no-repeat center center fixed' );" >
 	<div id="fb-root"></div>
   	<script>
-    	window.fbAsyncInit = function() {
-      	//Replace appId with your own
-      	FB.init({appId: '213050112074083', status: true, cookie: true,
-               	xfbml: true});
+		window.fbAsyncInit = function() {
+      		//Replace appId with your own
+      		FB.init({appId: '213050112074083', status: true, cookie: true,
+	               	xfbml: true});
+			
+			signupLogin = function(){
+				FB.api('/me', function(response) {
+					$('#fbLogin').html( "Logging In...")
+					$.post( "users/exists/" + response.username, function( data ){
+						if( data == "NO" ){
+							//need to create this user
+							$.post( "<%= url_for( :controller => 'users', :only_path => false ) %>", 
+								{ 'user[first_name]': response.first_name, 'user[last_name]': response.last_name,
+									'user[username]': response.username, 'user[facebook_url]': response.link,
+									'user[gender]': response.gender,
+									'user[email]':response.email },
+								function(response){
+									//response should be the new user id
+									window.location = "/session/new/" + data;
+								} );
+						}
+						else{
+							window.location = "/session/new/" + data;
+						}
+					});
+				})
+			}
+	
+			FB.Event.subscribe('auth.login', function () {
+				signupLogin();
+
+	 		});
+	
+			
     	};
     	(function() {
 	  		var e = document.createElement('script'); e.async = true;
@@ -55,45 +85,8 @@ session[ :background_pic ] = backgroundPic %>
 			account
 		</div>
 		
-		<div id="fbLogin">
-			<!--
-			<div id="fb-root"></div>
-    			<a href="auth/facebook" class="auth_provider">
-    				<%= image_tag "facebook_64.png", :size => "64x64", :alt => "Facebook" %>
-    				Login with Facebook
-    			</a> 
-			-->
-		    <script>
-	  			FB.Event.subscribe('auth.login', function () {
-					FB.api('/me', function(response) {
-						$.post( "users/exists/" + response.username, function( data ){
-							if( data == "NO" ){
-								//need to create this user
-								$.post( "<%= url_for( :controller => 'users', :only_path => false ) %>", 
-									{ 'user[first_name]': response.first_name, 'user[last_name]': response.last_name,
-										'user[username]': response.username, 'user[facebook_url]': response.link,
-										'user[gender]': response.gender,
-										'user[email]':response.email },
-									function(response){
-										//response should be the new user id
-										window.location = "/session/new/" + data;
-									} );
-							}
-							else{
-								window.location = "/session/new/" + data;
-							}
-						});
-					})
-					
-		 		});
-	 		</script>
-    		<script>
-	        	FB.init({ 
-    	        appId:'213050112074083', cookie:true, 
-        	    status:true, xfbml:true 
-	         });
-		    </script>
-    		<fb:login-button perms="email,publish_stream">
+		<div id="fbLogin">    		
+    		<fb:login-button perms="email,publish_stream" onclick="signupLogin()" >
     			Login with Facebook
     		</fb:login-button>
     	</div>

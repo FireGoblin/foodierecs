@@ -22,6 +22,7 @@ FoodierecsTwo::Application.routes.draw do
   
   #match '/auth/:provider/callback', :to => 'sessions#create'
   match 'session/new/:id' => 'sessions#new'
+  match 'session/destroy' => 'sessions#destroy'
   
   match '/main' => 'pages#main'
   match '/becomeafoodie' => 'pages#becomeafoodie'

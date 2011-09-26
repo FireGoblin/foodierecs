@@ -1,12 +1,25 @@
+<%= stylesheet_link_tag "headerStyle" %>
+
 <div id="header">
-	<a href="/main" style="text-decoration: none; color: #ffffff;">foodierecs</a>
-	<div id="search-form" style="width:300px; float:right;">
-		<form id="searchForm"><input id="searchField" type="text" name="searchField" style="font-size:15px" /> 
-		<a href="javascript:function Z(){Z=''}Z()" style="text-decoration: none;">
-			<span id="searchButton" style="height:30px; font-size:15px; color: #fff;">Search</span>
-		</a>
-		</form>
+	<div id="headerLeft">
+		<a href="/main">foodierecs</a>
 	</div>
+	
+	<div id="headerRight">
+		<div id="search-form">
+			<form id="searchForm"><input id="searchField" type="text" name="searchField" style="font-size:15px" /> 
+			<a href="javascript:function Z(){Z=''}Z()" style="text-decoration: none;">
+				<span id="searchButton" style="height:30px; font-size:15px; color: #fff;">Search</span>
+			</a>
+			</form>
+		</div>
+		<div id="links">
+			<%= link_to( 'Your Ratings', user_path(session[:user_id]) ) %> | 
+			<%= link_to( 'Foodie Recommendations', '/recommendations' ) %> |
+			<%= link_to( 'Logout', '/session/destroy' )%>
+		</div>
+	</div>
+	
 	<script>
 		$('#searchButton').click(function(){
 			doSearch();

@@ -1,0 +1,29 @@
+#headerLeft{
+	float: left;
+	font-size: 40px;
+}
+
+#headerLeft a{
+	text-decoration: none; 
+	color: #ffffff;
+}
+
+#headerRight{
+	float:right;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+#headerRight #links{
+	margin-top: 0px;
+	font-family: 'News Cycle',"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+}
+
+#headerRight #links a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#search-form{
+	width:300px;
+}
