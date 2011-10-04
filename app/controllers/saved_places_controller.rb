@@ -7,7 +7,7 @@ class SavedPlacesController < ApplicationController
   def create
     @savedplace = SavedPlaces.new(params[:save_place])
     
-    #don't do anything if it's already there
+    #remove it if it is already there
     if( !SavedPlaces.where( :user_id => @savedplace.user_id, :restaurant_id => @savedplace.restaurant_id ).exists? )
       if @savedplace.save
         render :text => "OK"
@@ -15,7 +15,7 @@ class SavedPlacesController < ApplicationController
         render :text => "FAIL"
       end
     else
-      render :text => "OK"
+      SavedPlaces.destroy_all( :user_id => @savedplace.user_id, :restaurant_id => @savedplace.restaurant_id )
     end
   end
 

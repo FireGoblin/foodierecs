@@ -10,42 +10,66 @@
 <%if( !session[ :user_id ].nil? )%>
 <div class="restaurantRecommend noFoodie">
 	<% thisOpinion = restaurant.opinions.where( :user_id => session[ :user_id ] )
-	puts thisOpinion %>
-	<a href="#forFoodies" class="forFoodies" id="forFoodies<%=restaurant.id%>"></a>
-	<a href="#notForFoodies" class="notForFoodies" id="notForFoodies<%=restaurant.id%>"></a>
-	<a href="#saveForLater" class="saveForLater" id="saveForLater<%=restaurant.id%>"></a>
+	forFoodiesClass = ""
+	notForFoodiesClass = ""
+	if( thisOpinion.exists? )
+		if( thisOpinion.first.like == 1 )
+			forFoodiesClass = "forFoodiesOn"
+		elsif( thisOpinion.first.like == -1 )
+			notforFoodiesClass = "notForFoodiesOn"
+		end
+	end 
+	thisSaved = restaurant.saved_places.where( :user_id => session[ :user_id ] )
+	saveLaterClass= "saveForLater"
+	if( thisSaved.exists? )
+		saveLaterClass = "saveForLater saveForLaterOn"
+	end
+	%>
+	<a href="#forFoodies" class="forFoodies <%=forFoodiesClass%>" id="forFoodies<%=restaurant.id%>"></a>
+	<a href="#notForFoodies" class="notForFoodies <%=notforFoodiesClass%>" id="notForFoodies<%=restaurant.id%>"></a>
+	<a href="#saveForLater" class="<%=saveLaterClass%>" id="saveForLater<%=restaurant.id%>"></a>
 </div>
 
 <script>
 	$('#notForFoodies<%=restaurant.id%>').click(function(){
+		//turn this button on
 		$('#notForFoodies<%=restaurant.id%>').addClass( 'notForFoodiesOn');
+		
+		//if the other one is on, turn that off
+		if( $( '#forFoodies<%=restaurant.id%>' ).hasClass( "forFoodiesOn" ) )
+			$( '#forFoodies<%=restaurant.id%>' ).removeClass( "forFoodiesOn" );
+			
 		$.post( "/opinions", { 'opinion[user_id]': <%=session[ :user_id ]%>, 'opinion[restaurant_id]': <%=restaurant.id%>,
 			 					'opinion[foodie]': <%=User.find_by_id(session[:user_id]).foodie%>, 'opinion[like]': -1 }
 				)
 	});
-	
+
 	$('#forFoodies<%=restaurant.id%>').click(function(){
+		//turn this button on
 		$('#forFoodies<%=restaurant.id%>').addClass( 'forFoodiesOn');
 		
+		//if the other one is on, turn that off
+		if( $( '#notForFoodies<%=restaurant.id%>' ).hasClass( "forFoodiesOn" ) )
+			$( '#notForFoodies<%=restaurant.id%>' ).removeClass( "forFoodiesOn" );
+
 		//These two are for the dialog box
 		$('#opinion_restaurant_id').attr( 'value', <%=restaurant.id%> );
 		$("#dialog").dialog('open');
-		
+
 		$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
 				{ 'opinion[user_id]': <%= session[ :user_id ] %>, 'opinion[restaurant_id]': <%=restaurant.id%>,
 					'opinion[foodie]': <%= User.find_by_id(session[:user_id]).foodie %>, 'opinion[like]': 1 }
 			)
 	});
-	
+
 	$('#saveForLater<%=restaurant.id%>').click(function(){
-		$('#saveForLater<%=restaurant.id%>').addClass( 'saveForLaterOn');
+		//we do toggle here because this works for on/off
+		$('#saveForLater<%=restaurant.id%>').toggleClass( 'saveForLaterOn')
 		$.post( "/saved_places", 
 		 		{ 'save_place[user_id]': <%=session[ :user_id ]%>, 'save_place[restaurant_id]': <%=restaurant.id%>,
 			 					'save_place[foodie]': <%=User.find_by_id(session[:user_id]).foodie%> }
 				)
 	});
-
-  	
 </script>
 <%end%>
 

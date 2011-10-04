@@ -4,17 +4,16 @@
 <% if opinion.like > 0 %>	
 	<% restaurant = opinion.restaurant %>
 	<div class="restaurantNameLeft"><%= link_to restaurant.name, restaurant_path(restaurant) %>
-		<div class="restaurantRecommend"> <div>
-			<div id="fb-root"></div>
-			<fb:like href="<%= "http://foodierecs.com"+restaurant_path(restaurant) %>"  send="false" 
-					layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-			<% if !Opinion.where( :restaurant_id => restaurant.id, :user_id => session[ :user_id ] ).exists? %>
-			<a href="javascript:function Z(){Z=''}Z()"> <!--this code makes it look like a link, even though it's not -->
-				<img id="notForFoodies<%=restaurant.id%>" src="../images/not-for-foodies.jpg">
-			</a>
-			<% end %>
-			</div>
+		<%if( !session[ :user_id ].nil? )%>
+		<div class="restaurantRecommend">
+			<% thisOpinion = restaurant.opinions.where( :user_id => session[ :user_id ] )
+			puts thisOpinion %>
+			<a href="#forFoodies" class="forFoodies" id="forFoodies<%=restaurant.id%>"></a>
+			<a href="#notForFoodies" class="notForFoodies" id="notForFoodies<%=restaurant.id%>"></a>
+			<a href="#saveForLater" class="saveForLater" id="saveForLater<%=restaurant.id%>"></a>
 		</div>
+		<%end%>
+		
 		<% if !opinion.to_eat.nil? && !opinion.to_eat.empty? %>
 			<div class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></div>
 		<%end%>
@@ -23,24 +22,10 @@
 		<%end%>
 	</div>
 	
-	<%if( !session[ :user_id ].nil? )%>
-	<script>
-		$('#notForFoodies<%=restaurant.id%>').click(function(){
-			$.post( "/opinions", { 'opinion[user_id]': <%=session[ :user_id ]%>, 'opinion[restaurant_id]': <%=restaurant.id%>,
-				 					'opinion[foodie]': <%=User.find_by_id(session[:user_id]).foodie%>, 'opinion[like]': -1 },
-				function( data ){
-					//TO DO: WHY DOES IT NEVER GET IN HERE???
-					alert( 'Marked as not for foodies!' );
-				})
-				//alert( 'Marked as not for foodies!' );
-				$('#notForFoodies<%=restaurant.id%>').hide();
-		});
-	</script>
-	<%end%>
 <% end %>
 	
 <% elsif !@restaurant.nil? %>
-
+	<!-- This means this snippet is being called by a restaurant page -->
 	<% @user_temp = opinion.user %>
 	<% if opinion.foodie == @foodie && opinion.like > 0 %>
 	<div class="foodieName"><%= link_to @user_temp.first_name+' '+@user_temp.last_name, user_path(@user_temp) %>
@@ -48,7 +33,7 @@
 			<div class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></div>
 		<%end%>
 		<% if !opinion.to_drink.nil? && !opinion.to_drink.empty? %>
-			<div class="foodieDrink"><span class="recTag">drink:</span><%= opinion.to_drink %></div>
+			<div class="foodieDrink"><span class="recTag">drink:</span> <%= opinion.to_drink %></div>
 		<%end%>
 	</div>
 	<% end %>
@@ -83,33 +68,75 @@
 			<span class="foodieDrink"><span class="recTag">drink:</span> <%= opinion.to_drink %></span>
 		<%end%>
 
-		<span class="restaurantRecommend withFoodie"> 
-			<div id="fb-root"></div>
-			<fb:like href="<%= "http://foodierecs.com"+restaurant_path(restaurant) %>"  send="false" 
-					layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-			<% if !Opinion.where( :restaurant_id => restaurant.id, :user_id => session[ :user_id ] ).exists? %>
-			<a href="javascript:function Z(){Z=''}Z()"> <!--this code makes it look like a link, even though it's not -->
-				<img id="notForFoodies<%=restaurant.id%>" src="../images/not-for-foodies.jpg">
-			</a>
-			<% end %>
-		</span>
+		<%if( !session[ :user_id ].nil? )%>
+		<div class="restaurantRecommend withFoodie">
+			<% thisOpinion = restaurant.opinions.where( :user_id => session[ :user_id ] )
+			forFoodiesClass = ""
+			notForFoodiesClass = ""
+			if( thisOpinion.exists? )
+				if( thisOpinion.first.like == 1 )
+					forFoodiesClass = "forFoodiesOn"
+				elsif( thisOpinion.first.like == -1 )
+					notforFoodiesClass = "notForFoodiesOn"
+				end
+			end 
+			thisSaved = restaurant.saved_places.where( :user_id => session[ :user_id ] )
+			saveLaterClass = "saveForLater"
+			if( thisSaved.exists? )
+				saveLaterClass = "saveForLater saveForLaterOn"
+			end
+			%>
+			<a href="#forFoodies" class="forFoodies <%=forFoodiesClass%>" id="forFoodies<%=restaurant.id%>"></a>
+			<a href="#notForFoodies" class="notForFoodies <%=notforFoodiesClass%>" id="notForFoodies<%=restaurant.id%>"></a>
+			<a href="#saveForLater" class="<%=saveLaterClass%>" id="saveForLater<%=restaurant.id%>"></a>
+		</div>
+		<%end%>
+		
+		<script>
+			$('#notForFoodies<%=restaurant.id%>').click(function(){
+				//turn this button on
+				$('#notForFoodies<%=restaurant.id%>').addClass( 'notForFoodiesOn');
+				
+				//if the other one is on, turn that off
+				if( $( '#forFoodies<%=restaurant.id%>' ).hasClass( "forFoodiesOn" ) )
+					$( '#forFoodies<%=restaurant.id%>' ).removeClass( "forFoodiesOn" );
+					
+				$.post( "/opinions", { 'opinion[user_id]': <%=session[ :user_id ]%>, 'opinion[restaurant_id]': <%=restaurant.id%>,
+					 					'opinion[foodie]': <%=User.find_by_id(session[:user_id]).foodie%>, 'opinion[like]': -1 }
+						)
+			});
+
+			$('#forFoodies<%=restaurant.id%>').click(function(){
+				//turn this button on
+				$('#forFoodies<%=restaurant.id%>').addClass( 'forFoodiesOn');
+				
+				//if the other one is on, turn that off
+				if( $( '#notForFoodies<%=restaurant.id%>' ).hasClass( "forFoodiesOn" ) )
+					$( '#notForFoodies<%=restaurant.id%>' ).removeClass( "forFoodiesOn" );
+
+				//These two are for the dialog box
+				$('#opinion_restaurant_id').attr( 'value', <%=restaurant.id%> );
+				$("#dialog").dialog('open');
+
+				$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
+						{ 'opinion[user_id]': <%= session[ :user_id ] %>, 'opinion[restaurant_id]': <%=restaurant.id%>,
+							'opinion[foodie]': <%= User.find_by_id(session[:user_id]).foodie %>, 'opinion[like]': 1 }
+					)
+			});
+
+			$('#saveForLater<%=restaurant.id%>').click(function(){
+				//we do toggle here because this works for on/off
+				$('#saveForLater<%=restaurant.id%>').toggleClass( 'saveForLaterOn')
+				$.post( "/saved_places", 
+				 		{ 'save_place[user_id]': <%=session[ :user_id ]%>, 'save_place[restaurant_id]': <%=restaurant.id%>,
+					 					'save_place[foodie]': <%=User.find_by_id(session[:user_id]).foodie%> }
+						)
+			});
+		</script>
+		
 	</div>
 </div>
 
-<%if( !session[ :user_id ].nil? )%>
-<script>
-	$('#notForFoodies<%=restaurant.id%>').click(function(){
-		$.post( "/opinions", { 'opinion[user_id]': <%=session[ :user_id ]%>, 'opinion[restaurant_id]': <%=restaurant.id%>,
-			 					'opinion[foodie]': <%=User.find_by_id(session[:user_id]).foodie%>, 'opinion[like]': -1 },
-			function( data ){
-				//TO DO: WHY DOES IT NEVER GET IN HERE???
-				alert( 'Marked as not for foodies!' );
-			})
-			//alert( 'Marked as not for foodies!' );
-			$('#notForFoodies<%=restaurant.id%>').hide();
-	});
-</script>
-<%end%>
 
 <% @count += 1 %>	
 <% end %>
