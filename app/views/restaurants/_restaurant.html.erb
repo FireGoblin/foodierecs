@@ -6,33 +6,47 @@
 					(<%= street_num.to_s + " " + restaurant.vicinity %>)
 	</span>
 </div>
-<% #puts(restaurant_path(restaurant))%>
-<div class="restaurantRecommend noFoodie"> <div>
-	<div id="fb-root"></div>
-	<fb:like href="<%= "http://foodierecs.com"+restaurant_path(restaurant) %>"  send="false" 
-			layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-	<% if !Opinion.where( :restaurant_id => restaurant.id, :user_id => session[ :user_id ] ).exists? %>
-	<a href="javascript:function Z(){Z=''}Z()">
-		<img id="notForFoodies<%=restaurant.id%>" src="../images/not-for-foodies.jpg">
-	</a>
-	<% end %>
-	</div>
-	
-	<%if( !session[ :user_id ].nil? )%>
-	<script>
-		$('#notForFoodies<%=restaurant.id%>').click(function(){
-			$.post( "/opinions", { 'opinion[user_id]': <%=session[ :user_id ]%>, 'opinion[restaurant_id]': <%=restaurant.id%>,
-				 					'opinion[foodie]': <%=User.find_by_id(session[:user_id]).foodie%>, 'opinion[like]': -1 },
-				function( data ){
-					//TO DO: WHY DOES IT NEVER GET IN HERE???
-					alert( 'Marked as not for foodies!' );
-				})
-			//alert( 'Marked as not for foodies!' );
-			$('#notForFoodies<%=restaurant.id%>').hide();
-		});
-	</script>
-	<%end%>
 
-	
+<%if( !session[ :user_id ].nil? )%>
+<div class="restaurantRecommend noFoodie">
+	<% thisOpinion = restaurant.opinions.where( :user_id => session[ :user_id ] )
+	puts thisOpinion %>
+	<a href="#forFoodies" class="forFoodies" id="forFoodies<%=restaurant.id%>"></a>
+	<a href="#notForFoodies" class="notForFoodies" id="notForFoodies<%=restaurant.id%>"></a>
+	<a href="#saveForLater" class="saveForLater" id="saveForLater<%=restaurant.id%>"></a>
 </div>
+
+<script>
+	$('#notForFoodies<%=restaurant.id%>').click(function(){
+		$('#notForFoodies<%=restaurant.id%>').addClass( 'notForFoodiesOn');
+		$.post( "/opinions", { 'opinion[user_id]': <%=session[ :user_id ]%>, 'opinion[restaurant_id]': <%=restaurant.id%>,
+			 					'opinion[foodie]': <%=User.find_by_id(session[:user_id]).foodie%>, 'opinion[like]': -1 }
+				)
+	});
+	
+	$('#forFoodies<%=restaurant.id%>').click(function(){
+		$('#forFoodies<%=restaurant.id%>').addClass( 'forFoodiesOn');
+		
+		//These two are for the dialog box
+		$('#opinion_restaurant_id').attr( 'value', <%=restaurant.id%> );
+		$("#dialog").dialog('open');
+		
+		$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
+				{ 'opinion[user_id]': <%= session[ :user_id ] %>, 'opinion[restaurant_id]': <%=restaurant.id%>,
+					'opinion[foodie]': <%= User.find_by_id(session[:user_id]).foodie %>, 'opinion[like]': 1 }
+			)
+	});
+	
+	$('#saveForLater<%=restaurant.id%>').click(function(){
+		$('#saveForLater<%=restaurant.id%>').addClass( 'saveForLaterOn');
+		$.post( "/saved_places", 
+		 		{ 'save_place[user_id]': <%=session[ :user_id ]%>, 'save_place[restaurant_id]': <%=restaurant.id%>,
+			 					'save_place[foodie]': <%=User.find_by_id(session[:user_id]).foodie%> }
+				)
+	});
+
+  	
+</script>
+<%end%>
+
 <% @count += 1 %>	

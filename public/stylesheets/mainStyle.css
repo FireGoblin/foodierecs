@@ -84,8 +84,8 @@ html {
 }	
 
 .restaurantRecommend{
-	width: 250px;
-	height: 20px;
+	width: 400px;
+	height: 28px;
 	overflow: hidden;
 	padding-left: 20px;
 }
@@ -99,6 +99,56 @@ html {
 	margin: 5px 0px;
 }
 
+.restaurantRecommend .forFoodies,
+.restaurantRecommend .notForFoodies,
+.restaurantRecommend .saveForLater{
+	width: 130px;
+	height: 28px;
+	display: inline-block;
+	
+	background: url(../images/button-bar.jpg);
+}
+
+.restaurantRecommend .forFoodies{
+	background-position: 0px 0px;
+}
+
+.restaurantRecommend .forFoodies:hover{
+	background-position: -131px 0px;
+}
+
+.restaurantRecommend .forFoodies:active,
+.restaurantRecommend .forFoodiesOn{
+	background-position: -262px 0px !important;
+}
+
+.restaurantRecommend .notForFoodies{
+	background-position: 0px -28px;
+}
+
+.restaurantRecommend .notForFoodies:hover{
+	background-position: -131px -28px;
+}
+
+.restaurantRecommend .notForFoodies:active,
+.restaurantRecommend .notForFoodiesOn{
+	background-position: -262px -28px;
+}
+
+.restaurantRecommend .saveForLater{
+	background-position: 0px -56px;
+}
+
+.restaurantRecommend .saveForLater:hover{
+	background-position: -131px -56px;
+}
+
+.restaurantRecommend .saveForLater:active,
+.restaurantRecommend .saveForLaterOn{
+	background-position: -262px -56px;
+}
+
+/*
 .restaurantRecommend iframe{
 	float: left;
 }
@@ -114,6 +164,7 @@ html {
 	border: 0;
 	padding-left: 5px;
 }
+*/
 
 .restaurantWithPct{
 	margin: 25px 0;

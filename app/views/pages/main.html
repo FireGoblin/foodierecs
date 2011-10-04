@@ -81,6 +81,7 @@ end %>
 		<img src="../images/bar.jpg" class="backgroundImage" width="1264" height="790">
 	</div>
 	-->
+	<!--
 		<script>
 			FB.Event.subscribe('edge.create', function(response) {
 				$.post('restaurants/findid/' + response.split( '/' )[ 4 ], function(data) {
@@ -99,9 +100,9 @@ end %>
   			});
 		</script>
 		
-		<!--To capture un-likes -->
+		<!--To capture un-likes 
 		<%= render 'layouts/unlike' %>
-		
+		-->
 		<!--<div id="mainNotes">
 			foodierecs maintains a <b>small group of NYC foodies to give recommendations</b>. They are nominated and voted upon<br />
 			to learn more about the process, <%= link_to( 'click here', '/becomeafoodie' )%> <br />

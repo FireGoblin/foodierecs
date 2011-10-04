@@ -1,4 +1,18 @@
 FoodierecsTwo::Application.routes.draw do
+  get "saved_places/new"
+
+  get "saved_places/create"
+
+  get "saved_places/update"
+
+  get "saved_places/edit"
+
+  get "saved_places/destroy"
+
+  get "saved_places/index"
+
+  get "saved_places/show"
+
   #get "sessions/new"
   get "pages/home"
   #get "pages/index"
@@ -14,6 +28,8 @@ FoodierecsTwo::Application.routes.draw do
   resources :nominations
 
   resources :feeds
+  
+  resources :saved_places
   
   #resources :pages
   

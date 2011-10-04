@@ -4,8 +4,7 @@
 <title>Restaurant recommendations from Foodies - foodierecs</title>
 
   <%= stylesheet_link_tag "homeStyle", "http://fonts.googleapis.com/css?family=Lobster+Two", "http://fonts.googleapis.com/css?family=News+Room" %>
-  <%= javascript_include_tag :defaults, 				
-										"http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" %>
+  <%= javascript_include_tag :defaults, "http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" %>
 
 <!--This is for displaying on iOS -->
 <meta name="viewport" content="width=500">
@@ -54,7 +53,7 @@ session[ :background_pic ] = backgroundPic %>
 			}
 	
 			FB.Event.subscribe('auth.login', function () {
-				signupLogin();
+				//signupLogin();
 
 	 		});
 	
