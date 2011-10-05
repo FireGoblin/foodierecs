@@ -13,11 +13,14 @@
 			</a>
 			</form>
 		</div>
+		<% if !session[ :user_id ].nil? 
+			session[ :user_name] = "sikakkar" %>
 		<div id="links">
-			<%= link_to( 'Your Ratings', user_path(session[:user_id]) ) %> | 
+			<%= link_to( 'Your Ratings', "/" + session[ :user_name ] ) %> | 
 			<%= link_to( 'Foodie Recommendations', '/recommendations' ) %> |
 			<%= link_to( 'Logout', '/session/destroy' )%>
 		</div>
+		<% end %>
 	</div>
 	
 	<script>

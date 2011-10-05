@@ -23,6 +23,7 @@ class SessionsController < ApplicationController
     @user = User.find(params[:id])
     if( !@user.nil? )
       session[ :user_id ] = @user.id
+      session[ :user_name ] = @user.username
     end
     redirect_to '/main'
   end
