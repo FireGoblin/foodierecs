@@ -36,28 +36,60 @@ end %>
     }
     var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
-	<% @user.opinions.each do |rec| %>
-	 myLatlng = new google.maps.LatLng(<%= rec.restaurant.lat %>,<%= rec.restaurant.long %>);
-    var marker<%= rec.id %> = new google.maps.Marker({
-        position: myLatlng, 
-        map: map,
-        title: "<%= rec.restaurant.name.squeeze(" ").tr("(),?!':.[]", "") %>"
-    });   
-
-	var infowindow<%= rec.id %> = new google.maps.InfoWindow({  
-	  content: "<%= rec.restaurant.name.squeeze(" ").tr("(),?!':.[]", "") %>"
-	});
+	//For saved places
+	var blueMarker = new google.maps.MarkerImage( "http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png" );
 	
-	google.maps.event.addListener(marker<%= rec.id %>, 'click', function() {
-		infowindow<%= rec.id %>.open(map, marker<%= rec.id %>);
-	  });
+	<% @user.saved_places.each do |saved| %>
+		myLatlng = new google.maps.LatLng(<%= saved.restaurant.lat %>,<%= saved.restaurant.long %>);
+	    var marker<%= saved.id %> = new google.maps.Marker({
+	        position: myLatlng, 
+	        map: map,
+	        title: "<%= saved.restaurant.name.squeeze(" ").tr("(),?!':.[]", "") %>",
+			icon: blueMarker
+	    });   
+
+		var infowindow<%= saved.id %> = new google.maps.InfoWindow({  
+		  content: "<b><%= saved.restaurant.name %></b><br />Saved Restaurant"
+		});
+	
+		google.maps.event.addListener(marker<%= saved.id %>, 'click', function() {
+			infowindow<%= saved.id %>.open(map, marker<%= saved.id %>);
+		  });
+	
+	<% end %>
+
+	//liked places
+	var greenMarker = new google.maps.MarkerImage( "http://www.google.com/intl/en_us/mapfiles/ms/micons/green-dot.png" );
+		
+	<% @user.opinions.each do |rec| %>
+		<% if rec.like == 1 %>
+		myLatlng = new google.maps.LatLng(<%= rec.restaurant.lat %>,<%= rec.restaurant.long %>);
+	    var marker<%= rec.id %> = new google.maps.Marker({
+	        position: myLatlng, 
+	        map: map,
+	        title: "<%= rec.restaurant.name.squeeze(" ").tr("(),?!':.[]", "") %>",
+			icon: greenMarker
+	    });   
+
+		var cont = "<b><%= rec.restaurant.name %></b><br />";
+		if( "<%=rec.to_eat%>" != "" ) { cont = cont + "<b>to eat:</b> <%=rec.to_eat%><br />"; }
+   	    if( "<%=rec.to_drink%>" != "" ) { cont = cont + "<b>to drink:</b> <%=rec.to_drink%>"; }
+
+		var infowindow<%= rec.id %> = new google.maps.InfoWindow({  
+		  content: cont
+		});
+	
+		google.maps.event.addListener(marker<%= rec.id %>, 'click', function() {
+			infowindow<%= rec.id %>.open(map, marker<%= rec.id %>);
+		  });
+		<% end %>
 	
 	<% end %>
   }
 </script>
 
 </head>
-<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); mapsInitialize();
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 500); $('#dialog').dialog({ autoOpen:false, modal:true }); mapsInitialize();
 				$('html').css( 'background', 
 					'url(../images/background<%=session[ :background_pic ]%>.jpg) no-repeat center center fixed' ); autocompleteInit();" >
 <div id="fb-root"></div>
@@ -72,11 +104,6 @@ end %>
 	<div id="userContent">
 		<%= render 'layouts/header' %> 
 		
-		<div id="mainNotes">
-			foodierecs maintains a <b>small group of NYC foodies to give recommendations</b>. They are nominated and voted upon<br />
-			to see your recommendations, <%= link_to( 'click here', '/' )%> <br />
-		</div>
-		
 		<div id="userInfo">
 			<div id="userName">
 				<%= @user.first_name + " " + @user.last_name %>
@@ -88,6 +115,12 @@ end %>
 				<% else %>
 					Non-Foodie
 				<% end %>
+			</div>
+			
+			<!--For liking restaurants -->
+			<div id="dialog" title="Recommendations" style="display:none" >
+				<% @opinion = Opinion.new %>
+				<%= render :partial => 'opinions/form' %>
 			</div>
 			
 			<div id="nomination">
@@ -208,14 +241,24 @@ end %>
 		
 		<div id="map_canvas"></div>
 		
-		<div class="restaurantListHeader"><b>Restaurants <%= @user.first_name %> likes:</b> </div>
-		
 		<div class="restaurantList">
+			<div class="restaurantListHeader"><b>Restaurants <%= @user.first_name %> likes:</b> </div>
 			<% unless @user.opinions.empty? %>
 				<table class="opinions" summary="User opinions">
 					<%= render @opinions %>
 				</table>
 				<%= will_paginate @opinions %>
+			<% end %>
+		</div>
+		
+		<div class="savedList">
+			<div class="savedListHeader"><b>Saved Restaurants:</b> </div>
+			<% if !@user.saved_places.empty? %>
+				<table class="saved_places" summary="Saved Places">
+					<%= render :partial => 'saved_places/saved_place', :collection => @saved_places %>
+				</table>
+			<%else%>
+				Nothing Saved!
 			<% end %>
 		</div>
 		

@@ -49,8 +49,8 @@
 		$('#forFoodies<%=restaurant.id%>').addClass( 'forFoodiesOn');
 		
 		//if the other one is on, turn that off
-		if( $( '#notForFoodies<%=restaurant.id%>' ).hasClass( "forFoodiesOn" ) )
-			$( '#notForFoodies<%=restaurant.id%>' ).removeClass( "forFoodiesOn" );
+		if( $( '#notForFoodies<%=restaurant.id%>' ).hasClass( "notForFoodiesOn" ) )
+			$( '#notForFoodies<%=restaurant.id%>' ).removeClass( "notForFoodiesOn" );
 
 		//These two are for the dialog box
 		$('#opinion_restaurant_id').attr( 'value', <%=restaurant.id%> );

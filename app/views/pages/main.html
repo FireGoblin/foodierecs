@@ -100,14 +100,10 @@ end %>
   			});
 		</script>
 		
-		<!--To capture un-likes 
+		To capture un-likes 
 		<%= render 'layouts/unlike' %>
 		-->
-		<!--<div id="mainNotes">
-			foodierecs maintains a <b>small group of NYC foodies to give recommendations</b>. They are nominated and voted upon<br />
-			to learn more about the process, <%= link_to( 'click here', '/becomeafoodie' )%> <br />
-			to see everything you have rated, <%= link_to('click here', user_path(session[:user_id]) ) %> <br />
-		</div>-->
+
 		<script src="http://connect.facebook.net/en_US/all.js#appId=243953148956166&amp;xfbml=1"></script>
 		<div id="mainRecommendations">
 			<div class="mainSectionTitle">Recommendations from Foodies</div>
@@ -154,9 +150,11 @@ end %>
 		<div id="mainRecent">
 			<div class="mainSectionTitle">
 				Recently rated
+				<!--
 				<div class="mainSectionSubTitle">
 					<a href="">Click here</a> to subscribe to a weekly feed
 				</div>
+				-->
 			</div>
 			<div class="sectionList">
 				<% puts("\n\n\n#{@recently_rated.count}\n\n\n") %>
@@ -165,7 +163,6 @@ end %>
 					<table class="opinions" summary="User opinions">
 					<%= render @recently_rated %>
 				</table>
-				<%= will_paginate @recently_rated %>
 				<% end %>=
 
 			</div>

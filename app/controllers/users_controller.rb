@@ -17,7 +17,8 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @restaurant = nil
-    @opinions = @user.opinions.paginate(:page => params[:page], :per_page => 6)
+    @opinions = @user.opinions.paginate(:page => params[:page], :per_page => 20)
+    @saved_places = @user.saved_places
     @title = @user.username
 		
     #redirect_to "users/#{@user.[:facebook_url]}"

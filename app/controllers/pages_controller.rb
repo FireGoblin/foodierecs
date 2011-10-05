@@ -41,8 +41,8 @@ class PagesController < ApplicationController
   	  	@places_to_rate = @places_to_rate - recommended_restaurants - rated_restaurants
   		end
   		
-  		@recommended = @recommended.paginate(:page => params[:page], :per_page => 5)
-  		@recently_rated = @recently_rated.paginate(:page => params[:page], :per_page => 5)
+  		#@recommended = @recommended.paginate(:page => params[:page], :per_page => 5)
+  		#@recently_rated = @recently_rated.paginate(:page => params[:page], :per_page => 9)
   		@places_to_rate = @places_to_rate.paginate(:page => params[:page], :per_page => 9)
 	  end
 	end

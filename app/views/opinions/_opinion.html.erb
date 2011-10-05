@@ -1,25 +1,66 @@
 <% puts("\n\nopinion printout\n\n")%>
 <% if !@user.nil? %>
-
+<!-- This means this is being called from the user page -->
 <% if opinion.like > 0 %>	
 	<% restaurant = opinion.restaurant %>
-	<div class="restaurantNameLeft"><%= link_to restaurant.name, restaurant_path(restaurant) %>
-		<%if( !session[ :user_id ].nil? )%>
-		<div class="restaurantRecommend">
-			<% thisOpinion = restaurant.opinions.where( :user_id => session[ :user_id ] )
-			puts thisOpinion %>
-			<a href="#forFoodies" class="forFoodies" id="forFoodies<%=restaurant.id%>"></a>
-			<a href="#notForFoodies" class="notForFoodies" id="notForFoodies<%=restaurant.id%>"></a>
-			<a href="#saveForLater" class="saveForLater" id="saveForLater<%=restaurant.id%>"></a>
-		</div>
-		<%end%>
-		
+	<div class="restaurantNameRec"><%= link_to restaurant.name, restaurant_path(restaurant) %>
 		<% if !opinion.to_eat.nil? && !opinion.to_eat.empty? %>
 			<div class="foodieDish"><span class="recTag">eat:</span> <%= opinion.to_eat %></div>
 		<%end%>
 		<% if !opinion.to_drink.nil? && !opinion.to_drink.empty? %>
 			<div class="foodieDrink"><span class="recTag">drink:</span> <%= opinion.to_drink %></div>
 		<%end%>
+		
+		<%if( !session[ :user_id ].nil? )%>
+		<div class="restaurantRecommend withFoodie">
+			<% thisOpinion = restaurant.opinions.where( :user_id => session[ :user_id ] )
+			forFoodiesClass = ""
+			notForFoodiesClass = ""
+			if( thisOpinion.exists? )
+				if( thisOpinion.first.like == 1 )
+					forFoodiesClass = "forFoodiesOn"
+				elsif( thisOpinion.first.like == -1 )
+					notforFoodiesClass = "notForFoodiesOn"
+				end
+			end 
+			%>
+			<a href="#forFoodies" class="forFoodies <%=forFoodiesClass%>" id="forFoodies<%=restaurant.id%>"></a>
+			<a href="#notForFoodies" class="notForFoodies <%=notforFoodiesClass%>" id="notForFoodies<%=restaurant.id%>"></a>
+		</div>
+		<script>
+			$('#notForFoodies<%=restaurant.id%>').click(function(){
+				//turn this button on
+				$('#notForFoodies<%=restaurant.id%>').addClass( 'notForFoodiesOn');
+				
+				//if the other one is on, turn that off
+				if( $( '#forFoodies<%=restaurant.id%>' ).hasClass( "forFoodiesOn" ) )
+					$( '#forFoodies<%=restaurant.id%>' ).removeClass( "forFoodiesOn" );
+					
+				$.post( "/opinions", { 'opinion[user_id]': <%=session[ :user_id ]%>, 'opinion[restaurant_id]': <%=restaurant.id%>,
+					 					'opinion[foodie]': <%=User.find_by_id(session[:user_id]).foodie%>, 'opinion[like]': -1 }
+						)
+			});
+
+			$('#forFoodies<%=restaurant.id%>').click(function(){
+				//turn this button on
+				$('#forFoodies<%=restaurant.id%>').addClass( 'forFoodiesOn');
+				
+				//if the other one is on, turn that off
+				if( $( '#notForFoodies<%=restaurant.id%>' ).hasClass( "notForFoodiesOn" ) )
+					$( '#notForFoodies<%=restaurant.id%>' ).removeClass( "notForFoodiesOn" );
+
+				//These two are for the dialog box
+				$('#opinion_restaurant_id').attr( 'value', <%=restaurant.id%> );
+				$("#dialog").dialog('open');
+
+				$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
+						{ 'opinion[user_id]': <%= session[ :user_id ] %>, 'opinion[restaurant_id]': <%=restaurant.id%>,
+							'opinion[foodie]': <%= User.find_by_id(session[:user_id]).foodie %>, 'opinion[like]': 1 }
+					)
+			});
+		</script>
+		<%end%>
+		
 	</div>
 	
 <% end %>
@@ -39,7 +80,7 @@
 	<% end %>
 	
 <% else %>
-
+<!-- This means this is being called from the home page -->
 <% restaurant = opinion.restaurant %>
 <% user = opinion.user %>
 <div class="restaurantWithPct">
@@ -90,8 +131,6 @@
 			<a href="#notForFoodies" class="notForFoodies <%=notforFoodiesClass%>" id="notForFoodies<%=restaurant.id%>"></a>
 			<a href="#saveForLater" class="<%=saveLaterClass%>" id="saveForLater<%=restaurant.id%>"></a>
 		</div>
-		<%end%>
-		
 		<script>
 			$('#notForFoodies<%=restaurant.id%>').click(function(){
 				//turn this button on
@@ -111,8 +150,8 @@
 				$('#forFoodies<%=restaurant.id%>').addClass( 'forFoodiesOn');
 				
 				//if the other one is on, turn that off
-				if( $( '#notForFoodies<%=restaurant.id%>' ).hasClass( "forFoodiesOn" ) )
-					$( '#notForFoodies<%=restaurant.id%>' ).removeClass( "forFoodiesOn" );
+				if( $( '#notForFoodies<%=restaurant.id%>' ).hasClass( "notForFoodiesOn" ) )
+					$( '#notForFoodies<%=restaurant.id%>' ).removeClass( "notForFoodiesOn" );
 
 				//These two are for the dialog box
 				$('#opinion_restaurant_id').attr( 'value', <%=restaurant.id%> );
@@ -133,7 +172,7 @@
 						)
 			});
 		</script>
-		
+		<%end%>
 	</div>
 </div>
 

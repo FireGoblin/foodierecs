@@ -112,70 +112,87 @@ end %>
 	<div id="restaurantContent">
 		<%= render 'layouts/header' %> 
 		
-		<div id="mainNotes">
-			foodierecs maintains a <b>small group of NYC foodies to give recommendations</b>. They are nominated and voted upon<br />
-			to see your recommendations, <%= link_to( 'click here', '/main' )%> <br />
-		</div>
-		
 		<div id="restaurantInfo">
 			<div id="restaurantName">
-				<%= @restaurant.name %>
+				<%= @restaurant.name %> 
 			</div>
 			
 			<div id="restaurantAddress">
-				<%= @restaurant.address %>
+				<%= @restaurant.address %> 
 			</div>
 		</div>
 		
-		<div class="restaurantRecommend">
-			<fb:like href="<%="http://foodierecs.com"+request.fullpath%>" send="false" layout="button_count" width="50" show_faces="true" font="verdana" style="float:left"></fb:like>
-			<% if ( !session[ :user_id ].nil? && !Opinion.where( :user_id => session[ :user_id ], :restaurant_id => @restaurant.id ).exists? ) %>
-				<a href=""><img id="notForFoodies" src="../images/not-for-foodies.jpg" /></a>
-			<% end %>
-		</div>
-		
 		<%if( !session[ :user_id ].nil? )%>
+		<div class="restaurantRecommend">
+			<% thisOpinion = @restaurant.opinions.where( :user_id => session[ :user_id ] )
+			forFoodiesClass = ""
+			notForFoodiesClass = ""
+			if( thisOpinion.exists? )
+				if( thisOpinion.first.like == 1 )
+					forFoodiesClass = "forFoodiesOn"
+				elsif( thisOpinion.first.like == -1 )
+					notforFoodiesClass = "notForFoodiesOn"
+				end
+			end 
+			thisSaved = @restaurant.saved_places.where( :user_id => session[ :user_id ] )
+			saveLaterClass= "saveForLater"
+			if( thisSaved.exists? )
+				saveLaterClass = "saveForLater saveForLaterOn"
+			end
+			%>
+			<a href="#forFoodies" class="forFoodies <%=forFoodiesClass%>" id="forFoodies"></a>
+			<a href="#notForFoodies" class="notForFoodies <%=notforFoodiesClass%>" id="notForFoodies"></a>
+			<a href="#saveForLater" class="<%=saveLaterClass%>" id="saveForLater"></a>
+		</div>
+
 		<script>
-		$('#notForFoodies').click(function(){
-			$.post( "/opinions", { 'opinion[user_id]': <%=session[ :user_id ]%>, 'opinion[restaurant_id]': <%=@restaurant.id%>,
-				 					'opinion[foodie]': <%=User.find_by_id(session[:user_id]).foodie%>, 'opinion[like]': -1 },
-				function( data ){
-					alert( 'Marked as not for foodies!' );
-				})
-		});
+			$('#notForFoodies').click(function(){
+				//turn this button on
+				$('#notForFoodies').addClass( 'notForFoodiesOn');
+
+				//if the other one is on, turn that off
+				if( $( '#forFoodies' ).hasClass( "forFoodiesOn" ) )
+					$( '#forFoodies' ).removeClass( "forFoodiesOn" );
+
+				$.post( "/opinions", { 'opinion[user_id]': <%=session[ :user_id ]%>, 'opinion[restaurant_id]': <%=@restaurant.id%>,
+					 					'opinion[foodie]': <%=User.find_by_id(session[:user_id]).foodie%>, 'opinion[like]': -1 }
+						)
+			});
+
+			$('#forFoodies').click(function(){
+				//turn this button on
+				$('#forFoodies').addClass( 'forFoodiesOn');
+
+				//if the other one is on, turn that off
+				if( $( '#notForFoodies' ).hasClass( "forFoodiesOn" ) )
+					$( '#notForFoodies' ).removeClass( "forFoodiesOn" );
+
+				//These two are for the dialog box
+				$('#opinion_restaurant_id').attr( 'value', <%=@restaurant.id%> );
+				$("#dialog").dialog('open');
+
+				$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
+						{ 'opinion[user_id]': <%= session[ :user_id ] %>, 'opinion[restaurant_id]': <%=@restaurant.id%>,
+							'opinion[foodie]': <%= User.find_by_id(session[:user_id]).foodie %>, 'opinion[like]': 1 }
+					)
+			});
+
+			$('#saveForLater').click(function(){
+				//we do toggle here because this works for on/off
+				$('#saveForLater').toggleClass( 'saveForLaterOn')
+				$.post( "/saved_places", 
+				 		{ 'save_place[user_id]': <%=session[ :user_id ]%>, 'save_place[restaurant_id]': <%=@restaurant.id%>,
+					 					'save_place[foodie]': <%=User.find_by_id(session[:user_id]).foodie%> }
+						)
+			});
 		</script>
-		
 		
 		<div id="dialog" title="Recommendations" style="display:none" >
 			<% @opinion = Opinion.new %>
 			<%= render :partial => 'opinions/form' %>
 		</div>
 		<%end%>
-	
-		<script>
-			FB.Event.subscribe('edge.create', function(response) {
-				//basically, we pretend like the user doesn't want to add a to eat/to drink and add the row
-				//then, if they do add it, this row will get deleted and replaced by the new one. nice!
-				//alternatively, if they aren't signed in, we'll send them to authorization
-				<% if !session[ :user_id ].nil? %>
-				$.post( "<%= url_for( :controller => 'opinions', :only_path => false ) %>", 
-						{ 'opinion[user_id]': <%= session[ :user_id ] %>, 'opinion[restaurant_id]': <%= @restaurant.id %>,
-							'opinion[foodie]': <%= User.find_by_id(session[:user_id]).foodie %>, 'opinion[like]': 1 } );
-				<% else %>
-				 	window.location = "/"
-				<% end %>
-				//need to do this next line because the form doesn't know what opinion
-				$('#opinion_restaurant_id').attr( 'value', <%=@restaurant.id%> );
-				$("#dialog").dialog('open');
-  			});
-		</script>
-
-		<% if !session[ :user_id ].nil? && Opinion.where( :user_id => session[ :user_id ], :restaurant_id => @restaurant.id ).exists? %>
-			<!--To capture un-likes -->
-			<%= render 'layouts/unlike' %>
-		<% end %>
-		</script>
-		
+			
 		<div class="foodieList">
 			<b><%= "Foodies who like " + @restaurant.name %>:</b> <br/>
 			<% @foodie = true %>
@@ -187,10 +204,12 @@ end %>
 			<% end %>
 		</div>
 		
+		<!--This needs to be done since we're not doing the like button thing anymore
 		<div class="likeFacePile">
 			<b><%= "Everyone who likes " + @restaurant.name %>:</b> <br />
 			<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:facepile href="<%= request.url; %>" width="200" max_rows="5"></fb:facepile>
 		</div>
+		-->
 		
 		<div id="map_canvas"></div>
 		

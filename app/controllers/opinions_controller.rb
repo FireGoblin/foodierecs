@@ -48,6 +48,7 @@ class OpinionsController < ApplicationController
     Opinion.destroy_all( :user_id => @opinion.user_id, :restaurant_id => @opinion.restaurant_id );
     
     if @opinion.save
+=begin
       #we need to update the restaurant table
       rest = Restaurant.where( :id => @opinion.restaurant_id ).first
       puts "\n\n\nrestaurant id is #{rest.id}\n\n\n"
@@ -65,6 +66,15 @@ class OpinionsController < ApplicationController
         end
       end
       rest.save   
+=end
+      
+      #not sure how efficient this is, but I'm going to recount the likes and not likes for restaurants
+      rest = Restaurant.where( :id => @opinion.restaurant_id ).first
+      likes = rest.opinions.where( :like => 1, :foodie => true )
+      dislikes = rest.opinions.where( :like => -1, :foodie => true )
+      rest.foodie_likes = likes.count
+      rest.foodie_dislikes = dislikes.count
+      rest.save
       
       if @opinion.like == 1
         #if it was a like, we should redirect to the page of the restaurant
@@ -72,6 +82,7 @@ class OpinionsController < ApplicationController
       else
         render :text => "OK"
       end
+      
     else
       render :text => "FAIL"
     end

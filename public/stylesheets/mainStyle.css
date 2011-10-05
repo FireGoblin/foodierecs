@@ -98,6 +98,8 @@ html {
 	margin: 5px 0px;
 }
 
+/*For Foodies, Not for foodies, save for later buttons*/
+
 .restaurantRecommend .forFoodies,
 .restaurantRecommend .notForFoodies,
 .restaurantRecommend .saveForLater{
@@ -146,6 +148,8 @@ html {
 .restaurantRecommend .saveForLaterOn{
 	background-position: -262px -56px;
 }
+
+/*For Foodies, Not for foodies, save for later buttons end*/
 
 /*
 .restaurantRecommend iframe{

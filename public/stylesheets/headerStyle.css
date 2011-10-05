@@ -27,3 +27,34 @@
 #search-form{
 	width:300px;
 }
+
+/*For wherever we have the dialog*/
+.ui-dialog .ui-dialog-titlebar{
+	font-family: 'Lobster Two',"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	color: #ffffff;
+	
+}
+
+.ui-dialog .ui-widget-header{
+	background-image: none !important;
+	background-color: #1477BB;
+}
+
+.ui-dialog label{
+	font-family: 'News Cycle',"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	padding-bottom: 2px;
+}
+
+.ui-dialog input{
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.ui-widget input{
+	font-family: 'News Cycle',"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 15px !important;
+}
+
+.ui-widget-header .ui-icon{
+	background: none !important;
+}

@@ -60,7 +60,6 @@ html {
 
 #restaurantInfo{
 	float:left;
-	height: 100px;
 	width: 400px;
 }
 
@@ -82,26 +81,66 @@ html {
 .restaurantRecommend{
 	float: right;
 	width: 250px;
-	height: 70px;
 	
-	padding: 30px 0 0 50px;
+	padding: 30px 0 20px 50px;
 }
 
 .restaurantRecommend iframe{
 	float: left;
 }
 
-.restaurantRecommend a{
-	display:inline-block;
-	position:relative;
-	float:left;
+/*For Foodies, Not for foodies, save for later buttons*/
+
+.restaurantRecommend .forFoodies,
+.restaurantRecommend .notForFoodies,
+.restaurantRecommend .saveForLater{
+	width: 130px;
+	height: 28px;
+	display: inline-block;
+	
+	background: url(../images/button-bar.jpg);
 }
 
-.restaurantRecommend a img{
-	text-decoration: none;
-	border: 0;
-	padding-left: 5px;
+.restaurantRecommend .forFoodies{
+	background-position: 0px 0px;
 }
+
+.restaurantRecommend .forFoodies:hover{
+	background-position: -131px 0px;
+}
+
+.restaurantRecommend .forFoodies:active,
+.restaurantRecommend .forFoodiesOn{
+	background-position: -262px 0px !important;
+}
+
+.restaurantRecommend .notForFoodies{
+	background-position: 0px -28px;
+}
+
+.restaurantRecommend .notForFoodies:hover{
+	background-position: -131px -28px;
+}
+
+.restaurantRecommend .notForFoodies:active,
+.restaurantRecommend .notForFoodiesOn{
+	background-position: -262px -28px;
+}
+
+.restaurantRecommend .saveForLater{
+	background-position: 0px -56px;
+}
+
+.restaurantRecommend .saveForLater:hover{
+	background-position: -131px -56px;
+}
+
+.restaurantRecommend .saveForLater:active,
+.restaurantRecommend .saveForLaterOn{
+	background-position: -262px -56px;
+}
+
+/*For Foodies, Not for foodies, save for later buttons end*/
 
 .foodieList{
 	margin: 30px 20px 30px 20px;
@@ -140,7 +179,7 @@ html {
 #map_canvas{
 	margin: 10px 30px 10px 20px;
 	float: right;
-	height: 170px;
+	height: 270px;
 	width: 300px;
 }
 

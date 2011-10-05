@@ -103,28 +103,18 @@ html {
 	margin: 20px auto;
 }
 
-.restaurantListHeader{
-	margin: 10px 20px 0 20px;
-}
-
 .restaurantList{
-	margin: 10px 20px 30px 20px;
-	
-	width: 660px;
-}
-
-.restaurantNameLeft{
+	margin: 10px 0px 10px 20px;
+	padding-right: 10px;
 	float: left;
-	width: 330px;
-	margin-bottom: 20px;
-	min-height: 100px;
-	height: 100px;
+	width: 320px;
+	border-right: thin solid;
 }
 
-.restaurantNameRight{
-	float: right;
-	width: 330px;
-	margin-bottom: 20px;
+.restaurantNameRec{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border-bottom: thin dotted;
 }
 
 .restaurantList a{
@@ -147,24 +137,76 @@ html {
 }
 
 .restaurantRecommend{
-	width: 250px;
-	height: 20px;
 	overflow: hidden;
 	padding-left: 5px;
 }
 
-.restaurantRecommend iframe{
-	float: left;
+.savedList{
+	float: right;
+	width: 320px;
+	margin: 10px 20px 10px 0px;
 }
 
-.restaurantRecommend a{
-	display:inline-block;
-	position:relative;
-	float:left;
-}
-
-.restaurantRecommend a img{
+.savedList a{
 	text-decoration: none;
-	border: 0;
-	padding-left: 5px;
+	color: #1477bb;
 }
+
+.restaurantNameSaved{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border-bottom: thin dotted;
+}
+
+/*For Foodies, Not for foodies, save for later buttons*/
+
+.restaurantRecommend .forFoodies,
+.restaurantRecommend .notForFoodies,
+.restaurantRecommend .saveForLater{
+	width: 130px;
+	height: 28px;
+	display: inline-block;
+	
+	background: url(../images/button-bar.jpg);
+}
+
+.restaurantRecommend .forFoodies{
+	background-position: 0px 0px;
+}
+
+.restaurantRecommend .forFoodies:hover{
+	background-position: -131px 0px;
+}
+
+.restaurantRecommend .forFoodies:active,
+.restaurantRecommend .forFoodiesOn{
+	background-position: -262px 0px !important;
+}
+
+.restaurantRecommend .notForFoodies{
+	background-position: 0px -28px;
+}
+
+.restaurantRecommend .notForFoodies:hover{
+	background-position: -131px -28px;
+}
+
+.restaurantRecommend .notForFoodies:active,
+.restaurantRecommend .notForFoodiesOn{
+	background-position: -262px -28px;
+}
+
+.restaurantRecommend .saveForLater{
+	background-position: 0px -56px;
+}
+
+.restaurantRecommend .saveForLater:hover{
+	background-position: -131px -56px;
+}
+
+.restaurantRecommend .saveForLater:active,
+.restaurantRecommend .saveForLaterOn{
+	background-position: -262px -56px;
+}
+
+/*For Foodies, Not for foodies, save for later buttons end*/

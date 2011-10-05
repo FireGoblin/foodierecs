@@ -97,7 +97,7 @@ module PagesHelper
 	end
 	
 	def recentlyRated
-		the_opinions = Opinion.find(:all, :limit => 20).reverse
+		the_opinions = Opinion.where(:like => 1).order( ).limit(9)
 
 		#the_restaurants = Array.new
 		
