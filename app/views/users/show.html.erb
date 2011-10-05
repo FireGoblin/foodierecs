@@ -36,28 +36,6 @@ end %>
     }
     var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
-	//For saved places
-	var blueMarker = new google.maps.MarkerImage( "http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png" );
-	
-	<% @user.saved_places.each do |saved| %>
-		myLatlng = new google.maps.LatLng(<%= saved.restaurant.lat %>,<%= saved.restaurant.long %>);
-	    var marker<%= saved.id %> = new google.maps.Marker({
-	        position: myLatlng, 
-	        map: map,
-	        title: "<%= saved.restaurant.name.squeeze(" ").tr("(),?!':.[]", "") %>",
-			icon: blueMarker
-	    });   
-
-		var infowindow<%= saved.id %> = new google.maps.InfoWindow({  
-		  content: "<b><%= saved.restaurant.name %></b><br />Saved Restaurant"
-		});
-	
-		google.maps.event.addListener(marker<%= saved.id %>, 'click', function() {
-			infowindow<%= saved.id %>.open(map, marker<%= saved.id %>);
-		  });
-	
-	<% end %>
-
 	//liked places
 	var greenMarker = new google.maps.MarkerImage( "http://www.google.com/intl/en_us/mapfiles/ms/micons/green-dot.png" );
 		
@@ -83,6 +61,28 @@ end %>
 			infowindow<%= rec.id %>.open(map, marker<%= rec.id %>);
 		  });
 		<% end %>
+	
+	<% end %>
+	
+	//For saved places
+	var blueMarker = new google.maps.MarkerImage( "http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png" );
+	
+	<% @user.saved_places.each do |saved| %>
+		myLatlng = new google.maps.LatLng(<%= saved.restaurant.lat %>,<%= saved.restaurant.long %>);
+	    var marker<%= saved.id %> = new google.maps.Marker({
+	        position: myLatlng, 
+	        map: map,
+	        title: "<%= saved.restaurant.name.squeeze(" ").tr("(),?!':.[]", "") %>",
+			icon: blueMarker
+	    });   
+
+		var infowindow<%= saved.id %> = new google.maps.InfoWindow({  
+		  content: "<b><%= saved.restaurant.name %></b><br />Saved Restaurant"
+		});
+	
+		google.maps.event.addListener(marker<%= saved.id %>, 'click', function() {
+			infowindow<%= saved.id %>.open(map, marker<%= saved.id %>);
+		  });
 	
 	<% end %>
   }

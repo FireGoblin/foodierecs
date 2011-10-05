@@ -14,7 +14,6 @@
 			</form>
 		</div>
 		<% if !session[ :user_id ].nil? 
-			session[ :user_name] = "sikakkar" %>
 		<div id="links">
 			<%= link_to( 'Your Ratings', "/" + session[ :user_name ] ) %> | 
 			<%= link_to( 'Foodie Recommendations', '/recommendations' ) %> |
