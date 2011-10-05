@@ -118,10 +118,12 @@ end %>
 			</div>
 			
 			<!--For liking restaurants -->
+			<% if !session[ :user_id ].nil? %>
 			<div id="dialog" title="Recommendations" style="display:none" >
 				<% @opinion = Opinion.new %>
 				<%= render :partial => 'opinions/form' %>
 			</div>
+			<% end %>
 			
 			<div id="nomination">
 				<% if !session[ :user ].nil? && Nomination.where( :user_id => @user.id ).exists? && User.find_by_id(session[:user_id]).foodie %>
