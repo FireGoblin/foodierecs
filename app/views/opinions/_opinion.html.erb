@@ -24,8 +24,8 @@
 				end
 			end 
 			%>
-			<a href="#forFoodies" class="forFoodies <%=forFoodiesClass%>" id="forFoodies<%=restaurant.id%>"></a>
-			<a href="#notForFoodies" class="notForFoodies <%=notforFoodiesClass%>" id="notForFoodies<%=restaurant.id%>"></a>
+			<a href="#" class="forFoodies <%=forFoodiesClass%>" id="forFoodies<%=restaurant.id%>"></a>
+			<a href="#" class="notForFoodies <%=notforFoodiesClass%>" id="notForFoodies<%=restaurant.id%>"></a>
 		</div>
 		<script>
 			$('#notForFoodies<%=restaurant.id%>').click(function(){
@@ -127,9 +127,9 @@
 				saveLaterClass = "saveForLater saveForLaterOn"
 			end
 			%>
-			<a href="#forFoodies" class="forFoodies <%=forFoodiesClass%>" id="forFoodies<%=restaurant.id%>"></a>
-			<a href="#notForFoodies" class="notForFoodies <%=notforFoodiesClass%>" id="notForFoodies<%=restaurant.id%>"></a>
-			<a href="#saveForLater" class="<%=saveLaterClass%>" id="saveForLater<%=restaurant.id%>"></a>
+			<a href="#" class="forFoodies <%=forFoodiesClass%>" id="forFoodies<%=restaurant.id%>"></a>
+			<a href="#" class="notForFoodies <%=notforFoodiesClass%>" id="notForFoodies<%=restaurant.id%>"></a>
+			<a href="#" class="<%=saveLaterClass%>" id="saveForLater<%=restaurant.id%>"></a>
 		</div>
 		<script>
 			$('#notForFoodies<%=restaurant.id%>').click(function(){
