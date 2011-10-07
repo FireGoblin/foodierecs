@@ -31,13 +31,15 @@ session[ :background_pic ] = backgroundPic %>
 			
 			signupLogin = function(){
 				FB.api('/me', function(response) {
+					var username = response.username;
+					username.replace( /./g, "" );
 					$('#fbLogin').html( "Logging In...")
-					$.post( "users/exists/" + response.username, function( data ){
+					$.post( "users/exists/" + username, function( data ){
 						if( data == "NO" ){
 							//need to create this user
 							$.post( "<%= url_for( :controller => 'users', :only_path => false ) %>", 
 								{ 'user[first_name]': response.first_name, 'user[last_name]': response.last_name,
-									'user[username]': response.username, 'user[facebook_url]': response.link,
+									'user[username]': username, 'user[facebook_url]': response.link,
 									'user[gender]': response.gender,
 									'user[email]':response.email },
 								function(response){
