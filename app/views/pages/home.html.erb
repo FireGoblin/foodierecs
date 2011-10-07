@@ -32,7 +32,7 @@ session[ :background_pic ] = backgroundPic %>
 			signupLogin = function(){
 				FB.api('/me', function(response) {
 					var username = response.username;
-					username.replace( /./g, "" );
+					username.replace( ".", "" );
 					$('#fbLogin').html( "Logging In...")
 					$.post( "users/exists/" + username, function( data ){
 						if( data == "NO" ){
