@@ -53,8 +53,9 @@ session[ :background_pic ] = backgroundPic %>
 				})
 			}
 		
-			FB.Event.subscribe('auth.statusChange', signupLogin() );
-    	};
+			FB.Event.subscribe('auth.authResponseChange', signupLogin() );
+			
+    };
     	(function() {
 	  		var e = document.createElement('script'); e.async = true;
       		e.src = document.location.protocol +
